@@ -1,0 +1,14 @@
+.d-fl > * {display: inline-block; vertical-align: top;}
+.header-contacts, .top-menu-wrap {text-align: right;}
+.top-menu li {padding: 0 8px;}
+.top-menu-wrap {float: right;}
+.header-line {overflow: hidden;}
+.logotype {float: left;}
+.slider-portfolio .bx-pager-link {display: block; margin-left: 1px;}
+.wrap-dark {background: #f0f0f0;}
+.tariff {margin-right: 8px;}
+.bottom-menu-wrap {width: 52%;}
+.footer-contacts .d-fl > div {width: 25%;}
+.footer-contacts .d-fl > div.counters {width: 20%;}
+.service, .activity {width: 24%;}
+.activity::after {display: none;}

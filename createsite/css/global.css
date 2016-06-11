@@ -1,0 +1,186 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, address, img, strong, sub, sup, b, ol, ul, li, form, label, table, tbody, thead, tr, th, td, article, aside, footer, header, nav, section, dl, dd, dt {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+article, aside, footer, header, nav, section {display: block;}
+body {
+	background: #fff;
+	color: #1e1e1e;
+	font: normal 16px/20px 'Open Sans', Tahoma, Verdana, Arial, sans-serif;
+	text-align: left;
+}
+html, body {height: 100%;}
+address {
+	display: inline;
+	font-style: normal;
+}
+sup {vertical-align: super; line-height: 5px;}
+sub {vertical-align: sub; line-height: 1px;}
+h1, .h1 {
+	font-size: 35px;
+	line-height: 40px;
+	margin-bottom: 15px;
+	margin-top: 7px;
+}
+h2, .h2, h3, .h3, h4, h5, h6, .h4, .h5, .h6 {
+	font-size: 28px;
+	line-height: 35px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {font-weight: bold;}
+h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {margin-bottom: 10px;}
+.h1, .h2, .h3, .h4, .h5, .h6, .d-b {display: block;}
+p {
+	letter-spacing: -0.4px;
+	padding-bottom: 5px;
+}
+p.h1, p.h2, p.h3, p.h4, p.h5, p.h6 {letter-spacing: 0;}
+ul, .ul-a, ol, .ol-a {
+	list-style: none;
+	margin: 0;
+}
+ul li, .ul-a li {list-style: none;}
+ol li, .ol-a li {
+	list-style: decimal outside none;
+	margin-left: 25px;
+}
+a {
+	color: #ec1e4e;
+	cursor: pointer;
+	text-decoration: underline;
+}
+.ul-a li a, .ol-a li a, a:hover, a:active {
+	color: #00bd50;
+	text-decoration: none;
+}
+.ul li {
+	list-style-image: url(../images/more.gif);
+	margin: 6px 6px 6px 20px;
+}
+:focus {outline: none;}
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: top;
+}
+img, a img {border: none;}
+.img {border: 1px solid #cacac9;}
+.img-l {
+	float: left;
+	margin: 0 10px 5px 0;
+}
+.img-r {
+	float: right;
+	margin: 0 0 5px 10px;
+}
+.f-left {text-align: left;}
+.f-right {text-align: right;}
+.f-center {text-align: center;}
+.f-justify {text-align: justify;}
+.f-normal {font-weight: normal;}
+.f-bold {font-weight: bold;}
+.f-italic {font-style: italic;}
+.f-underline {text-decoration: underline;}
+.f-no-underline {text-decoration: none;}
+.f-lowercase {text-transform: lowercase;}
+.f-uppercase {text-transform: uppercase;}
+.f-nowrap {white-space: nowrap;}
+.f-s16 {font-size: 16px;}
+.f-s18 {font-size: 18px;}
+table, .table {
+	border: none;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+td, .table td, .table-td-top, .vertical-top {vertical-align: top;}
+th, .table th, .table-td-middle, .vertical-middle {vertical-align: middle;}
+.table td, .table th, .border1px td, .border1px th {border: 1px solid #000;}
+.table-td-bottom, .vertical-bottom {vertical-align: bottom;}
+.clear-left {clear: left;}
+.clear-right {clear: right;}
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clear-all, .clearfix:after {clear: both;}
+.overflow-hidden {overflow: hidden;}
+.g-left {float: left;}
+.g-right {float: right;}
+.d-ib, .d-ib_li > li, .d-ib_div > div {display: inline-block;}
+.d-fl {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.fl-between {
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.fl-end {
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+.h-hidden, .hide_element, .j-result, .hide {display: none;}
+.h-relative {position: relative;}
+.h-full-width {width: 100%;}
+.h-centered {
+	margin-left: auto;
+	margin-right: auto;
+}
+input[type="text"], textarea, select {
+	background: #fff;
+	border: 1px solid #dcdcdc;
+	box-sizing: border-box;
+	color: #1e1e1e;
+	display: block;
+	font: normal 16px/19px 'Open Sans', Tahoma, Verdana, Arial, sans-serif;
+	outline: none;
+	width: 100%;
+}
+textarea {
+	overflow: auto;
+	resize: vertical;
+}
+.form_el_invalid, input[type="text"].form_el_invalid, .wrapped_select, select.wrapped_select {border: 1px solid #ec1e4e !important;}
+.lightTip {width: 362px;}
+.lightTip .content {
+	background: #fff none repeat scroll 0 0;
+	border: 4px solid #ec1e4e;
+	color: #020202;
+	min-width: 228px;
+	padding: 10px;
+	text-align: center;
+}
+.lightTip .bottom {
+	background: url(../images/notch.png) 50% 0 no-repeat;
+	height: 14px;
+}
+.zoomToggle, .zoomDisabled {cursor: auto;}
+.zoomToggleOn {cursor: url(../images/zoom_in.cur), pointer;}
+.zoomToggleOff {cursor: url(../images/zoom_out.cur), pointer;}
+.h-bordered {border-bottom: 1px solid #dcdcdc;}
+
+.h-ml15 {margin-left: 15px;}
+
+.h-mt18 {margin-top: 18px;}
+.h-mt20 {margin-top: 20px;}
+.h-mt32 {margin-top: 32px;}
+
+.h-mb10 {margin-bottom: 10px;}
+.h-mb22 {margin-bottom: 22px;}
+.h-mb35 {margin-bottom: 35px;}
+.h-mb40 {margin-bottom: 40px;}
+
+.h-w40 {width: 40%;}
+.h-w49 {width: 49%;}
+.h-w57 {width: 57%;}
