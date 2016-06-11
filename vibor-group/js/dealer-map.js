@@ -386,7 +386,7 @@ $(function() {
 
 	var mapConfig = {
 		idSelector: 'map-canvas',
-		markerLocation: '/images/icon-dealer-marker.png'
+		markerLocation: 'images/icon-dealer-marker.png'
 	}
 
 	myMap.init( mapConfig );
