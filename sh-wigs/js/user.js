@@ -268,9 +268,23 @@ jQuery(function(){
 			count += parseInt(val);
 		});
 
+		update_basket_price(context, count);
+
 		$('.loading').hide();
 
 		return false;
+	}
+
+	function FormatInt(n) {
+		n = parseInt(n);
+		var text = (n % 1000).toString();
+		n = parseInt(n / 1000);
+		while(n > 0) {
+			while((text.length+1) % 4 > 0) text = "0" + text;
+			text = (n % 1000).toString() + " " + text;
+			n = parseInt(n / 1000);
+		}
+		return text;
 	}
 
 	// Mobile Menu
