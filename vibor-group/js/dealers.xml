@@ -1,0 +1,2311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dealers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dealer>
+		<id>1</id>
+		<name>Барсегян Арсен Велимович, ИП</name>
+		<region>Республика Северная Осетия-Алания</region>
+		<city>Владикавказ</city>
+		<address>326031, РСО-Алания, г.Владикавказ, ул.Московская, д.27/1</address>
+		<contacts>(8672) 51-54-55, +7918-822-1206                           19ch@rambler.ru</contacts>
+		<lat>43.055777</lat>
+		<lng>44.642293</lng>
+	</dealer>
+	<dealer>
+		<id>2</id>
+		<name>Верона, ООО</name>
+		<region>Краснодарский край</region>
+		<city>Приморско-Ахтарск</city>
+		<address>353860, Краснодарский край, г.Приморско-Ахтарск, ул.Фестивальная, район АТСК</address>
+		<contacts>8-906-187-0605, 8-918-11-33-44-9        ooo.azovservis@yandex.ru</contacts>
+		<lat>46.04711</lat>
+		<lng>38.2107548</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>3</id>
+		<name>Выбор-КМВ, ООО</name>
+		<region>Ставропольский край</region>
+		<city>Ессентуки</city>
+		<address>357600, г. Ессентуки, ул. Пятигорская, д.155;  г. Пятигорск ул. Кисловодское шоссе, 23</address>
+		<contacts>Факс (87934) 2-17-06,  8-928-325-64-91,                       vibor.kmv@mail.ru</contacts>
+		<site>http://выбор-кмв.рф </site>
+		<lat>44.0540157</lat>
+		<lng>42.8904951</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>4</id>
+		<name>Выбор современного благоустройства, ООО (ИП Савельев В.Б.)</name>
+		<region>Краснодарский край</region>
+		<city>г.Новороссийск,</city>
+		<address>г.Новороссийск, Мысхакское шоссе, д.50/24</address>
+		<contacts>(8617) 301-277, 8-988-765-10-07,                         vsb1005@mail.ru</contacts>
+		<lat>44.699272268595</lat>
+		<lng>37.766645800003</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>5</id>
+		<name>Гранит, ООО</name>
+		<region>Воронежская область</region>
+		<city>Воронеж</city>
+		<address>394028, г.Воронеж, ул.Базовая, д. 4 оф.2</address>
+		<contacts>т.ф. (473) 244-33-85, 232-03-75, 229-29-43  8-910-288-77-48                                   info@granit-vrn.ru</contacts>
+		<lat>51.6562044</lat>
+		<lng>39.2856146</lng>
+	</dealer>
+	<dealer>
+		<id>6</id>
+		<name>Дрогайцева Е.Н., ИП</name>
+		<region>Краснодарский край</region>
+		<city>ст. Каневская</city>
+		<address>353730, Краснодарский край, ст.Каневская, ул.Гоголя, 33</address>
+		<contacts>8-918-465-90-65                                  elena.drog@yandex.ru</contacts>
+		<lat>46.0696924</lat>
+		<lng>38.9905763</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>7</id>
+		<name>Земцов Александр Владимирович, ИП   (ГК "Центрус")/Земцова Людмила Александровна , ИП</name>
+		<region>Саратовская область</region>
+		<city>Саратов</city>
+		<address>г.Саратов, Усть-Курдюмский Тракт, ул.Усть-Курдюмская, 12</address>
+		<contacts>(8452) 39-20-44, 392-594  752739,      office@centrus64.ru</contacts>
+		<site>http://www.centrus64.ru/ </site>
+		<lat>51.573697</lat>
+		<lng>46.075557</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>8</id>
+		<name>Земцов Александр Владимирович, ИП   (ГК "Центрус")/Земцова Людмила Александровна , ИП</name>
+		<region>Саратовская область</region>
+		<city>Саратов</city>
+		<address>г.Саратов, Усть-Курдюмский Тракт, ул.Усть-Курдюмская район СтройРынка</address>
+		<contacts>(8452) 39-20-44, 392-594  752739,      office@centrus64.ru</contacts>
+		<site>http://www.centrus64.ru/ </site>
+		<lat>51.558255</lat>
+		<lng>46.068316</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>9</id>
+		<name>Лобанов Сергей  Александрович ИП</name>
+		<region>Краснодарский край</region>
+		<city>ст. Павловская</city>
+		<address>352040, РФ, Краснодарский край, Павловский район, ст. Павловская, ул.Горького д.259 </address>
+		<contacts>(86191)5-75-05                                         lobanovserge@bk.ru</contacts>
+		<lat>46.136931</lat>
+		<lng>39.778488</lng>
+	</dealer>
+	<dealer>
+		<id>10</id>
+		<name>Кажарова Майя Николаевна, ИП</name>
+		<region>Кабардино-Балкарская Республика</region>
+		<city>Алтуд с.</city>
+		<address>КБР, Прохладненский район, с.Алтуд, ул.Комсомольская, 38</address>
+		<contacts>(86631)91-931, 8-928-081-1066                           kazharowa.m@yandex.ru</contacts>
+		<lat>43.896811</lat>
+		<lng>43.21732</lng>
+	</dealer>
+	<dealer>
+		<id>11</id>
+		<name>Койденко Елена Александровна ИП</name>
+		<region>Краснодарский край</region>
+		<city>г. Усть-Лабинск</city>
+		<address>353200, Краснодарский край, г. Усть-Лабинск, ул. Кавказская, 5</address>
+		<contacts>8-861-35-4-10-22, 8-918-697-91-59;                           koidenko@mail.ru</contacts>
+		<lat>45.225412</lat>
+		<lng>39.681766</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>12</id>
+		<name>Науменко Сергей Викторович, ИП</name>
+		<region>Краснодарский край</region>
+		<city>Выселки ст.</city>
+		<address>353100, Краснодарский край, ст. Выселки, ул. Северная, д. 124 </address>
+		<contacts>8-918-456-43-22, (86157) 7-64-14, 89184468105         natalia_o@inbox.ru; s4564322@yandex.ru</contacts>
+		<lat>45.5817958</lat>
+		<lng>39.6567751</lng>
+	</dealer>
+	<dealer>
+		<id>13</id>
+		<name>Оганян Гаврил Яковлевич ИП</name>
+		<region>Краснодарский край</region>
+		<city>пос. Мостовской</city>
+		<address>352570, Краснод.край, пос.Мостовской, ул.Переправненская, 4</address>
+		<contacts>8-918-480-00-10                              stroitzenter2012@yandex.ru</contacts>
+		<lat>44.391595</lat>
+		<lng>40.806933</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>14</id>
+		<name>Образцов Валерий Георгиевич ИП</name>
+		<region>Краснодарский край</region>
+		<city>ст. Каневская</city>
+		<address>353730, Россия, Краснодарский край, ст. Каневская, ул. Береговая, 2А </address>
+		<contacts>(86164)4-55-44,  8-918-951-18 01                                       valery-rf@yandex.ru</contacts>
+		<lat>46.0806651</lat>
+		<lng>38.9701366</lng>
+	</dealer>
+	<dealer>
+		<id>15</id>
+		<name>Образцов Валерий Георгиевич ИП</name>
+		<region>Краснодарский край</region>
+		<city>ст. Ленинградская</city>
+		<address>ст. Ленинградская, Каневское шоссе д.1, Промзона </address>
+		<contacts> 8(86145)3-82-44, 8 (918)385-61-62  valery-rf@yandex.ru </contacts>
+		<lat>46.319395</lat>
+		<lng>39.387721</lng>
+	</dealer>
+	<dealer>
+		<id>16</id>
+		<name>Образцов Валерий Георгиевич ИП</name>
+		<region>Краснодарский край</region>
+		<city>г.Ейск</city>
+		<address>г. Ейск ул. Герцена, д.13  </address>
+		<contacts> 8(918)265-11-45  valery-rf@yandex.ru</contacts>
+		<lat>46.678796</lat>
+		<lng>38.274726</lng>
+	</dealer>
+	<dealer>
+		<id>17</id>
+		<name>Озеров Виталий Владимирович ИП</name>
+		<region>Краснодарский край</region>
+		<city>ст. Роговская</city>
+		<address>352726, Краснодарский край, ст. Роговская, Пер. Школьный, 11Б</address>
+		<contacts>8-960-48-03-550                                 viozerov@yandex.ru; stroyimp23@yandex.ru</contacts>
+		<lat>45.7209365</lat>
+		<lng>38.7599303</lng>
+	</dealer>
+	<dealer>
+		<id>18</id>
+		<name>ПКФ Татаев, ООО</name>
+		<region>Чеченская Республика</region>
+		<city>Центерой с.</city>
+		<address>Чеченская республика, Грозненский р-н, с.Комсомольское, автодорога Грозный-Аргун</address>
+		<contacts>8-928-000-0176,   8-963-988-77-77 ,  8-964-073-18-17                              tataevbaza@mail.ru</contacts>
+		<lat>43.38707861</lat>
+		<lng>46.1551475</lng>
+	</dealer>
+	<dealer>
+		<id>19</id>
+		<name>Подлеснов А.А. ИП</name>
+		<region>Краснодарский край</region>
+		<city>Темрюк</city>
+		<address>353500, Краснодарский край, г. Темрюк, ул. Р. Люксембург, 55/1</address>
+		<contacts>8-918-64-06-777, 8(86148)6-54-82, 8(818)040-01-61              100673@list.ru</contacts>
+		<lat>45.280751</lat>
+		<lng>37.375697</lng>
+	</dealer>
+	<dealer>
+		<id>20</id>
+		<name>ПромХим, ООО</name>
+		<region>Карачаево-Черкесская Республика</region>
+		<city>Черкесск</city>
+		<address>369000, Карачаево-Черкесская Республика, г.Черкесск, ул.Кавказская, 147</address>
+		<contacts>8928-0280188, (8782) 21-33-15, 21-32-98       GumzhachevAM@promhim.ru; Kazbek A Bratov BratovKA@promhim.ru</contacts>
+		<lat>44.2328831</lat>
+		<lng>42.0497147</lng>
+	</dealer>
+	<dealer>
+		<id>21</id>
+		<name>Рогожа А.Ю.</name>
+		<region>Краснодарский край</region>
+		<city>Геленджик</city>
+		<address>Красндарский край г. Геленджик. Ул. Леселидзе 31</address>
+		<contacts>89184782178                           antonrogoja@gmail.com</contacts>
+		<lat>44.5500404</lat>
+		<lng>38.0648487</lng>
+	</dealer>
+	<dealer>
+		<id>22</id>
+		<name>Смолдырева Ирина Алексеевна, ИП</name>
+		<region>Краснодарский край</region>
+		<city>Тимашевск</city>
+		<address>г. Тимашевск, ул.Транспортная, 33, </address>
+		<contacts>8(918) 31-77-336, +7(918) 48-77-008                                        smoldereva@mail.ru</contacts>
+		<lat>45.6088251</lat>
+		<lng>38.9822165</lng>
+	</dealer>
+	<dealer>
+		<id>23</id>
+		<name>Смолдырева Ирина Алексеевна, ИП</name>
+		<region>Краснодарский край</region>
+		<city>Тимашевск</city>
+		<address>г. Тимашевск, ул. Красная, д.194  </address>
+		<contacts>8(918) 31-77-336, +7(918) 48-77-008                                        smoldereva@mail.ru</contacts>
+		<lat>45.61374</lat>
+		<lng>38.933973</lng>
+	</dealer>
+	<dealer>
+		<id>24</id>
+		<name>Смолдырева Ирина Алексеевна, ИП</name>
+		<region>Краснодарский край</region>
+		<city>ст. Медведовская</city>
+		<address>ст. Медведовская, ул. Мира, 218</address>
+		<contacts>8(918) 31-77-336, +7(918) 48-77-008                                        smoldereva@mail.ru</contacts>
+		<lat>45.438987</lat>
+		<lng>39.010473</lng>
+	</dealer>
+	<dealer>
+		<id>25</id>
+		<name>Смолдырева Ирина Алексеевна, ИП</name>
+		<region>Краснодарский край</region>
+		<city>ст. Новотиторовская</city>
+		<address>ст. Новотиторовска , ул. Широкая, д.2б </address>
+		<contacts>8(918) 31-77-336, +7(918) 48-77-008                                        smoldereva@mail.ru</contacts>
+		<lat>45.230582</lat>
+		<lng>38.999307</lng>
+	</dealer>
+	<dealer>
+		<id>26</id>
+		<name>Стеккер, ПК (Охтов А.Д.)</name>
+		<region>Карачаево-Черкесская Республика</region>
+		<city>Черкесск</city>
+		<address>369000, Карачаево-Черкесская Республика, г.Черкесск, ул.Кавказская, 30/1</address>
+		<contacts>(8782) 255-834, 963 283 68 88                                                Pk-stekker@mail.ru</contacts>
+		<lat>44.2328831</lat>
+		<lng>42.0497147</lng>
+	</dealer>
+	<dealer>
+		<id>27</id>
+		<name>ООО "Стекстрой"</name>
+		<region>Ставропольский край</region>
+		<city>Ставрополь</city>
+		<address>355035, г.Ставрополь, ул.Индустриальная, 47</address>
+		<contacts>(8652) 564-291, 8-918-763-26-33                                         info@stekstroy.ru, t88652564291@yandex.ru</contacts>
+		<lat>45.05</lat>
+		<lng>41.9666667</lng>
+	</dealer>
+	<dealer>
+		<id>28</id>
+		<name>Темп, ООО (ИП Байкулов Р.Б.)</name>
+		<region>Карачаево-Черкесская Республика</region>
+		<city>Черкесск</city>
+		<address>369222, Карачаево-Черкесская республика, г.Черкесск, Северный проезд, д.7</address>
+		<contacts>(878) 793-03-34, 224-00-37, 8-928-983-38-88 моб: 8 928 380 10 76 факс: 8 (87822) 3-88-54                                      oootemp@mail.ru</contacts>
+		<lat>44.2166667</lat>
+		<lng>42.049999</lng>
+	</dealer>
+	<dealer>
+		<id>29</id>
+		<name>«ТОНО» ООО</name>
+		<region>Ставропольский край</region>
+		<city>Ставрополь</city>
+		<address>г. Ставрополь,  ул. Индустриальная,  62</address>
+		<contacts>тел.: 8(962)401-30-85, 89054112380                                  tono26@yandex.ru</contacts>
+		<lat>45.0482683</lat>
+		<lng>41.9019693</lng>
+	</dealer>
+	<dealer>
+		<id>30</id>
+		<name>Триад</name>
+		<region>Кабардино-Балкарская Республика</region>
+		<city>Нальчик</city>
+		<address>360000, КБР, г.Нальчик, пер.Монтажников, 9</address>
+		<contacts>8-928-707-07-44 Germes-stroi@yandex.ru</contacts>
+		<lat>43.479868</lat>
+		<lng>43.606028</lng>
+	</dealer>
+	<dealer>
+		<id>31</id>
+		<name>Хачеритлов Р.А., ИП</name>
+		<region>Кабардино-Балкарская Республика</region>
+		<city>Баксан</city>
+		<address>361535, Кабардино-Балкарская Ресрублика, г.Баксан, пр.Ленина, 75</address>
+		<contacts>(86634) 4-14-94, 8-928-913-7030                                  hacheritloff.rustam@yandex.ru</contacts>
+		<lat>43.6868222</lat>
+		<lng>43.5338486</lng>
+	</dealer>
+	<dealer>
+		<id>32</id>
+		<name>Шапарь Лиана Гургеновна, ИП</name>
+		<region>Краснодарский край</region>
+		<city>Славянск-на-Кубани</city>
+		<address>353560, г.Славянск-на-Кубани, ул.Полковая, д.259, оф.302</address>
+		<contacts>(86146)2-19-62, моб. 8-918-333-05-55 , 8-918-375-9442  89180073007                                  priboy.plyus@list.ru, als0001@mail.ru</contacts>
+		<lat>45.2566637</lat>
+		<lng>38.1174753</lng>
+	</dealer>
+	<dealer>
+		<id>33</id>
+		<name>Шестопалова Юлия Валентиновна, ИП</name>
+		<region>Краснодарский край</region>
+		<city>Лабинск</city>
+		<address>г. Лабинск, юго-восточная окраина (Владимирское кольцо), </address>
+		<contacts>8-988-525-48-49                               vibor-lab@mail.ru</contacts>
+		<lat>44.6419848</lat>
+		<lng>40.7350922</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>34</id>
+		<name>Элипс, ООО</name>
+		<region>Краснодарский край</region>
+		<city>Славянск-на-Кубани</city>
+		<address>353560, г.Славянск-на-Кубани, ул.Гриня, д.13</address>
+		<contacts>(86146) 40-078, (918)318-49-25 , (918)354-86-32                                      kuban-ponomarenko@mail.ru</contacts>
+		<lat>45.241636</lat>
+		<lng>38.1407</lng>
+	</dealer>
+	<dealer>
+		<id>35</id>
+		<name>Уютный двор</name>
+		<region>Краснодарский край</region>
+		<city>Краснодар</city>
+		<address>Краснодар, ул. Силантьева 64/1 (6-ой км. Ростовского шоссе, остановка Горхутор)</address>
+		<contacts>(861) 202-00-85, 8-928-844-65-09, 88612020085,89181570707                                       elenavoit5@gmail.com</contacts>
+		<lat>45.1148245</lat>
+		<lng>38.9972914</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>36</id>
+		<name>Уютный двор</name>
+		<region>Краснодарский край</region>
+		<city>Темрюк</city>
+		<address>Темрюк, пересечение  ул.Октябрьской  и ул.Урицкого р-он дома 76</address>
+		<contacts>89064356767, 89183350050                          elenavoit5@gmail.com</contacts>
+		<lat>45.279635</lat>
+		<lng>37.367537</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>37</id>
+		<name>Уютный двор</name>
+		<region>Краснодарский край</region>
+		<city>г. Майкоп</city>
+		<address>г. Майкоп угол ул.Хакурате 541/А и ул.Юнатов</address>
+		<contacts>8(918)042-84-94, 8(918)111-71-28                elenavoit5@gmail.com</contacts>
+		<lat>44.614221</lat>
+		<lng>40.131128</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>38</id>
+		<name>Корендюк  Наталия Любомировна, ИП</name>
+		<region>Краснодарский край</region>
+		<city>Краснодар</city>
+		<address>г.  Краснодар,  п.Знаменский, Трасса М4 Дон</address>
+		<contacts>8-918-940-65-76, 8-928-666-55-88                                     89189406576@bk.ru</contacts>
+		<lat>45.058672</lat>
+		<lng>39.103881</lng>
+	</dealer>
+	<dealer>
+		<id>39</id>
+		<name>Данилович Дмитрий Владимирович, ИП</name>
+		<region>Краснодарский край</region>
+		<city>Анапа</city>
+		<address>353440, Краснодарский край, Анапский р-н, Анапа г, ул. Ленина, 144б </address>
+		<contacts>8-918-47-00-678                                            vavilon-anapa@mail.ru</contacts>
+		<lat>44.877407</lat>
+		<lng>37.324348</lng>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>40</id>
+		<name>Шамрай Даниил Геннадиевич, ИП</name>
+		<region>Краснодарский край</region>
+		<city>Краснодар</city>
+		<address>350037, РФ Краснодарский край, г.Краснодар, ул.Островная, 2</address>
+		<contacts>8-918-46-87-400                                 shamdan@bk.ru</contacts>
+		<site>http://plitka-trotyarnaya.ru/</site>
+		<lat>45.032106</lat>
+		<lng>39.235868</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>41</id>
+		<name>Солодаренко Наталья Федоровна, ИП</name>
+		<region>Краснодарский край</region>
+		<city>Сочи</city>
+		<address>354000,г. Сочи ,Ул. Кубанская 3,кв.3</address>
+		<contacts>8-929-85-32-324. 89189191122                              nsolodarenko@yandex.ru;vibor-sochi@mail.ru</contacts>
+		<lat>43.580127</lat>
+		<lng>39.728154</lng>
+	</dealer>
+	<dealer>
+		<id>43</id>
+		<name>ООО "АТП"</name>
+		<region>Краснодарский край</region>
+		<city>Анапа</city>
+		<address>Анапа, Анапский р-н, Воскренский хутор, Промзона</address>
+		<contacts>тел.: (86133) 2-13-44     моб.: (918) 040-20-04</contacts>
+		<site>http://www.atp-anapa.ru</site>
+		<lat>44.965631</lat>
+		<lng>37.323257</lng>
+	</dealer>
+	<dealer>
+		<id>44</id>
+		<name>ООО АС-Инжиниринг </name>
+		<region>Волгоградская область</region>
+		<city>Волжский</city>
+		<address>404105, Россия, Волгоградская область, г. Волжский,           ул. Александрова, д. 18 А</address>
+		<contacts>(8443)210-260, почта: info@vibor34.ru</contacts>
+		<site>www.vibor34.ru. </site>
+		<lat>48.7715209</lat>
+		<lng>44.8017904</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>45</id>
+		<name>ЗАО"Лемакс"</name>
+		<region>Ростовская область</region>
+		<city>г. Таганрог</city>
+		<address>Ростовская область, г. Таганрог, поляковское шоссе 11/2</address>
+		<contacts>7-988-252-04-99, vereshak@lemax.ru</contacts>
+		<site>http://www.lemax-t.ru/</site>
+		<lat>47.215259</lat>
+		<lng>38.878526</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>46</id>
+		<name>ООО "Веролина"</name>
+		<region>Ростовская область</region>
+		<city>г. Батайск</city>
+		<address>Ростовская область, г. Батайск, ул. М.Горького 137а/Луначарского 114</address>
+		<contacts>7-928-123-32-22, super.dvor@mail.ru</contacts>
+		<lat>47.140522</lat>
+		<lng>39.736252</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>47</id>
+		<name>ИП Козорезов А.Ю.</name>
+		<region>Ростовская область</region>
+		<city>г. Азов</city>
+		<address>Ростовская область, г. Азов, ул.Кооперативная, 10</address>
+		<contacts>7-951-507-72-11, azov.plitka@yandex.ru</contacts>
+		<lat>47.098193</lat>
+		<lng>39.417305</lng>
+		<warehouse>да</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>48</id>
+		<name>ИП Раздоров А.В.</name>
+		<region>Ростовская область</region>
+		<city>г. Новочеркасск</city>
+		<address>Ростовская область, г. Новочеркасск, пр. Баклановский 200Б</address>
+		<contacts>7-903-462-10-37, mcm-n@mail.ru</contacts>
+		<lat>47.423088</lat>
+		<lng>40.04069</lng>
+		<warehouse>да</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>49</id>
+		<name>ООО "Газобетон-Югстрой"</name>
+		<region>Ростовская область</region>
+		<city>г. Аксай</city>
+		<address>Ростовская область, г. Аксай, ул. Шолохова,1</address>
+		<contacts>7-918-555-79-66, gazglav@yandex.ru</contacts>
+		<site>rostovgazobeton.ru</site>
+		<lat>47.274694</lat>
+		<lng>39.8547</lng>
+		<warehouse>да</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>50</id>
+		<name>ООО "ЮгПанель"</name>
+		<region>Ростовская область</region>
+		<city>х. Ленинаван</city>
+		<address>Ростовская область, х. Ленинаван, ул. Садовая 125</address>
+		<contacts>7-928-229-84-17, rgs-director@mail.ru</contacts>
+		<lat>47.27571</lat>
+		<lng>39.614253</lng>
+		<warehouse>да</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>51</id>
+		<name>ИП Глинкина В.В.</name>
+		<region>Ростовская область</region>
+		<city>г. Ростов-на-Дону</city>
+		<address>Ростовская область, г. Ростов-на-Дону, ул. 1ой Конной армии 15</address>
+		<contacts>7-928-752-77-76, kirpich.glinkina@mail.ru</contacts>
+		<lat>47.251384</lat>
+		<lng>39.762805</lng>
+		<warehouse>нет</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>52</id>
+		<name>ООО Ваш Дом</name>
+		<region>Ростовская область</region>
+		<city>г. Ростов-на-Дону</city>
+		<address>Ростовская область, г. Ростов-на-Дону, ул. Малиновского 48а</address>
+		<contacts>7-961-416-25-41, (863) 276-47-00, tamara@stroymag61.ru</contacts>
+		<site>http://stroymag61.ru/</site>
+		<lat>47.218073</lat>
+		<lng>39.614376</lng>
+		<warehouse>да</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>53</id>
+		<name>ИП Лебедева</name>
+		<region>Ростовская область</region>
+		<city>г. Волгодонск</city>
+		<address>Ростовская область, г. Волгодонск, Морская 51</address>
+		<contacts>7-918-851-11-24, vd@mirstone5.ru</contacts>
+		<lat>47.509273</lat>
+		<lng>42.173257</lng>
+		<warehouse>да</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>54</id>
+		<name>ООО "БНГ"</name>
+		<region>Ростовская область</region>
+		<city>г. Новочеркасск</city>
+		<address>Ростовская область, г. Новочеркасск, Харьковское шоссе 4 б</address>
+		<contacts>(8635) 256-902, oobng@yandex.ru</contacts>
+		<site>bng-stroydom.narod.ru</site>
+		<lat>47.474493</lat>
+		<lng>40.102272</lng>
+		<warehouse>да</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>55</id>
+		<name>ООО "Армаф плюс"</name>
+		<region>Крым</region>
+		<city>г. Севастополь</city>
+		<address>Крым, г. Севастополь, Камышовое шоссе 14б</address>
+		<contacts>7-978-811-65-85, sale4stone@mail.ru</contacts>
+		<site>http://www.4stone.com.ua, http://vk.com/4stone</site>
+		<lat>44.567553</lat>
+		<lng>33.460859</lng>
+		<warehouse>да</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>56</id>
+		<name>ИП Хрхрян Д.Д.</name>
+		<region>Ростовская область</region>
+		<city>п. Чалтырь</city>
+		<address>Ростовская область, Мясниковский район, п. Чалтырь</address>
+		<contacts>7-928-130-62-10</contacts>
+		<lat>47.286058</lat>
+		<lng>39.510787</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>57</id>
+		<name>ООО «ТеплоГрад»</name>
+		<region>Белгородская область</region>
+		<city>г. Белгород</city>
+		<address>г. Белгород, ул. Дзгоева, д. 4, офис 120</address>
+		<contacts>(4722) 78-32-04, 78-32-07, teplogradbelg@yandex.ru</contacts>
+		<site>teplograd31.pulscen.ru</site>
+		<lat>50.588246</lat>
+		<lng>36.654419</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>58</id>
+		<name>ООО «АСТПЛИТКА»</name>
+		<region>Астраханская область</region>
+		<city>г. Астрахань</city>
+		<address>г. Астрахань, ул. Рождественского, 16/1, 2 этаж</address>
+		<contacts>7-988-171-74-16, 7-988-172-74-50, 7-988-172-74-49, ast_plitka@mail.ru</contacts>
+		<site>http://астплитка.рф/</site>
+		<lat>46.310643</lat>
+		<lng>48.056527</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>59</id>
+		<name> ТК "Территория" ООО</name>
+		<region>Удмуртская Республика</region>
+		<city>г. Ижевск</city>
+		<address>г. Ижевск, ул. 10 Лет Октября, 44б</address>
+		<contacts>(3412) 558885        info@tr18.ru
+</contacts>
+		<site>tr18.ru </site>
+		<lat>56.858932</lat>
+		<lng>53.221472</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>60</id>
+		<name> ТК "Территория" ООО</name>
+		<region>Пермский край</region>
+		<city>г.Пермь</city>
+		<address>г.Пермь ул.Плановая д.3 оф.1</address>
+		<contacts>8(951)926-89-80, 8(922)335-20-60     info@tr18.ru</contacts>
+		<site>tr18.ru </site>
+		<lat>58.105235</lat>
+		<lng>56.386074</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>61</id>
+		<name> ТК "Территория" ООО</name>
+		<region>Свердловская область</region>
+		<city>г.Екатеренбург</city>
+		<address>г. Екатеринбург, ул. Шоферов, д. 9</address>
+		<contacts>8(912) 692-39-16 info@tr18.ru</contacts>
+		<site>tr18.ru </site>
+		<lat>56.858513</lat>
+		<lng>60.668432</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>62</id>
+		<name>ООО "РеКонСтрой"</name>
+		<region>Белгородская область</region>
+		<city>г.Белгород</city>
+		<address>г. Белгород, переулок Щорса 3, 1-й этаж (Остановка "5-го Августа").</address>
+		<contacts>тел.: (4722) 500-832, (4722) 77-03-26, (4722) 77-03-27, 8-962-307-03-27 rekonstroy31@gmail.com</contacts>
+		<site>http:// реконстрой.рф</site>
+		<lat>50.579801</lat>
+		<lng>36.567259</lng>
+	</dealer>
+	<dealer>
+		<id>63</id>
+		<name>ООО "РеКонСтрой"</name>
+		<region>Белгородская область</region>
+		<city>п. Таврово</city>
+		<address>Белгородский район, п.Таврово 5, ТЦ ТАВР</address>
+		<contacts>тел.: (4722) 41-31-31, (4722) 77-03-01, 8-952-429-31-31,  8-952-429-32-32   rekonstroy.tavrovo@gmail.com</contacts>
+		<site>http:// реконстрой.рф</site>
+		<lat>50.518267 </lat>
+		<lng>36.561224</lng>
+	</dealer>
+	<dealer>
+		<id>64</id>
+		<name>ООО "РеКонСтрой"</name>
+		<region>Белгородская область</region>
+		<city>п.Новосадовый</city>
+		<address>Белгородский р-н, п.Новосадовый, ул.Ягодная 1м, 2-й этаж. </address>
+		<contacts>тел.: (4722) 77-03-23, (4722) 77-03-28, 8-962-307-03-28    rekonstroy.mkr41@gmail.com
+</contacts>
+		<site>http:// реконстрой.рф</site>
+		<lat>50.651730</lat>
+		<lng>36.686513</lng>
+	</dealer>
+	<dealer>
+		<id>65</id>
+		<name>ООО "РеКонСтрой"</name>
+		<region>Курская область</region>
+		<city>г.Курск</city>
+		<address>г. Курск , ТЦ "Альмирал", проспект Кулакова 24, офис 205, 2-й этаж.</address>
+		<contacts>тел.: (4712) 305-335, 8-952-494-22-46, 8-952-494-22-47  rekonstroy.kursk@gmail.com
+</contacts>
+		<site>http://курск.реконстрой.рф </site>
+		<lat>51.666244</lat>
+		<lng>36.140365</lng>
+	</dealer>
+	<dealer>
+		<id>66</id>
+		<name>ООО "РеКонСтрой"</name>
+		<region>Белгородская область</region>
+		<city>г.Старый Оскол</city>
+		<address>г. Старый Оскол, микрорайон Северный 12, 2-й этаж. </address>
+		<contacts>тел.: (4725) 41-50-68, 8-952-430-08-34,  8-952-430-08-35,  8-952-430-42-36, rekonstroy.oskol31@gmail.com
+</contacts>
+		<site>http://старый-оскол.реконстрой.рф </site>
+		<lat>51.325887</lat>
+		<lng>37.883231</lng>
+	</dealer>
+	<dealer>
+		<id>67</id>
+		<name>ИП Ибрагимов Али Мустапаевич</name>
+		<region>Республика Дагестан</region>
+		<city>с.Новый Костек</city>
+		<address>Республика Дагестан, Хасавюртовский район, село Новый Костек улица Базарная 1</address>
+		<contacts>8(928)054-58-88</contacts>
+		<lat>43.334381</lat>
+		<lng>46.824954</lng>
+	</dealer>
+	<dealer>
+		<id>68</id>
+		<name>ИП Картоев Мухарбек Абдрахманович </name>
+		<region>Республика Ингушетия</region>
+		<city>с. Экажево </city>
+		<address>Республика Ингушетия Назрановский район с. Экажево ул. Албогачиева д.1</address>
+		<contacts>8(906)488-46-09</contacts>
+		<lat>43.218179</lat>
+		<lng>44.824648</lng>
+	</dealer>
+	<dealer>
+		<id>69</id>
+		<name>Койденко Елена Александровна ИП</name>
+		<region>Краснодарский край</region>
+		<city>ст. Динская</city>
+		<address>Краснодарский край, ст.Динская ул.Калинина 85</address>
+		<contacts>8(8613) 54-10-22, 8-928-843-2585;                           koidenko@mail.ru</contacts>
+		<lat>45.220292</lat>
+		<lng>39.218783</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>70</id>
+		<name>ООО Master Group</name>
+		<region>Ставропольский край</region>
+		<city>г.Георгиевск</city>
+		<address>Ставропольский край, город Георгиевск, улица Октябрьская 138</address>
+		<contacts>8(962)-495-6000 ; 8(87951)-5-09-20.</contacts>
+		<site>www.kerama-master.club</site>
+		<lat>44.168505</lat>
+		<lng>43.453783</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>71</id>
+		<name>ООО Master Group</name>
+		<region>Ставропольский край</region>
+		<city>г.Георгиевск</city>
+		<address>Ставропольский край город Георгиевск, село Краснокумское Садовая 29/Советская.  </address>
+		<contacts>8(962)-495-6000 ; 8(87951)-5-09-20.</contacts>
+		<site>www.kerama-master.club</site>
+		<lat>44.168506</lat>
+		<lng>43.453784</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>72</id>
+		<name>ООО «Формика» </name>
+		<region>Ярославская область</region>
+		<city>г.Рыбинск</city>
+		<address>Ярославская область, г. Рыбинск, ул. Нобелевская, дом 67</address>
+		<contacts>тел 8-915-960-99-00</contacts>
+		<lat>58.02864</lat>
+		<lng>38.916572</lng>
+	</dealer>
+	<dealer>
+		<id>73</id>
+		<name>Компания «Стройкомплект»</name>
+		<region>Московская область</region>
+		<city>г.Коломна</city>
+		<address>г. Коломна, ул.Щуровская, дом 5</address>
+		<contacts>Телефон:  8-901-532-56-62, 8-496-615-26-19, 8-926-810-26-43  E-mail: kl@strd.ru</contacts>
+		<site>www.strd.ru </site>
+		<lat>55.062194</lat>
+		<lng>38.844635</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>74</id>
+		<name>Компания «Стройкомплект»</name>
+		<region>Московская область</region>
+		<city>г.Клин</city>
+		<address>г. Клин, ул. Захватаева, дом 4</address>
+		<contacts>Телефон:  8(49624)996-80, 8-929-904-16-43   E-mail: klin@strd.ru</contacts>
+		<site>www.strd.ru </site>
+		<lat>56.329277</lat>
+		<lng>36.729992</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>75</id>
+		<name>Компания «Стройкомплект»</name>
+		<region>Московская область</region>
+		<city>г.Серпухов</city>
+		<address>г. Серпухов, ул.Ворошилова,  дом 126А</address>
+		<contacts>Телефон:  8(4967)76-49-44, 8-929-904-16-49,   E-mail: sh@strd.ru</contacts>
+		<site>www.strd.ru </site>
+		<lat>54.919626</lat>
+		<lng>37.433274</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>76</id>
+		<name>Ип Топильский Валерий Иванович </name>
+		<region>Тамбовская область</region>
+		<city>г.Тамбов</city>
+		<address>г. Тамбов Ул. Мичуринская д.215 м-н "Студия Камня"</address>
+		<contacts>тел. 8(4752)-379595, 8920-495-9595, mail:info@kamen68.ru</contacts>
+		<site>www.kamen68.ru</site>
+		<lat>52.772101</lat>
+		<lng>41.388368</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>77</id>
+		<name>Компания «Стройкомплект»</name>
+		<region>Московская область</region>
+		<city>г.Балашиха</city>
+		<address>г. Балашиха, микрорайон "Первомайский", ш. Энтузиастов, д.32, 4 этаж, офис 410</address>
+		<contacts>Телефон:  8(915) 113-36-93, 8 (495) 521-25-03, 8 (901) 541-08-81   E-mail: b@strd.ru</contacts>
+		<site>www.strd.ru </site>
+		<lat>55.792959</lat>
+		<lng>37.936726</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>78</id>
+		<name>Компания «Стройкомплект»</name>
+		<region>Московская область</region>
+		<city>г.Истра</city>
+		<address>г.Истра, Охотничий проезд, д.3, оф.2.13</address>
+		<contacts>Телефон: 8(498) 316-46-67, 8(499) 551-01-67, 8(910) 409-87-99      Е-mail: is@strd.ru</contacts>
+		<site>www.strd.ru </site>
+		<lat>55.900678</lat>
+		<lng>36.857193</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>79</id>
+		<name>Компания «Стройкомплект»</name>
+		<region>Московская область</region>
+		<city>г.Люберцы</city>
+		<address>г.Люберцы, Октябрьский проспект, д.1, оф. 808</address>
+		<contacts>Телефон: 8 (499) 110-37-78, 8(495)766-71-32, 8(915)361-00-26         E-mail: l@strd.ru</contacts>
+		<site>www.strd.ru </site>
+		<lat>55.699827</lat>
+		<lng>37.85842</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>80</id>
+		<name>Компания «Стройкомплект»</name>
+		<region>Московская область</region>
+		<city>г.Подольск</city>
+		<address>г.Подльск, ул. Гайдара, д.9</address>
+		<contacts>Телефон: 8 (499) 653-93-47, 8 (4967) 54-84-80, 8(926)520-28-56  E-mail: p@strd.ru</contacts>
+		<site>www.strd.ru </site>
+		<lat>55.420464</lat>
+		<lng>37.526744</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>81</id>
+		<name>Компания «Стройкомплект»</name>
+		<region>Московская область</region>
+		<city>г.Ступино</city>
+		<address>г.Ступино, пр-т Победы, д.71 (магазин Прометей), 2 этаж, № офиса: 3209</address>
+		<contacts>Телефон:  8( 496)649-23-49, 8(929)904-15-68, 8(926)904-02-74, 8(499) 653-83-31    E-mail: su@strd.ru</contacts>
+		<site>www.strd.ru </site>
+		<lat>54.902646</lat>
+		<lng>38.080564</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>82</id>
+		<name>Компания «Стройкомплект»</name>
+		<region>Московская область</region>
+		<city>г.Щелково</city>
+		<address>г.Щелково, ул.Советская, строение 2, оф.216 (красно-оранжевое здание)</address>
+		<contacts>Телефон: 8 (495) 215-09-18, (905) 511-58-37    E-mail :  sch@strd.ru</contacts>
+		<site>www.strd.ru </site>
+		<lat>55.911315</lat>
+		<lng>38.001342</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>83</id>
+		<name>ИП Кузенков Виктор Юрьевич/Мир Брусчатки</name>
+		<region>Москва</region>
+		<city>Москва</city>
+		<address>25-й км МКАД, ТК Конструктор</address>
+		<contacts>8(495)502-21-41;  8(499)753-37-37,  e-mail: td.force@bk.ru</contacts>
+		<site>мирбрусчатки.рф</site>
+		<lat>55.58408</lat>
+		<lng>37.710314</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>84</id>
+		<name>ИП Кузенков Виктор Юрьевич/Мир Брусчатки</name>
+		<region>Московская область</region>
+		<city>пос. Ермолино</city>
+		<address>Дмитровское шоссе, ТК Ермолино</address>
+		<contacts>8(495)502-21-41;  8(499)753-37-37,  e-mail: td.force@bk.ru</contacts>
+		<site>мирбрусчатки.рф</site>
+		<lat>56.150795</lat>
+		<lng>37.491512</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>85</id>
+		<name>ИП Кузенков Виктор Юрьевич/Мир Брусчатки</name>
+		<region>Московская область</region>
+		<city>пос. Подосинки</city>
+		<address>пос.Подосинки, трасса А-107</address>
+		<contacts>8(495)502-21-41;  8(499)753-37-37,  e-mail: td.force@bk.ru</contacts>
+		<site>мирбрусчатки.рф</site>
+		<lat>56.205816</lat>
+		<lng>37.538215</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>86</id>
+		<name>ИП Кузенков Виктор Юрьевич/Мир Брусчатки</name>
+		<region>Московская область</region>
+		<city>село Пирогово</city>
+		<address>Московская область, село Подрезово, Осташковское шоссе</address>
+		<contacts>8(495)502-21-41;  8(499)753-37-37,  e-mail: td.force@bk.ru</contacts>
+		<site>мирбрусчатки.рф</site>
+		<lat>55.969819</lat>
+		<lng>37.713135</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>87</id>
+		<name>ИП Орлов</name>
+		<region>Московская область</region>
+		<city>Москва</city>
+		<address>г. Москва, поселение Новофедоровское , д. Яковлевское , Торговая площадь , здание 1</address>
+		<contacts>Тел. 8-906-079-52-83</contacts>
+		<lat>55.463391</lat>
+		<lng>36.940045</lng>
+		<warehouse>нет</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>88</id>
+		<name>ООО «Кровля+»</name>
+		<region>Тверская область</region>
+		<city>г.Тверь</city>
+		<address>г.Тверь , Зеленый проезд ,д.49,корпус 4</address>
+		<contacts>тел. 8-482-23264-75</contacts>
+		<lat>56.826606</lat>
+		<lng>35.923413</lng>
+		<warehouse>нет</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>89</id>
+		<name>ООО «Кровля Дом»</name>
+		<region>Тверская область</region>
+		<city>г.Тверь</city>
+		<address>г. Тверь , ул. Маяковского ,д.16</address>
+		<contacts>тел. 8-482-43-48-36</contacts>
+		<lat>56.861973</lat>
+		<lng>35.945718</lng>
+		<warehouse>нет</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>90</id>
+		<name>Профснаб, ООО</name>
+		<region>Самарская область</region>
+		<city>Самара</city>
+		<address>443022, г. Самара, Заводское шоссе, д.1, оф. 411</address>
+		<contacts>тел.: (846) 373-45-73 (74),
+
+моб.: (927) 201-15-36
+                                 nmsamara@mail.ru</contacts>
+		<lat>53.195852</lat>
+		<lng>50.250423</lng>
+	</dealer>
+	<dealer>
+		<name>ООО "УралСтройПанель"</name>
+		<region>Чувашская Республика</region>
+		<city>Чебоксары</city>
+		<address>428022 Чебоксары, ул. Калинина 105 А ТЦ "Мега Молл"</address>
+		<contacts>89879224002                                uralpanel21@yandex.ru; uralpanel@yandex.ru</contacts>
+	</dealer>
+	<dealer>
+		<id>92</id>
+		<name>ИП Крылова Аида Геннадьевна</name>
+		<region>Москва</region>
+		<city>Москва</city>
+		<address>ТЦ "Славянский Мир" МКАД</address>
+		<contacts>Павильон  А-7/1
++7 (495) 926-34-00                                        
++7 (916) 911-72-03 - Олег</contacts>
+		<lat>55.614803</lat>
+		<lng>37.486621</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>93</id>
+		<name>ИП Крылова Аида Геннадьевна</name>
+		<region>Москва</region>
+		<city>Москва</city>
+		<address>ТЦ "Славянский Мир" МКАД</address>
+		<contacts>Павильон  МЦ-12*  
++7 (495) 926-57-93                                        
++7 (903) 679-52-37 - Татьяна</contacts>
+		<lat>55.615525</lat>
+		<lng>37.485746</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>94</id>
+		<name>ИП Крылова Аида Геннадьевна</name>
+		<region>Москва</region>
+		<city>Москва</city>
+		<address>ТЦ "Славянский Мир" МКАД</address>
+		<contacts>Павильон К-1*                                    
++7 (926) 860-16-68 - Анна</contacts>
+		<lat>55.610194</lat>
+		<lng>37.487462</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>95</id>
+		<name>ИП Крылова Аида Геннадьевна</name>
+		<region>Московская область</region>
+		<city>Троицк</city>
+		<address>МО, Калужское шоссе, 22 км от МКАД, ТЦ Молоток, Район города Троицк</address>
+		<contacts>8-901-553-85-39 Олег</contacts>
+		<lat>55.450096</lat>
+		<lng>37.289948</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>96</id>
+		<name>ООО Концерн ДОН</name>
+		<region>Московская область</region>
+		<city>д. Верея</city>
+		<address>Московская область, Раменский р-он, деревня Верея, Островецкое шоссе, строение 10</address>
+		<contacts>+7 (495) 995-75-54 - многоканальный;                                 +7 (496) 462-45-27;  +7 (925) 664-47-91</contacts>
+		<site>www.stone-centre.ru</site>
+		<lat>55.6192</lat>
+		<lng>38.032811</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>97</id>
+		<name>Мир камня</name>
+		<region>Московская область</region>
+		<city>д. Грибки</city>
+		<address>Дмитровское шоссе, д.Грибки, вл.182а (6 км от МКАД)</address>
+		<contacts>8(495)940-60-55;  8(495)940-60-56                                          e-mail: sales@mircamney.ru  ;</contacts>
+		<site>www.mircamney.ru</site>
+		<lat>55.95283</lat>
+		<lng>37.538191</lng>
+		<warehouse>да</warehouse>
+		<laying>нет</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>98</id>
+		<name>Мир камня</name>
+		<region>Московская область</region>
+		<city>п. совхоза Останкино</city>
+		<address>Рогачевское шоссе, район посёлка совхоза Останкино (10 км от Дмитровского шоссе)</address>
+		<contacts>8(495)940-60-55;  8(985)389-18-66                                            e-mail: sales@mircamney.ru  ;</contacts>
+		<site>www.mircamney.ru</site>
+		<lat>56.041962</lat>
+		<lng>37.422581</lng>
+		<warehouse>да</warehouse>
+		<laying>нет</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>99</id>
+		<name>Мир камня</name>
+		<region>Московская область</region>
+		<city>д. Черкизово</city>
+		<address>Химки, дер.Черкизово,10-й км от МКАД в сторону области по Ленинградскому шоссе перед поворотом на Шереметьево-1</address>
+		<contacts>8(495)940-60-55;  8(495)210-79-22                                                 e-mail: sales@mircamney.ru  ;</contacts>
+		<site>www.mircamney.ru</site>
+		<lat>55.952912</lat>
+		<lng>37.347043</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>100</id>
+		<name>ООО КомФорт</name>
+		<region>Рязанская область</region>
+		<city>Рязань</city>
+		<address>г. Рязань, ул.Татарская, 37А, офис Н11</address>
+		<contacts>Тел.: +7 (4912) 92-09-10
+Факс.: +7 (4912) 20-77-02</contacts>
+		<site>http://www.comfort-com.com</site>
+		<lat>54.617892</lat>
+		<lng>39.724213</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>101</id>
+		<name>Киселев Алексей Борисович, ИП/ООО Прага</name>
+		<region>Рязанская область</region>
+		<city>Рязань</city>
+		<address>г. Рязань, Солотчинское шоссе, 2</address>
+		<contacts>8-(4912) 777-858, 8-800-500-18-12</contacts>
+		<site>http://pragaplitka.ru/</site>
+		<lat>54.631945</lat>
+		<lng>39.775281</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>102</id>
+		<name>Киселев Алексей Борисович, ИП/ООО Прага</name>
+		<region>Москва</region>
+		<city>Москва</city>
+		<address>МО, Одинцовский р-н, п. Заречье (МКАД 51 км внешняя сторона), ул. Торговая, стр. 2. ТЦ "ЭлитСтрой материалы"</address>
+		<contacts>(495) 640-77-58, 8-800-500-18-12</contacts>
+		<site>http://pragaplitka.ru/</site>
+		<lat>55.684066</lat>
+		<lng>37.412798</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>103</id>
+		<name>Киселев Алексей Борисович, ИП/ООО Прага</name>
+		<region>Московская область</region>
+		<city>Москва</city>
+		<address>Московская обл. г. Раменское, Донинское шоссе, д.20, 35 километров от МКАД. Строительный Рынок "Радуга"</address>
+		<contacts>(495) 640-77-58, 8-800-500-18-12</contacts>
+		<site>http://pragaplitka.ru/</site>
+		<lat>55.589905</lat>
+		<lng>38.253238</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>104</id>
+		<name>Киселев Алексей Борисович, ИП/ООО Прага</name>
+		<region>Пензенская область</region>
+		<city>Пенза</city>
+		<address>3-й Объединенный проезд, 33, район Западной поляны,около гостиницы "Ласточка".</address>
+		<contacts>8(8412)77-43-67</contacts>
+		<site>http://pragaplitka.ru/</site>
+		<lat>53.191475</lat>
+		<lng>44.972234</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>105</id>
+		<name>ИП Кузенков Виктор Юрьевич/Мир Брусчатки</name>
+		<region>Московская область</region>
+		<city>с. Тарасовка</city>
+		<address>МО Ярославское шоссе, Пушкинский район, город Пушкино, съезд на город Ивантеевка, выставка деревянных домов</address>
+		<contacts>8(495)502-21-41;  8(499)753-37-37,  e-mail: td.force@bk.ru</contacts>
+		<site>мирбрусчатки.рф</site>
+		<lat>55.984251</lat>
+		<lng>37.870782</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>106</id>
+		<name>ООО Геостиль</name>
+		<region>Московская область</region>
+		<city>московская область</city>
+		<address>Новорижское шоссе, 5 км от МКАД, район кругового движения</address>
+		<contacts>8-495-663-93-93   +7(916)601-87-37  
+Email:geogips@yandex.ru</contacts>
+		<site>www.nakam.ru</site>
+		<lat>55.810472</lat>
+		<lng>37.319488</lng>
+		<warehouse>да</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>107</id>
+		<name>ИП Казаков Сергей Викторович</name>
+		<region>Республика Мордовия</region>
+		<city>г.Саранск</city>
+		<address>Республика Мордовия, г. Саранск, Александровское шоссе 8А, Садово-ландшафтный центр</address>
+		<contacts>8-987-690-29-13             Email: landscape-rm@mail.ru</contacts>
+		<site>www.fazenda13.ru</site>
+		<lat>54.305867</lat>
+		<lng>44.475292</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<name>ИП Мухаметзянов Кумар</name>
+		<region>Республика Татарстан</region>
+		<city>Набережные челны</city>
+		<address>респ. Татарстан, г. Набережные челны</address>
+		<contacts>8-919-621-03-03                                                                               e-mail:  kumar.74@mail.ru</contacts>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>109</id>
+		<name>ИП Мухаметзянов Кумар</name>
+		<region>Республика Татарстан</region>
+		<city>Альметьевск</city>
+		<address>респ. Татарстан, г. Альметьевск, ул. Чернышевского 40 А</address>
+		<contacts>8-919-621-03-03                                                                              e-mail:  kumar.74@mail.ru</contacts>
+		<lat>54.911222</lat>
+		<lng>52.301133</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>110</id>
+		<name>Филиал ООО «Трэйд Экспо Холдинг» в Москве</name>
+		<region>Московская область</region>
+		<city>Москва</city>
+		<address>г. Москва, 51-ый километр Киевского шоссе, д. Селятино, Строительный рынок "Строймастер"</address>
+		<contacts>тел: 8 (495) 740 5865, 8 (925) 011 26 13</contacts>
+		<site>http://www.glav-teh.ru/</site>
+		<lat>55.510247</lat>
+		<lng>36.986849</lng>
+		<warehouse>да</warehouse>
+		<laying>нет</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>111</id>
+		<name>ООО "Трейд Экспо Холдинг"</name>
+		<region>Москва</region>
+		<city>Москва</city>
+		<address>Москва, Фрунзенская набережная, д. 30, пав. 27</address>
+		<contacts>8-499-242-89-51/91, 8-916-61-99-111</contacts>
+		<site>http://www.glav-teh.ru/</site>
+		<lat>55.723587</lat>
+		<lng>37.584411</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>112</id>
+		<name>ИП Бугай И.И.</name>
+		<region>Московская область</region>
+		<city>д. Юрлово</city>
+		<address>МО, Пятницкое шоссе 11 км,  д. Юрлово</address>
+		<contacts>clean-stone@yandex.ru
+8-926-510-88-49</contacts>
+		<site>www.clean-stone.ru</site>
+		<lat>55.898157</lat>
+		<lng>37.276701</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>113</id>
+		<name>ИП Бугай И.И.</name>
+		<region>Тверская область</region>
+		<city>д. Завидово</city>
+		<address>Тверская область, Ленинградское шоссе, деревня Завидово</address>
+		<contacts>8-900-472-19-80 Илона</contacts>
+		<site>www.clean-stone.ru</site>
+		<lat>56.522179</lat>
+		<lng>36.531635</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>114</id>
+		<name>Компания "Магазин Камня" ИП Жевнеров Д.В.</name>
+		<region>Московская область</region>
+		<city>п. Новые Ржавки</city>
+		<address>Солнечногорский район, Ленинградское шоссе, п. Новые Ржавки (Ржавки-2, на картах яндекса) 17 км от МКАД</address>
+		<contacts>Отдел продаж - офис тел: 8-495-769-65-44
+Дополнительные телефоны:
+8-915-177-64-53 Дмитрий
+8-916-149-75-63 Денис
+stoneshop@mail.ru</contacts>
+		<site>магазин-камня.рф</site>
+		<lat>55.994263</lat>
+		<lng>37.259708</lng>
+		<warehouse>да</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>115</id>
+		<name>ИП Абросимов П.А.</name>
+		<region>Нижегородская область</region>
+		<city>Арзамас</city>
+		<address>Нижегородская область,г.Арзамас,ул.Лесная 13 ,</address>
+		<contacts>тел: 8-950-351-65-65; 8-910-10-34-634
+Email:klimov_2007@mail.ru</contacts>
+		<site>https://vk.com/kamen_v_arzamase</site>
+		<lat>55.417688</lat>
+		<lng>43.839714</lng>
+		<warehouse>да</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>116</id>
+		<name>ООО "МКПО"</name>
+		<region>Московская область</region>
+		<city>Воскресенск</city>
+		<address>г. Воскресенск,ул. 2 Заводская, д. 6</address>
+		<contacts>8(800) 100-22-52
+
+8(496) 44-96-283
+
++7(916) 589-68-43
+
++7(915) 132-25-55</contacts>
+		<site>http://mkpostroi.ru/</site>
+		<lat>55.31205</lat>
+		<lng>38.690356</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>117</id>
+		<name>ООО "Термострой"</name>
+		<region>Липецкая область</region>
+		<city>Липецк</city>
+		<address>База строительно-отделочных материалов "Термострой":  г.Липецк,ул.Юношеская, владение,46 Б</address>
+		<contacts>тел.(4742) 50-60-50, Подзоров Вадим 
+ 8-961-033-14-21</contacts>
+		<site>http://www.termostroy48.ru/</site>
+		<lat>52.585215</lat>
+		<lng>39.45426</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>118</id>
+		<name>ООО "Термострой"</name>
+		<region>Липецкая область</region>
+		<city>Липецк</city>
+		<address>Магазин «Термострой» на ул. Студеновская, 132, владение 2</address>
+		<contacts>тел.(4742) 50-60-50, Подзоров Вадим 
+ 8-961-033-14-21</contacts>
+		<site>http://www.termostroy48.ru/</site>
+		<lat>52.625041</lat>
+		<lng>39.643057</lng>
+		<warehouse>нет</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>119</id>
+		<name>ТЦ СЛАВА город Ступино</name>
+		<region>Московская область</region>
+		<city>Ступино</city>
+		<address>Московская обл., г. Ступино
+ул. Первомайская, вл.61</address>
+		<contacts>тел./факс: 8 (49664) 7-000-1</contacts>
+		<site>http://slava-m.ru</site>
+		<lat>54.897067</lat>
+		<lng>38.072658</lng>
+		<warehouse>нет</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>120</id>
+		<name>ТЦ СЛАВА город Кашира</name>
+		<region>Московская область</region>
+		<city>Кашира</city>
+		<address>Московская обл., г. Кашира
+ул. Центролит, д.7</address>
+		<contacts>тел./факс: 8 (49669) 6-72-86</contacts>
+		<site>http://slava-m.ru</site>
+		<lat>54.816278</lat>
+		<lng>38.243566</lng>
+		<warehouse>нет</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>121</id>
+		<name>ООО "Кирпичная Компания"</name>
+		<region>Липецкая область</region>
+		<city>Липецк</city>
+		<address>398037, Липецк, Трубный проезд д.1 стр.7 оф.219</address>
+		<contacts>Тел.: +7 4742 551 991
+Моб.:8-915-557-30-04</contacts>
+		<site>www.551991.ru</site>
+		<lat>52.624551</lat>
+		<lng>39.543824</lng>
+		<warehouse>да</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>122</id>
+		<name>ООО «Мир кирпича»</name>
+		<region>Липецкая область</region>
+		<city>Липецк</city>
+		<address>г. Липецк ул. Гагарина д.108</address>
+		<contacts>(4742) 34-53-66  34-54-25</contacts>
+		<site>http://mk48lip.ru/</site>
+		<lat>52.623117</lat>
+		<lng>39.563503</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>123</id>
+		<name>ООО СтройПарк (Питомник растений Весна)</name>
+		<region>Московская область</region>
+		<city>Москва</city>
+		<address>г.Москва поселение Краснопахорское вблизи д.Красная Пахра</address>
+		<contacts>7 (495) 772-63-02</contacts>
+		<site>http://www.sad-vesna.ru/</site>
+		<lat>55.439376</lat>
+		<lng>37.297813</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>124</id>
+		<name>Компания «Твоя Крепость» </name>
+		<region>Московская область</region>
+		<city>Красногорск</city>
+		<address>Новорижское шоссе 4-й км, Московская область</address>
+		<contacts>+7 (495) 725-92-33        e-mail: : info@stone-online.ru</contacts>
+		<site>www.stone-online.ru</site>
+		<lat>55.803789</lat>
+		<lng>37.293379</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>125</id>
+		<name>ООО Илия-Дизайн</name>
+		<region>Московская область</region>
+		<city>п. Пироговский</city>
+		<address>Московская область, Мытищинский район, поселок Пироговский, садовый центр Удача</address>
+		<contacts>телефон 8(495)504-64-56</contacts>
+		<site>www.il-d.ru</site>
+		<lat>55.970614</lat>
+		<lng>37.742887</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>126</id>
+		<name>ООО Сибкамень</name>
+		<region>Иркутская область</region>
+		<city>Иркутск</city>
+		<address>г. Иркутск, ул. Ширямова, 34Б</address>
+		<contacts>(3952) 71-31-24 - офис</contacts>
+		<site>www.sks-stone.ru</site>
+		<lat>52.262038</lat>
+		<lng>104.345505</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>127</id>
+		<name>ООО Биктон</name>
+		<region>Нижегородская область</region>
+		<city>Нижний Новгород</city>
+		<address>Нижний Новгород, Мещерский бульвар, дом 11.</address>
+		<contacts>Телефон/факс: 
+8 (831) 261-35-30
+Электронная почта: 
+info-bikton@yandex.ru</contacts>
+		<site>http://bikton-nn.ru/</site>
+		<lat>56.335362</lat>
+		<lng>43.941536</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>128</id>
+		<name>ООО Лиганд</name>
+		<region>Ярославская область</region>
+		<city>Ярославль</city>
+		<address>ул. Калинина, д. 18, 2-этаж, Ярославль, Ярославская область, 150057, Россия</address>
+		<contacts>8(4852)333100
+330607@mail.ru</contacts>
+		<site>http://ligand.tiu.ru/</site>
+		<lat>57.572452</lat>
+		<lng>39.852653</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>129</id>
+		<name>ООО "МодульСтрой"</name>
+		<region>Ярославская область</region>
+		<city>Ярославль</city>
+		<address>г.Ярославль, Полушкина Роща, д.9, стр.14  ТЦ "ТАНДЕМ" 4 этаж</address>
+		<contacts>(4852) 97-07-37 офис
+89109684582 Фёдор
+89023316414 Максим</contacts>
+		<site>http://stroybeton76.ru/</site>
+		<lat>57.654994</lat>
+		<lng>39.868236</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>130</id>
+		<name>Компания Славдом, Профессиональный шоу-рум на Аптекарской</name>
+		<region>Санкт-Петербург</region>
+		<city>Санкт-Петербург</city>
+		<address>197022, г. Санкт-Петербург, Аптекарская наб., д.12</address>
+		<contacts>Многоканальный тел.: +7 812 337 51 51
+e-mail: info@slav-dom.ru</contacts>
+		<site>http://www.slav-dom.ru</site>
+		<lat>59.975963</lat>
+		<lng>30.32327</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>131</id>
+		<name>Компания Славдом, Офис продаж Пискаревский и складской комплекс</name>
+		<region>Санкт-Петербург</region>
+		<city>Санкт-Петербург</city>
+		<address>195273, г. Санкт-Петербург, Пискаревский пр., д.150, корп.2, литера Н</address>
+		<contacts>Многоканальный тел.: +7 812 318 51 51
+e-mail: info@slav-dom.ru</contacts>
+		<site>http://www.slav-dom.ru</site>
+		<lat>60.014365</lat>
+		<lng>30.452673</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>132</id>
+		<name>Компания Славдом, Профессиональный шоу-рум на Павелецкой</name>
+		<region>Москва</region>
+		<city>Москва</city>
+		<address>115114, г. Москва, Павелецкая наб., д. 2, строение 01, 1 этаж, офис 133</address>
+		<contacts>Многоканальный тел.: +7 495 640 95 51
+e-mail: msk@slav-dom.ru</contacts>
+		<site>http://www.slav-dom.ru</site>
+		<lat>55.715418</lat>
+		<lng>37.646013</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>133</id>
+		<name>Компания Славдом, Шоу-рум на Звенигородской</name>
+		<region>Москва</region>
+		<city>Москва</city>
+		<address>123022, г. Москва, 2-ая Звенигородская ул., д.13, строение 43 (вход с ул. Сергея Макеева).</address>
+		<contacts>Многоканальный тел.: +7 495 640 51 51
+e-mail: msk@slav-dom.ru</contacts>
+		<site>http://www.slav-dom.ru</site>
+		<lat>55.762409</lat>
+		<lng>37.551959</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>134</id>
+		<name>Демо-парк, шоу-рум, отдел продаж Славдом «Можайское, МКАД 54»</name>
+		<region>Москва</region>
+		<city>Москва</city>
+		<address>г. Москва (МО) Можайское шоссе, д. 165, с. 1 (54 км. МКАД, внешняя сторона, заезд через дублер)</address>
+		<contacts>Многоканальный тел.: +7 495 640 51 51; 8 800 333 51 51, e-mail: msk@slav-dom.ru</contacts>
+		<site>http://www.slav-dom.ru</site>
+		<lat>55.710252</lat>
+		<lng>37.385421</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>135</id>
+		<name>Империя Ремонта (ИП Ахметзянов Р.С.)</name>
+		<region>Республика Татарстан</region>
+		<city>Казань</city>
+		<address>г. Казань, ул. Чистопольская, 75</address>
+		<contacts>(843)5278228, (843)5275478, 8-903-305-67-05</contacts>
+		<site>www.vibors-kazan.ru</site>
+		<lat>55.820132</lat>
+		<lng>49.15106</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>136</id>
+		<name>ООО " СКАТ"</name>
+		<region>Ростовская область</region>
+		<city>г.Новошахтинск</city>
+		<address>Ростовская область, г. Новошахтинск, ул. Трамвайная, 7.</address>
+		<contacts>89081930877, 89094224766,  +79081930877@yandex.ru</contacts>
+		<lat>47.2188188</lat>
+		<lng>39.7505662</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>137</id>
+		<name>ООО "ДТК"</name>
+		<region>Ростовская область</region>
+		<city>г. Новочеркасск</city>
+		<address>Ростовская область, г. Новочеркасск, ш. Харьковское 2Б</address>
+		<contacts>8(8635)22-64-21, 89289052226,   296547@bk.ru</contacts>
+		<site>http://dontc.ru/</site>
+		<lat>47.2610085</lat>
+		<lng>39.6279999</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>138</id>
+		<name>ИП Крылов А.В.</name>
+		<region>Ростовская область</region>
+		<city>г. Аксай</city>
+		<address>Ростовская область, г. Аксай, проспект Аксайский, 14Б</address>
+		<contacts>8(863) 246-69-77, 89064249693,   krylo-andre@yandex.ru</contacts>
+		<site>www.kamni-rostov.ru</site>
+		<lat>47.2838379</lat>
+		<lng>39.8458514</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>139</id>
+		<name>ИП Мошлаков А.В</name>
+		<region>Ростовская область</region>
+		<city>г. Азов</city>
+		<address>Ростовская область, г. Азов ул. Кооперативная д.12 база «Строй Дон»</address>
+		<contacts>телефон: 89289053170,  kbazar.rostov@bk.ru</contacts>
+		<lat>47.095212</lat>
+		<lng>39.422773</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>140</id>
+		<name>ИП Подгурский С.В.</name>
+		<region>Ростовская область</region>
+		<city>г.Шахты</city>
+		<address>Ростовская область г.Шахты ул. Разина, дом 13, кв.78</address>
+		<contacts>89286267868</contacts>
+		<lat> 47.4232</lat>
+		<lng>40.1251</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>141</id>
+		<name>ООО "ЛЕССТРОЙТОРГ"</name>
+		<region>Ростовская область</region>
+		<city>г.Донецк</city>
+		<address>Ростовская область г.Донецк пр. Мира, 2.</address>
+		<contacts>89286053440 lesstroytorg2007@yandex.ru</contacts>
+		<lat>47.2838379</lat>
+		<lng>39.8458514</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>142</id>
+		<name>ООО "Промлит"</name>
+		<region>Ростовская область</region>
+		<city>г.Ростов-на-Дону</city>
+		<address>Ростовская обл, Ростов-на-Дону г, Нансена ул, дом № 243</address>
+		<contacts>89282961780 2961780@bk.ru</contacts>
+		<lat>47.2838379</lat>
+		<lng>39.8458514</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>143</id>
+		<name> ООО «Стройэлектроснаб»</name>
+		<region>Ростовская область</region>
+		<city>г.Ростов-на-Дону</city>
+		<address>г.Ростов-на-Дону, Малое зеленое кольцо 3А (район рынка Атлант)</address>
+		<contacts>89034738778 u5kirpich@gmail.com</contacts>
+		<site>www.kdrnd.ru</site>
+		<lat>47.274952</lat>
+		<lng>39.820304</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>144</id>
+		<name>ТД "Профиль"</name>
+		<region>Ростовская область</region>
+		<city>г.Каменск-Шахтинский</city>
+		<address>г.Каменск-Шахтинский ул.Заводская 58</address>
+		<contacts>89054251820</contacts>
+		<lat>47.2838379</lat>
+		<lng>39.8458514</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>145</id>
+		<name>Компания «Стройкомплект»</name>
+		<region>Москва</region>
+		<city>Москва</city>
+		<address>г. Москва, Каширское ш., д.70, корп. 3, оф.1</address>
+		<contacts>Телефон: 8(495)745-00-75, 8(499)324-09-97,  8(499)324-21-60, 8(903)734-18-86, E-mail: m@strd.ru</contacts>
+		<site>www.strd.ru </site>
+		<lat>55.642596</lat>
+		<lng>37.676412</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>146</id>
+		<name>Компания «Стройкомплект»</name>
+		<region>Московская область</region>
+		<city>г. Наро-Фоминск</city>
+		<address>г. Наро-Фоминск, ул. Московская, д.13-Б</address>
+		<contacts>Телефон:  8 (495) 922-43-08, 8 (905) 511-61-79, 8 (499) 322-24-82 E-mail: n@strd.ru</contacts>
+		<site>www.strd.ru </site>
+		<lat>55.37902</lat>
+		<lng>36.759672</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>147</id>
+		<name>ООО «СК Теплый Дом» </name>
+		<region>Владимирская область</region>
+		<city>г. Петушки</city>
+		<address>Владимирская область, г. Петушки, ул. 3-го Интернационала , дом 12, офис №1</address>
+		<contacts>Тел. 8 (980) 750 99 90, 8(919)010-58-19, e-mail: teplodom-33@mail.ru</contacts>
+		<lat>55.944495</lat>
+		<lng>39.462586</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>148</id>
+		<name>ИП Свиридов </name>
+		<region>Приморский край</region>
+		<city>г.Находка</city>
+		<address>г.Находка ул.Пограничная 50</address>
+		<contacts>8(902)525 81 75       8(4236)784236, 8(4236)777879  e-mail: svalekseev@mail.ru</contacts>
+		<lat>42.819778</lat>
+		<lng>132.864765</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>149</id>
+		<name>ООО "Юг-Плит"</name>
+		<region>Краснодарский край</region>
+		<city>ст. Смоленская</city>
+		<address>Краснодарский край Северский район станица Смоленская улица Вишневая 86</address>
+		<contacts>8(918)472-80-64</contacts>
+		<lat>44.802477</lat>
+		<lng>38.820964</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>150</id>
+		<name>ООО "Юг-Плит"</name>
+		<region>Краснодарский край</region>
+		<city>г.Горячий Ключ</city>
+		<address>Краснодарский край г.Горячий Ключ ул.Ленина 195 Г</address>
+		<contacts>8(918) 44-66-303</contacts>
+		<lat>44.634425</lat>
+		<lng>39.135563</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>151</id>
+		<name>ИП Серобян Эдварл Вардгесович</name>
+		<region>Краснодарский край</region>
+		<city>г.Абинск</city>
+		<address>Краснодарский край г.Абинск ул. Советов 120</address>
+		<contacts>8(918)266-65-51, 8(918)141-11-07</contacts>
+		<lat>44.863707</lat>
+		<lng>38.155753</lng>
+	</dealer>
+	<dealer>
+		<id>152</id>
+		<name>ИП Пашинина Марина Николаевна</name>
+		<region>Краснодарский край</region>
+		<city>г.Краснодар</city>
+		<address>Краснодарский край г. Краснодар ул. Калинина 58</address>
+		<contacts>8(861)228-02-45, 8(918)441-24-10</contacts>
+		<lat>45.055569</lat>
+		<lng>38.863751</lng>
+	</dealer>
+	<dealer>
+		<id>153</id>
+		<name>ИП Соловьева Татьяна Ивановна</name>
+		<region>Краснодарский край</region>
+		<city>г.Геленджик</city>
+		<address>Краснодарский край г. Геленджик ул. Просковейская 11 офис 2</address>
+		<contacts>8(989)244-45-55</contacts>
+		<lat>44.559156</lat>
+		<lng>38.097039</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>154</id>
+		<name>ИП Тарасенко Сергей Викторович</name>
+		<region>Краснодарский край</region>
+		<city>ст. Полтавская</city>
+		<address>Краснодарский край ст.Полтавская ул. Народаня 2</address>
+		<contacts>8(918)061-71-89</contacts>
+		<lat>45.36537</lat>
+		<lng>38.210946</lng>
+	</dealer>
+	<dealer>
+		<id>155</id>
+		<name>ИП Каун Вячеслав Николаевич</name>
+		<region>Краснодарский край</region>
+		<city>г.Крымск</city>
+		<address>Краснодарский край г.Крымск ул.Торговая 8</address>
+		<contacts>8(918)645-52-59</contacts>
+		<lat>44.934412</lat>
+		<lng>37.985495</lng>
+	</dealer>
+	<dealer>
+		<id>156</id>
+		<name>ИП Лёшина Светлана Константиновна</name>
+		<region>Московская область</region>
+		<city>г.Орехово-Зуево</city>
+		<address>Московская обл. г.Орехово-Зуево ул. Урицкого 92/1 Строительно-торговый центр "БАРРИКАДА" павильон "МИР ТРОТУАРНОЙ ПЛИТКИ" </address>
+		<contacts>8(985)314-84-75, e-mail: anfilada-oz@yandex.ru</contacts>
+		<site>тротуарный-мир.рф</site>
+		<lat>55.822453</lat>
+		<lng>38.966474</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>157</id>
+		<name>Компания ПРОФСТИЛЬ (ООО "РДС")</name>
+		<region>Республика Татарстан</region>
+		<city>г.Казань </city>
+		<address>г. Казань, ул. Нурсултана Назарбаева, 12В</address>
+		<contacts>8(843) 225-15-12</contacts>
+		<site>www.profstil.de</site>
+		<lat>55.775354</lat>
+		<lng> 49.139766</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>158</id>
+		<name>ИП Миронюк Д.Б.</name>
+		<region>Краснодарский край</region>
+		<city>г. Славянск-на-Кубани</city>
+		<address>г.Славянск-на-Кубани, ул. Дружбы Народов 96/4 </address>
+		<contacts>8(918)666-04-03, 8(988)320-93-33 e-mail: bim_2009@mail.ru </contacts>
+		<lat>45.23116</lat>
+		<lng>38.126791</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>159</id>
+		<name>Компания «Стройкомплект»</name>
+		<region>Московская область</region>
+		<city>г.Москва</city>
+		<address>г. Троицк, Калужское шоссе, дом 13Б</address>
+		<contacts>Телефон:  8-495-780-71-27, 8-910-409-46-34, 8-916-090-07-08   E-mail: t@strd.ru</contacts>
+		<site>www.strd.ru </site>
+		<lat>55.475791</lat>
+		<lng>37.316619</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>160</id>
+		<name>Компания «Стройкомплект»</name>
+		<region>Московская область</region>
+		<city>г.Раменское</city>
+		<address>г.Раменское, ул.Советская, дом2</address>
+		<contacts>Телефон:  8(495)-540-42-01, 8-926-520-64-69   E-mail: ram@strd.ru</contacts>
+		<site>www.strd.ru </site>
+		<lat>55.565952</lat>
+		<lng>38.228229</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>161</id>
+		<name>Компания «Стройкомплект»</name>
+		<region>Московская область</region>
+		<city>г.Дмитров</city>
+		<address>г.Дмитров, ул. Московская, дом 29</address>
+		<contacts>Телефон:  8(4967)76-49-44, 8-929-904-16-49,   E-mail: sh@strd.ru</contacts>
+		<site>www.strd.ru </site>
+		<lat>54.919626</lat>
+		<lng>37.433274</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>162</id>
+		<name>Компания «Стройкомплект»</name>
+		<region>Московская область</region>
+		<city>г.Чехов</city>
+		<address>г. Чехов, ул. Московская, дом 44</address>
+		<contacts>Телефон:  8(495)-660-34-17,8-903-131-56-33   E-mail: c@strd.ru</contacts>
+		<site>www.strd.ru </site>
+		<lat>55.145071</lat>
+		<lng>37.453567</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>163</id>
+		<name>ООО "Галерея клинкера"</name>
+		<region>Республика Башкортостан</region>
+		<city>г. Уфа</city>
+		<address>г. Уфа, улица Габдуллы Амантая, 1</address>
+		<contacts>телефон 8-(347) 266-72-21,  E-mail:elena@ufa-klinker.ru </contacts>
+		<site>www.ufa-klinker.ru</site>
+		<lat>54.692963</lat>
+		<lng>55.991228</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>164</id>
+		<name>ИП Лёшина Светлана Константиновна</name>
+		<region>Московская область</region>
+		<city>п. Новостройка</city>
+		<address>Московская область, Ногинский район, деревня Кузнецы (Большое Буньково) поселок Новостройка, дом 5А, павильон "МИР ТРОТУАРНОЙ ПЛИТКИ" </address>
+		<contacts>8(985)314-82-84, e-mail: anfilada-oz@yandex.ru</contacts>
+		<site>тротуарный-мир.рф</site>
+		<lat>55.851681</lat>
+		<lng>38.636196</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>165</id>
+		<name>ИП Лёшина Светлана Константиновна</name>
+		<region>Владимирская область</region>
+		<city>д. Киржач</city>
+		<address>Владимирская область, Петушинский район, деревня Киржач, улица Дорожная, дом 1, "МИР ТРОТУАРНОЙ ПЛИТКИ" </address>
+		<contacts>8(985)314-84-75, e-mail: anfilada-oz@yandex.ru</contacts>
+		<site>тротуарный-мир.рф</site>
+		<lat>55.90035</lat>
+		<lng>39.067462</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>166</id>
+		<name>ИП Лёшина Светлана Константиновна</name>
+		<region>Московская область</region>
+		<city>г. Ногинск</city>
+		<address>Московская обл. г.Ногинск, Горьковское шоссе, 52-ой км, "Технопарк", "МИР ТРОТУАРНОЙ ПЛИТКИ" </address>
+		<contacts>8(985)314-82-75, e-mail: anfilada-oz@yandex.ru</contacts>
+		<site>тротуарный-мир.рф</site>
+		<lat>55.831637</lat>
+		<lng>38.400718</lng>
+		<warehouse>нет</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>167</id>
+		<name>Компания МЕКСТРОЙ</name>
+		<region>Москва</region>
+		<city>г. Москва</city>
+		<address>г. Москва, ул. Большая Черкизовская, дом 24 А, БЦ Эталон (метро Черкизовская)</address>
+		<contacts>Телефон: 8-495-544-76-93, 8-926-530-12-48,  E-mail: infomekstroy@mail.ru</contacts>
+		<site>www.plitmark.ru</site>
+		<lat>55.794953</lat>
+		<lng>37.737515</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>168</id>
+		<name>ООО Альфа-СТК</name>
+		<region>Самарская область</region>
+		<city>г. Самара</city>
+		<address>г. Самара, ул. Гагарина, дом 2</address>
+		<contacts>Телефон: 8-(846)-201-88-78, 8-996-737-46-94, E-mail: vibor-alfa@mail.ru</contacts>
+		<site>www.выбор-альфа.рф,  www.vibor-alfa.com</site>
+		<lat>53.202071</lat>
+		<lng>50.161961</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>169</id>
+		<name>ТД Фарбет</name>
+		<region>Московская область</region>
+		<city>г.Котельники</city>
+		<address>г. Котельники, Новорязанское шоссе, дом 5, Выставка малоэтажного строительства "Хуторок"</address>
+		<contacts>Телефон: 8-926-392-30-08, E-mail: info@farbet.ru</contacts>
+		<site>www.farbet.ru</site>
+		<lat>55.668371</lat>
+		<lng>37.865804</lng>
+		<warehouse>нет</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>170</id>
+		<name>ООО ЛеонМаркт</name>
+		<region>Москва</region>
+		<city>г. Москва</city>
+		<address>г. Москва, Каширское шоссе, дом 19. корпус 2, павильон Д1-34, павильон 2-57, ТК Каширский двор</address>
+		<contacts>Телефон: 8-926-348-36-77, 8-915-042-10-61, E-mail: info@klinkermarkt.ru</contacts>
+		<site>www.klinker-markt.ru</site>
+		<lat>55.664588</lat>
+		<lng>37.63464</lng>
+		<warehouse>нет </warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>171</id>
+		<name>Магазин "Мандарин-Строй" (ИП Андреев А.А.)</name>
+		<region>Орловская область</region>
+		<city>г. Орел</city>
+		<address>г. Орел ул. Курская д.85 м-н «Мандарин-Строй»</address>
+		<contacts>тел. 89202818999, e-mail: andreev-orel@ya.ru</contacts>
+		<lat>52.959962</lat>
+		<lng>36.095296</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>172</id>
+		<name>ИП Галичева</name>
+		<region>Ростовская область</region>
+		<city>г. Батайск</city>
+		<address>Ростовская область, г. Батайск ул. Энгельса 412В 2 этаж</address>
+		<contacts>телефон: 89282267209</contacts>
+		<lat>47.117495</lat>
+		<lng>39.750748</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>173</id>
+		<name>ГК  «АРХИТОН» </name>
+		<region>Ростовская область</region>
+		<city>г. Ростов-на-Дону</city>
+		<address>г.Ростов-на-Дону, ул.Металлургическая 113/46 оф.5</address>
+		<contacts>Тел. 8-928-152-18-99 E-mail: 2962640@rambler.ru</contacts>
+		<site>www.arhiton61.ru</site>
+		<lat>47.251225</lat>
+		<lng>39.769361</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>174</id>
+		<name>Уютный двор</name>
+		<region>Республика Дагестан</region>
+		<city>г.Махачкала</city>
+		<address>г.Махачка, ул.Ирчи Казака, дом 2Б</address>
+		<contacts>8-963-39-61-333  elenavoit5@gmail.com</contacts>
+		<lat>42.967267</lat>
+		<lng>47.499238</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>175</id>
+		<name> Diar group </name>
+		<region>Пензенская область</region>
+		<city>г. Пенза</city>
+		<address>г. Пенза, ул. Мира, 65</address>
+		<contacts> тел. 8 (8412) 45 37 19 , e-mail: diargroup-s@mail.ru</contacts>
+		<lat>53.188158</lat>
+		<lng>44.965268</lng>
+		<warehouse>да</warehouse>
+		<laying>нет</laying>
+		<design>нет</design>
+	</dealer>
+	<dealer>
+		<id>176</id>
+		<name>Компания Диадема (ООО "Диадема")</name>
+		<region>Республика Татарстан</region>
+		<city>г. Казань</city>
+		<address>г.Казань, ул.Г.Тукая, д.58, офис 206</address>
+		<contacts>8(843) 253-68-94;  8(905) 020-08-10           e-mail:diadema-kazan@mail.ru</contacts>
+		<site>www.diademart.ru </site>
+		<lat>55.77918</lat>
+		<lng>49.113825</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>177</id>
+		<name>ООО БрусчаткаПремиум</name>
+		<region>Республика Татарстан</region>
+		<city>г. Казань</city>
+		<address>г.Казань ул.Зинина 3</address>
+		<contacts>8(843) 238-51-87</contacts>
+		<site>Брусчаткапремиум.рф</site>
+		<lat>55.791222</lat>
+		<lng>49.156626</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+	<dealer>
+		<id>178</id>
+		<name>ООО Строй Арсенал</name>
+		<region>Иркутская область</region>
+		<city>г. Иркутск</city>
+		<address>г.Иркутск, ул.Мира, 2А</address>
+		<contacts>8-(3952)376-000, 8-(3952)376-111,  8-902-7-649-549       e-mail: vpetrov@bk.ru
+</contacts>
+		<site>www.komplektuem.com</site>
+		<lat>52.338807</lat>
+		<lng>104.233783</lng>
+		<warehouse>да</warehouse>
+		<laying>да</laying>
+		<design>да</design>
+	</dealer>
+</dealers>
