@@ -1612,6 +1612,8 @@ a {color: #009ac4;}
 		font-weight: bold;
 	}
 
+	.sidr-class-s-main.sidr-class-top-menu__item {display: none;}
+
 	.slider_shares {
 		clear: both;
 		margin-top: 15px;
