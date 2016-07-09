@@ -1140,6 +1140,134 @@ a {color: #009ac4;}
 
 #mobile-menu-content {display: none;}
 
+.breadcrumbs {
+	list-style: none;
+	margin: 11px 0 14px 0;
+	padding: 0;
+}
+
+.breadcrumbs > li {
+	display: inline-block;
+	padding: 2px 3px 2px 0;
+}
+
+.breadcrumbs > li::after {
+	content: '/';
+	padding-left: 8px;
+}
+
+.breadcrumbs > li:last-of-type::after {display: none;}
+
+.breadcrumbs > li, .breadcrumbs > li > a {
+	color: #8b8e8b;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.breadcrumbs > li > a:hover, .breadcrumbs > li > a.current {color: #7aca13;}
+
+.slider_shares {border-bottom: none;}
+
+.shares {float: left;}
+
+.shares_side {float: right;}
+
+.share:not(:last-child) {margin-bottom: 15px;}
+
+.share img {vertical-align: top;}
+
+.pagination {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+
+.pagination > li, .pagination > li.pagination_dotted:hover {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background-color: #fff;
+	border: solid 1px #dbdbdb;
+	margin-right: 5px;
+	min-width: 35px;
+	text-align: center;
+}
+
+.pagination > li.pagination_active {
+	background-color: #72c411;
+	border-color: #66ab0e;
+}
+
+.pagination > li > a {
+	color: #3c4341;
+	display: block;
+	font-size: 16px;
+	padding: 7px 6px 3px;
+	text-decoration: none;
+}
+
+.pagination > li:hover > a {color: #72c411}
+
+.pagination > li.pagination_active > a {color: #fff;}
+
+.pagination > li.pagination__prev > a, .pagination > li.pagination__next > a {
+	color: #009ac4;
+	font-size: 14px;
+	position: relative;
+	z-index: 1;
+}
+
+.pagination > li.pagination__prev:hover > a, .pagination > li.pagination__next:hover > a {text-decoration: underline;}
+
+.pagination > li.pagination__prev > a {padding: 5px 24px 5px 29px;}
+
+.pagination > li.pagination__next > a {padding: 5px 29px 5px 14px;}
+
+.pagination > li.pagination__prev {margin-right: 15px;}
+
+.pagination > li.pagination__next {
+	margin-left: 10px;
+	margin-right: 0;
+}
+
+.pagination > li.pagination__prev, .pagination > li.pagination__next {
+	border: none;
+	position: relative;
+}
+
+.pagination > li.pagination__prev::after, .pagination > li.pagination__next::after {
+	background: url(../img/pagination.png) no-repeat 0 0;
+	bottom: 0;
+	content: '';
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.pagination > li.pagination__prev::after {
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.pagination > li.pagination_dotted {padding-top: 7px;}
+
+
+
 
 @media screen and (min-width: 940px) and (max-width: 1199px) {
 	.search-wrap {
@@ -1188,11 +1316,20 @@ a {color: #009ac4;}
 }
 
 @media screen and (min-width: 940px) and (max-width: 1099px) {
-	.slider {
+	.slider, .slider_shares {
 		clear: both;
 		padding-top: 15px;
 	}
 	.catalog-menu-submenu {width: 660px;}
+}
+
+@media screen and (min-width: 479px) and (max-width: 1099px) {
+	.shares, .shares_side {
+		text-align: center;
+		overflow: hidden;
+		width: 49%;
+	}
+	.shares_side {margin-bottom: 15px;}
 }
 
 @media screen and (min-width: 720px) and (max-width: 1023px) {
@@ -1474,6 +1611,11 @@ a {color: #009ac4;}
 		color: #242b28;
 		font-weight: bold;
 	}
+
+	.slider_shares {
+		clear: both;
+		margin-top: 15px;
+	}
 }
 
 @media screen and (max-width: 877px) {
@@ -1604,4 +1746,25 @@ a {color: #009ac4;}
 	.link-all {padding-left: 17px;}
 	.image-line {width: 100%;}
 	.image-line:nth-child(4n + 1), .image-line:nth-child(4n) {text-align: center;}
+	.shares, .shares_side {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	.shares_side {margin-top: 15px;}
+	.pagination {
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	.pagination > li.pagination__prev > a, .pagination > li.pagination__next > a {
+		font-size: 0;
+		padding: 5px 0;
+	}
+	.pagination > li.pagination__prev::after, .pagination > li.pagination__next::after {
+		background-image: url(../img/pagination-mobile.png);
+	}
+	.pagination > li.pagination__prev {margin-left: -10px;}
+	.pagination > li.pagination__next {margin-right: -10px;}
+	.pagination {padding-bottom: 30px;}
 }
