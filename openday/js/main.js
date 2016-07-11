@@ -67,4 +67,12 @@ jQuery(function() {
 			.toggleClass('submenu-opened')
 			.next().toggle();
 	});
+
+	$(window).scroll(function() {
+		var left = $(document).scrollLeft();
+		if (left >= 265) {
+			$.sidr('close', 'mobile-menu-content');
+			$('.mobile-menu-close').hide();
+		}
+	});
 });
