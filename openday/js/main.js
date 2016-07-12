@@ -26,12 +26,14 @@ jQuery(function() {
 	// Slider
 	$('.js-slider').bxSlider({
 		controls: false,
+		minSlides: 1,
 		maxSlides: 1,
 		slideWidth: 590
 	});
 
 	var slider = $('.js-slider').bxSlider({
 		controls: false,
+		minSlides: 1,
 		maxSlides: 1,
 		slideWidth: 590
 	});
@@ -40,6 +42,7 @@ jQuery(function() {
 		slider.reloadSlider({
 			controls: false,
 			pager: false,
+			minSlides: 1,
 			maxSlides: 1,
 			slideWidth: 590
 		});
@@ -76,3 +79,65 @@ jQuery(function() {
 		}
 	});
 });
+
+// Counter
+function counter(date_year, date_month, date_day, date_hours, date_min) {
+	if (date_month > 0) {
+		date_month = date_month - 1;
+	}
+	var date = new Date(date_year, date_month, date_day);
+	var date_current = new Date();
+	if (date > date_current) {
+		var day = 60*60*1000*24;
+		var hour = 60*60*1000;
+		var min = 60*1000;
+		var sec = 1000;
+		count = date - date_current;
+
+		if (date_hours) {
+			count = count + date_hours*hour;
+		}
+		if (date_min) {
+			count = count + date_min*min;
+		}
+
+		days = parseInt(count/(day));
+		hours = parseInt((count-(day*days))/hour);
+		minutes = parseInt((count-(day*days+hour*hours))/min);
+		seconds = parseInt((count-(day*days+hour*hours+min*minutes))/sec);
+
+		days_params = days.toFixed().split("");
+		hours_params = hours.toFixed().split("");
+		minutes_params = minutes.toFixed().split("");
+		seconds_params = seconds.toFixed().split("");
+
+		if (!seconds_params[1]) {
+			seconds_params = ['', seconds_params[0]];
+		}
+		if (!hours_params[1])  {
+			hours_params = ['', hours_params[0]];
+		}
+		if (!minutes_params[1]) {
+			minutes_params = ['', minutes_params[0]];
+		}
+		if (!days_params[1]) {
+			days_params = ['', days_params[0]];
+		}
+
+		var daysLeft = days_params[0] + days_params[1] + "д";
+		var hoursLeft = hours_params[0] + hours_params[1] + "ч";
+		var minutesLeft = minutes_params[0] + minutes_params[1] + "мин";
+		var secondsLeft = seconds_params[0] + seconds_params[1] + "с";
+
+		$('.js-counter').text(daysLeft + " " + hoursLeft + " " + minutesLeft + " " + secondsLeft);
+	}
+}
+
+function set_counter() {
+	date = new Date();
+	year = date.getFullYear();
+	month = date.getMonth();
+	counter(year, month + 2, 01, 00, 00);
+}
+
+setInterval(set_counter, 1000);
