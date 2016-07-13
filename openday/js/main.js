@@ -24,13 +24,6 @@ jQuery(function() {
 	});
 
 	// Slider
-	$('.js-slider').bxSlider({
-		controls: false,
-		minSlides: 1,
-		maxSlides: 1,
-		slideWidth: 590
-	});
-
 	var slider = $('.js-slider').bxSlider({
 		controls: false,
 		minSlides: 1,
@@ -39,15 +32,17 @@ jQuery(function() {
 	});
 
 	onResize = function() {
-		slider.reloadSlider({
-			controls: false,
-			pager: false,
-			minSlides: 1,
-			maxSlides: 1,
-			slideWidth: 590
-		});
+		if ($('.js-slider').length) {
+			slider.reloadSlider({
+				controls: false,
+				minSlides: 1,
+				maxSlides: 1,
+				slideWidth: 590
+			});
+		}
 	}
 
+	$(window).load(onResize);
 	$(window).resize(onResize);
 
 	// Mobile Menu
@@ -77,6 +72,14 @@ jQuery(function() {
 			$.sidr('close', 'mobile-menu-content');
 			$('.mobile-menu-close').hide();
 		}
+	});
+
+	// Card images
+	$('.js-load-big-img').click(function() {
+		$('.s-good-image-thumb').removeClass('current');
+		$(this).addClass('current');
+		$('.good-images__main').attr('src', $(this).data('src'));
+		return false;
 	});
 });
 
