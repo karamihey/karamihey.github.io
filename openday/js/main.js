@@ -81,6 +81,29 @@ jQuery(function() {
 		$('.good-images__main').attr('src', $(this).data('src'));
 		return false;
 	});
+
+	// Order Form
+	var formFields = $('.form-wrap');
+	var formResultMessage = $('.form-result');
+	var formClose = $('.form-close');
+
+	$('.js-order').click(function() {
+		$('.js-order-form, .overlay').show();
+	});
+
+	$('.js-close, .overlay').click(function() {
+		$('.js-order-form, .overlay').hide();
+		$('input[type=text]', formFields).val("");
+		formFields.show();
+		formClose.removeClass('form-close_result');
+		formResultMessage.hide();
+	});
+
+	$('.js-order-form').submit(function(event) {
+		formFields.hide();
+		formClose.addClass('form-close_result');
+		formResultMessage.show();
+	});
 });
 
 // Counter

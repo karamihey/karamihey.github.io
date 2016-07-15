@@ -252,7 +252,8 @@
 					</ul>
 
 					<div class="clearfix">
-						<div class="good-images">
+						<div class="good-images"> <!-- Хит продаж - good-images_hit -->
+							<div class="goods__sale goods__sale_product">-25%</div>
 							<img class="good-images__main" src="img/item-001.jpg" alt="">
 							<ul class="good-thumbnails">
 								<li data-src="img/item-001.jpg" class="js-load-big-img s-good-image-thumb current"><img src="img/item-thumbnail_001.jpg" alt=""></li>
@@ -264,8 +265,25 @@
 						</div>
 						<div class="good-description">
 							<h1>Смартфон Apple iPhone 6 Plus 16GB Space Gray PS (1080x1920)</h1>
-							<div>Цена: <span class="good-price"><b>1424,00</b> руб.</span></div>
-							<span class="btn-order">Заказать</span>
+
+							<!-- Хит продаж 
+							     <div class="goods-gift goods-gift_hit goods-gift_product">Игры в подарок!</div>
+							-->
+
+							<div class="clearfix">
+								<div class="good-description__sale">
+									<div class="goods-sale__price goods-sale__price_product">15 300 руб.</div>
+
+									<div class="js-counter goods-sale__time goods-sale__time_product"></div>
+								</div>
+
+								<div class="goods-gift goods-gift_sale goods-gift_product">Игры в подарок!</div>
+
+								<div>Цена: <span class="good-price"><b>14 240,00</b> руб.</span></div>
+
+							</div>
+
+							<span class="js-order btn-order">Заказать</span>
 
 							<h2>Описание</h2>
 							<div class="good-text">
@@ -390,7 +408,31 @@
 			</footer>
 		</div>
 		
-		
+		<form action="#" class="js-order-form order-form">
+			<span class="js-close form-close"></span>
+			<div class="form-wrap">
+				<div class="form-title">Сделайте заказ</div>
+				<div class="form-content">
+					<label for="name">ФИО:</label>
+					<input class="form-field" type="text" id="name" name="name">
+
+					<label for="phone">Телефон<span class="required">*</span>:</label>
+					<input class="form-field" type="text" id="phone" name="phone" required="required">
+
+					<div class="form-submit">
+						<input class="btn-order btn-order_submit" type="submit" value="Заказать">
+						<div><a class="form-link" href="#">Политика конфиденциальности</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="form-result">
+				<div>Ваша заявка успешно отправлена.</div>
+				<div>Наши специалисты свяжутся с вами в ближайшее время.</div>
+				<div>Спасибо, что выбрали нас.</div>
+			</div>
+		</form>
+
+		<div class="overlay"></div>
 
 		<script src="js/jquery.js"></script>
 		<script src="js/jquery.formstyler.min.js"></script>
