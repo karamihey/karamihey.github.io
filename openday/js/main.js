@@ -138,16 +138,16 @@ function counter(date_year, date_month, date_day, date_hours, date_min) {
 		seconds_params = seconds.toFixed().split("");
 
 		if (!seconds_params[1]) {
-			seconds_params = ['', seconds_params[0]];
+			seconds_params = [0, seconds_params[0]];
 		}
 		if (!hours_params[1])  {
-			hours_params = ['', hours_params[0]];
+			hours_params = [0, hours_params[0]];
 		}
 		if (!minutes_params[1]) {
-			minutes_params = ['', minutes_params[0]];
+			minutes_params = [0, minutes_params[0]];
 		}
 		if (!days_params[1]) {
-			days_params = ['', days_params[0]];
+			days_params = [0, days_params[0]];
 		}
 
 		var daysLeft = days_params[0] + days_params[1] + "д";

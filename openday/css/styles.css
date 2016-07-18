@@ -693,6 +693,15 @@ a {color: #009ac4;}
 
 .content {padding: 0 40px;}
 
+.content_contacts {
+	background-color: #f4f4f4;
+	border-top: 1px solid #dbdbdb;
+	margin-top: -1px;
+	margin-bottom: -255px;
+	padding-bottom: 75px;
+
+}
+
 .shop-info {
 	color: #242b28;
 	font: bold 20px Calibri;
@@ -1088,6 +1097,11 @@ a {color: #009ac4;}
 	right: 0;
 }
 
+.footer_create {
+	border-top: none;
+	height: 52px;
+}
+
 .footer__info {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -1170,6 +1184,11 @@ a {color: #009ac4;}
 }
 
 .breadcrumbs > li > a:hover, .breadcrumbs > li > a.current {color: #7aca13;}
+
+.breadcrumbs + h1 {
+	margin-top: -7px;
+	padding-top: 0;
+}
 
 .slider_shares {
 	border-bottom: none;
@@ -1555,6 +1574,8 @@ h2 {
 
 .contacts__title {color: #7b7b7b;}
 
+.contacts__title_service {margin-top: 12px;}
+
 .contacts__title::before {
 	background: url(../img/contacts-icons.png) no-repeat 0 0;
 	content: '';
@@ -1571,6 +1592,8 @@ h2 {
 .contacts__title_email::before {background-position: -40px 0;}
 
 .contacts__title_site::before {background-position: -60px 0;}
+
+.contacts__title_service::before {background-position: -81px 0;}
 
 .contacts__title_address::before {
 	background-position: 0 -20px;
@@ -1741,6 +1764,160 @@ h2 {
 	text-align: center;
 }
 
+.contacts_page {
+	float: left;
+	width: 51%;
+}
+
+.contacts_page .contacts__elem_main {width: 46%;}
+
+.contacts_page .contacts__elem_address {width: 54%;}
+
+.contacts-form {
+	background-color: #fff;
+	border: solid 1px #dbdbdb;
+	box-sizing: border-box;
+	float: right;
+	padding: 10px 52px 15px;
+	width: 42.5%;
+}
+
+.contacts-form__title, .contacts-form__subtitle {text-align: center;}
+
+.contacts-form__title {font: bold 24px Calibri;}
+
+.contacts-form__subtitle {
+	font: normal 16px Calibri;
+	margin-bottom: 19px;
+}
+
+.contacts-form__label {
+	float: left;
+	padding-top: 8px;
+	width: 23%;
+}
+
+.contacts-form__field {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #fff;
+	border: solid 1px #dbdbdb;
+	box-sizing: border-box;
+	float: left;
+	margin-bottom: 7px;
+	outline: none;
+	padding: 8px 5px 9px;
+	width: 77%;
+}
+
+.contacts-form__submit {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background-color: #7aca13;
+	border: solid 1px #66ab0e;
+	display: inline-block;
+	cursor: pointer;
+	font-family: Arial;
+	font-size: 21px;
+	color: #fff;
+	margin-left: 23%;
+	margin-top: 3px;
+	text-shadow: 0 1px 2px #589905;
+	padding: 10px;
+	width: 77%;
+}
+
+.contacts-form__submit:hover {background-color: #72b221;}
+
+.contacts__links {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin-top: 36px;
+}
+
+.company-logo {
+	float: left;
+	margin-right: 15px;
+}
+
+.company-logo + .good-text {overflow: hidden;}
+
+.company-logo + .good-text > p {line-height: 16px;}
+
+.contacts_company {margin-top: 25px;}
+
+.forum-menu {
+	background-color: #f9f9f9;
+	border: 1px solid #d1d9db;
+	margin-bottom: 40px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.forum-menu__topics {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.forum-menu__topic {
+	border-right: 1px solid #d1d9db;
+	color: #242b28;
+	display: block;
+	font-size: 15px;
+	line-height: 25px;
+	padding: 14px 18px;
+	text-decoration: none;
+}
+
+.forum-menu__add {
+	display: block;
+	padding: 14px 18px;
+	text-decoration: none;
+}
+
+.forum-menu__add::before {
+	background: url(../img/icon-add.png) no-repeat 0 0;
+	content: '';
+	display: inline-block;
+	height: 25px;
+	margin-right: 8px;
+	vertical-align: middle;
+	width: 25px;
+}
+
+.pagination_forum {margin-top: 30px;}
+
+.forum-message {
+	font-size: 16px;
+	margin: 78px 0 60px;
+	text-align: center;
+}
+
 @media screen and (min-width: 940px) and (max-width: 1199px) {
 	.search-wrap {
 		padding-left: 25px;
@@ -1754,6 +1931,10 @@ h2 {
 	.search-city {width: 29%;}
 	.brand {width: 18%;}
 	.category-menu {width: auto;}
+	.contacts-form {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
@@ -2146,6 +2327,15 @@ h2 {
 	}
 
 	.good-description {overflow: inherit;}
+
+	.contacts_page {width: 100%;}
+
+	.contacts-form {
+		float: left;
+		margin-bottom: 15px;
+		margin-top: 30px;
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 877px) {
@@ -2195,7 +2385,7 @@ h2 {
 		padding-left: 11px;
 	}
 	.mobile-mavigation {
-		right: 22%;
+		right: 12px;
 		top: 165px;
 	}
 	.shop-info__elem {
@@ -2216,7 +2406,7 @@ h2 {
 @media screen and (max-width: 659px) {
 	.top-menu {display: none;}
 	.mobile-mavigation {
-		right: 14%;
+		right: 12px;
 		top: 125px;
 	}
 	.navigation-fixed {height: 0;}
@@ -2261,6 +2451,12 @@ h2 {
 		margin-top: -15px;
 		width: 100%;
 	}
+	.content_contacts {margin-bottom: -350px;}
+	.company-logo {
+		display: block;
+		float: none;
+		margin: 0 auto 15px;
+	}
 }
 
 @media screen and (max-width: 619px) {
@@ -2286,6 +2482,14 @@ h2 {
 	.btn-submit {
 		padding-left: 12px;
 		padding-right: 12px;
+	}
+	.order-form {
+		margin-left: -235px;
+		width: 470px;
+	}
+	.form-content {
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
 
@@ -2349,4 +2553,37 @@ h2 {
 		overflow: hidden;
 	}
 	.contacts__elem {width: 100%;}
+	.order-form {
+		margin-left: -157px;
+		width: 314px;
+	}
+	.form-content {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.contacts-form {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.contacts_page .contacts__elem_main, .contacts_page .contacts__elem_address, 
+	.contacts-form__label, .contacts-form__field {width: 100%;}
+	.contacts__links {margin-top: 0;}
+	.contacts__links > div {
+		margin-bottom: 15px;
+		width: 100%;
+	}
+	.contacts-form__submit {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.forum-menu__topics {
+		border-bottom: 1px solid #d1d9db;
+		width: 100%;
+	}
+	.forum-menu__topics > div {
+		text-align: center;
+		width: 50%;
+	}
+	.forum-menu__topics > div:last-of-type {border-right: none;}
 }
