@@ -1848,10 +1848,9 @@ h2 {
 
 .company-logo {
 	float: left;
+	margin-bottom: 15px;
 	margin-right: 15px;
 }
-
-.company-logo + .good-text {overflow: hidden;}
 
 .company-logo + .good-text > p {line-height: 16px;}
 
@@ -1917,6 +1916,108 @@ h2 {
 	margin: 78px 0 60px;
 	text-align: center;
 }
+
+.forum-menu_topic {margin-bottom: 16px;}
+
+.topic-image {
+	border: 1px solid #dbdbdb;
+	float: left;
+	margin-bottom: 15px;
+	margin-right: 19px;
+	vertical-align: top;
+}
+
+.topic-author {
+	color: #009ac4;
+	font-size: 16px;
+	line-height: 14px;
+	margin-bottom: 3px;
+}
+
+.topic-date {color: #7b7b7b;}
+
+.topic-text > p {
+	margin: 10px 0 18px;
+	line-height: 18px;
+}
+
+.comment-form {margin-top: 28px;}
+
+.avatar {
+	border: 1px solid #dbdbdb;
+	float: left;
+	margin-bottom: 15px;
+	margin-right: 19px;
+	vertical-align: top;
+}
+
+.comment-wrap {overflow: hidden;}
+
+.comment-field {
+	background-color: #fff;
+	border: solid 1px #dbdbdb;
+	box-sizing: border-box;
+	display: block;
+	outline: none;
+	padding: 7px 12px 9px;
+	resize: none;
+	width: 100%;
+}
+
+.comment-submit {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background-color: #7aca13;
+	border: solid 1px #66ab0e;
+	clear: left;
+	cursor: pointer;
+	float: right;
+	font-family: Arial;
+	font-size: 14px;
+	color: #fff;
+	padding: 3px 10px 4px;
+	margin-top: -6px;
+	text-shadow: 0 1px 2px #589905;
+}
+
+.comment-submit:hover {background-color: #72b221;}
+
+.comments-list {margin-top: 26px;}
+
+.comments-list__elem {
+	border: 1px solid #dbdbdb;
+	margin-bottom: 2px;
+	padding: 10px 8px 6px;
+}
+
+.comments-list__elem:nth-child(2n) {background-color: #f9f9f9;}
+
+.avatar_comment {
+	margin-bottom: 0;
+	margin-right: 15px;
+}
+
+.comment-body {overflow: hidden;}
+
+.comment-author {
+	color: #009ac4;
+	line-height: 16px;
+}
+
+.comment-text {
+	margin-bottom: 5px;
+	margin-top: 6px;
+	line-height: 17px;
+}
+
+.comment-date, .comment-time {
+	color: #7b7b7b;
+	display: inline-block;
+	padding-right: 4px;
+}
+
+.comment-answer {text-decoration: none;}
 
 @media screen and (min-width: 940px) and (max-width: 1199px) {
 	.search-wrap {
@@ -2493,6 +2594,15 @@ h2 {
 	}
 }
 
+@media screen and (max-width: 519px) {
+	.topic-image {
+		float: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
 @media screen and (max-width: 479px) {
 	.mobile-mavigation {
 		right: 11px;
@@ -2569,7 +2679,9 @@ h2 {
 	.contacts-form__label, .contacts-form__field {width: 100%;}
 	.contacts__links {margin-top: 0;}
 	.contacts__links > div {
+		box-sizing: border-box;
 		margin-bottom: 15px;
+		padding-left: 33px;
 		width: 100%;
 	}
 	.contacts-form__submit {

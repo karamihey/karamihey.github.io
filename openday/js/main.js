@@ -103,6 +103,7 @@ jQuery(function() {
 		formFields.hide();
 		formClose.addClass('form-close_result');
 		formResultMessage.show();
+		event.preventDefault();
 	});
 });
 
