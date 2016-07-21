@@ -15,7 +15,6 @@
 
 		<div class="wrapper">
 			<div class="main">
-				<header class="header"></header>
 				<div class="navigation-fixed"><div class="top-navigation">
 					<ul class="s-top-menu top-menu">
 						<li class="s-main top-menu__item"><a class="top-menu__link" href="#">Главная</a></li>
@@ -258,7 +257,7 @@
 							<div><a class="forum-menu__topic" href="#">Все темы</a></div>
 							<div><a class="forum-menu__topic" href="#">Мои темы</a></div>
 						</div>
-						<div><a class="forum-menu__add" href="#">Создать новую тему</a></div>
+						<div><a class="js-order forum-menu__add" href="#">Создать новую тему</a></div>
 					</div>
 
 					<div class="clearfix">
@@ -350,27 +349,42 @@
 			</footer>
 		</div>
 		
-		<form action="#" class="js-order-form order-form">
+		<form action="#" class="js-order-form order-form order-form_topic">
 			<span class="js-close form-close"></span>
 			<div class="form-wrap">
-				<div class="form-title">Сделайте заказ</div>
-				<div class="form-content">
-					<label for="name">ФИО:</label>
-					<input class="form-field" type="text" id="name" name="name">
+				<div class="form-title">Создать новую тему</div>
+				<div class="form-content form-content_topic">
+					<label for="title">Заголовок:<span class="required">*</span></label>
+					<input class="form-field" type="text" id="title" name="title" placeholder="Ваш заголовок" required="required">
 
-					<label for="phone">Телефон<span class="required">*</span>:</label>
-					<input class="form-field" type="text" id="phone" name="phone" required="required">
+					<label for="description">Описание:<span class="required">*</span></label>
+					<textarea name="description" id="description" cols="30" rows="5" class="form-field" required="required"></textarea>
 
-					<div class="form-submit">
-						<input class="btn-order btn-order_submit" type="submit" value="Заказать">
-						<div><a class="form-link" href="#">Политика конфиденциальности</a></div>
+					<div class="clearfix">
+						<label class="added-images__label" for="title">Прикрепить картинку<span class="required">*</span></label>
+						<div class="added-images clearfix">
+							<div class="added-images__elem">
+								<img class="added-images__image" src="img/added-image.jpg" alt="">
+								<span class="added-images__remove"></span>
+							</div>
+							<div class="added-images__title"><b>mob_version.jpg</b> 949 Kb (загружено)</div>
+						</div>
+					</div>
+
+					<label for="link">Ссылка на видео:</label>
+					<input class="form-field" type="text" id="link" name="link" placeholder="http://">
+
+					<div class="form-submit clearfix">
+						<input class="btn-order btn-order_submit btn-order_topic" type="submit" value="Создать тему">
+						<div class="confirm-checkbox">
+							<input id="confirm" name="confirm" type="checkbox" class="checkbox">
+							<label class="checkbox-label" for="confirm">Соглашение пользователя</label>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="form-result">
-				<div>Ваша заявка успешно отправлена.</div>
-				<div>Наши специалисты свяжутся с вами в ближайшее время.</div>
-				<div>Спасибо, что выбрали нас.</div>
+				<div>Ваша тема успешно добавлена.</div>
 			</div>
 		</form>
 

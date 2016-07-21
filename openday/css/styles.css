@@ -1738,9 +1738,22 @@ h2 {
 	text-decoration: none;
 }
 
-.form-message {font-size: 12px;}
+.form-message {
+	color: #66ab0e;
+	font-size: 12px;
+	position: relative;
+	top: -14px;
+	z-index: -1;
+}
+
+.form-message_autorize {
+	margin-bottom: -13px;
+	margin-left: 27%;
+}
 
 .form-message_error {color: #fd4744;}
+
+.form-message_send {color: #009ac4;}
 
 .form-close {
 	background: url(../img/icon-close.png) no-repeat 0 0;
@@ -2019,6 +2032,147 @@ h2 {
 
 .comment-answer {text-decoration: none;}
 
+.autorize-form {
+	width: 39%;
+	margin: 41px auto 30px;
+}
+
+.contacts-form__label_autorize {
+	padding-top: 15px;
+	width: 27%;
+}
+
+.contacts-form__field_autorize {
+	margin-bottom: 15px;
+	margin-top: 6px;
+	padding-left: 13px;
+	width: 73%;
+}
+
+.contacts-form__field_password {margin-bottom: 9px;}
+
+.autorize-form h1 {margin-left: 27%}
+
+.forgot-password {text-align: right;}
+
+.forgot-password a {text-decoration: none;}
+
+.contacts-form__submit_autorize {
+	font-size: 19px;
+	margin-left: 27%;
+    margin-top: 6px;
+    padding: 8px 52px;
+    width: auto;
+}
+
+.contacts-form__submit_confirm {
+	margin-top: 15px;
+	padding-left: 19px;
+	padding-right: 19px;
+}
+
+.autorize-form__note {
+	font-size: 12px;
+	margin-left: 27%;
+	margin-top: -16px;
+	margin-bottom: 7px;
+}
+
+.order-form_topic {
+	margin-left: -297px;
+	margin-top: 0;
+	position: absolute;
+	top: 50px;
+	width: 589px;
+}
+
+.form-content_topic {padding: 16px 56px;}
+
+.contacts-form__field_password + .form-message_autorize {top: -8px;}
+
+.validate_error {border-color: #fd4744;}
+
+.contacts-form__submit_recovery {margin-top: 19px;}
+
+.added-images__label {
+	float: left;
+	margin-top: -2px;
+	margin-right: 15px;
+}
+
+.added-images {
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding-top: 3px;
+}
+
+.added-images__elem {
+	float: left;
+	position: relative;
+}
+
+.added-images__image {
+	border: 1px solid #ccc;
+	vertical-align: top;
+}
+
+.added-images__remove {
+	background: url(../img/delete-img.png) no-repeat 0 0;
+	bottom: 0;
+	cursor: pointer;
+	display: block;
+	height: 24px;
+	position: absolute;
+	right: -2px;
+	top: -3px;
+	width: 24px;
+}
+
+.added-images__title {
+	clear: both;
+	padding-top: 5px;
+}
+
+.btn-order_topic {float: left;}
+
+.confirm-checkbox {
+	float: right;
+	margin-top: 25px;
+}
+
+.checkbox {
+	clip: rect(0, 0, 0, 0);
+	position: absolute;
+}
+
+.checkbox-label {
+	color: #009ac4;
+	cursor: pointer;
+	font-size: 14px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.checkbox-label::after {
+	background-color: #fff;
+	border: solid 1px #ccc;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	content: ' ';
+	display: inline-block;
+	height: 24px;
+	margin-left: 9px;
+	position: relative;
+	top: 3px;
+	vertical-align: bottom;
+	width: 24px;
+}
+
+.checkbox:checked + .checkbox-label::after {background: url(../img/checkboxes.png) no-repeat scroll 50% 50% #fff;}
+
+.btn-order_topic {padding: 9px 43px;}
+
 @media screen and (min-width: 940px) and (max-width: 1199px) {
 	.search-wrap {
 		padding-left: 25px;
@@ -2069,6 +2223,7 @@ h2 {
 		margin: 0 2% 33px 0;
 	}
 	.topic:nth-child(3n), .goods__item:nth-child(3n), .category:nth-child(3n) {margin-right: 0;}
+	.autorize-form {width: 55%;}
 }
 
 @media screen and (min-width: 940px) and (max-width: 1169px) {
@@ -2192,7 +2347,7 @@ h2 {
 	.mobile-mavigation {
 		position: absolute;
 		right: 11px;
-		top: 154px;
+		top: 45px;
 		display: -webkit-box;
 		display: -webkit-flex;
 		display: -ms-flexbox;
@@ -2205,6 +2360,7 @@ h2 {
 		-ms-grid-row-align: flex-start;
 		align-items: flex-start;
 	}
+	.header + .navigation-fixed .mobile-mavigation {top: 154px;}
 	.mobile-menu, .authorization-menu {
 		display: -webkit-inline-box;
 		display: -ms-inline-flexbox;
@@ -2455,6 +2611,7 @@ h2 {
 	.category:nth-child(4n), .category:nth-child(2n) {margin-right: auto;}
 	.topic:nth-child(2n + 1), .goods__item:nth-child(2n + 1), .category:nth-child(2n + 1) {margin-right: auto;}
 	.image-line {width: 50%;}
+	.autorize-form {width: 100%;}
 }
 
 @media screen and (min-width: 660px) and (max-width: 939px) {
@@ -2485,10 +2642,8 @@ h2 {
 		font-size: 14px;
 		padding-left: 11px;
 	}
-	.mobile-mavigation {
-		right: 12px;
-		top: 165px;
-	}
+	.mobile-mavigation {right: 12px;}
+	.header + .navigation-fixed .mobile-mavigation {top: 165px;}
 	.shop-info__elem {
 		-webkit-flex-basis: 100%;
 		-ms-flex-preferred-size: 100%;
@@ -2506,10 +2661,8 @@ h2 {
 
 @media screen and (max-width: 659px) {
 	.top-menu {display: none;}
-	.mobile-mavigation {
-		right: 12px;
-		top: 125px;
-	}
+	.mobile-mavigation {right: 12px;}
+	.header + .navigation-fixed .mobile-mavigation {top: 125px;}
 	.navigation-fixed {height: 0;}
 }
 
@@ -2577,6 +2730,14 @@ h2 {
 		float: left;
 		width: 50%;
 	}
+	.order-form_topic {
+		margin-left: -235px;
+		width: 470px;
+	}
+	.form-content_topic {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
 @media screen and (min-width: 480px) and (max-width: 519px) {
@@ -2604,10 +2765,8 @@ h2 {
 }
 
 @media screen and (max-width: 479px) {
-	.mobile-mavigation {
-		right: 11px;
-		top: 114px;
-	}
+	.mobile-mavigation {right: 11px;}
+	.header + .navigation-fixed .mobile-mavigation {top: 114px;}
 	.topic, .goods__item, .category {
 		-webkit-flex-basis: 100%;
 		-ms-flex-preferred-size: 100%;
@@ -2698,4 +2857,11 @@ h2 {
 		width: 50%;
 	}
 	.forum-menu__topics > div:last-of-type {border-right: none;}
+	.form-message_autorize, .autorize-form h1, .autorize-form__note {margin-left: 0;}
+	.added-images, .confirm-checkbox {clear: both;}
+	.confirm-checkbox {
+		float: none;
+		padding-top: 10px;
+		text-align: left;
+	}
 }
