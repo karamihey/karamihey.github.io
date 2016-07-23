@@ -23,6 +23,11 @@ jQuery(function() {
 		selectPlaceholder: 'Все области'
 	});
 
+	$('.js-select-brand').styler({
+		selectSmartPositioning: false,
+		selectPlaceholder: 'Выберите каталог бренда'
+	});
+
 	// Slider
 	var slider = $('.js-slider').bxSlider({
 		controls: false,
