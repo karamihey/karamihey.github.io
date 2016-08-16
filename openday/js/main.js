@@ -30,6 +30,7 @@ jQuery(function() {
 
 	// Slider
 	var slider = $('.js-slider').bxSlider({
+		auto: true,
 		controls: false,
 		minSlides: 1,
 		maxSlides: 1,
@@ -39,6 +40,7 @@ jQuery(function() {
 	onResize = function() {
 		if ($('.js-slider').length) {
 			slider.reloadSlider({
+				auto: true,
 				controls: false,
 				minSlides: 1,
 				maxSlides: 1,
@@ -109,6 +111,11 @@ jQuery(function() {
 		formClose.addClass('form-close_result');
 		formResultMessage.show();
 		event.preventDefault();
+	});
+
+	// Add image
+	$('.j-add-image').click(function() {
+		$('.s-add-file').trigger('click');
 	});
 });
 

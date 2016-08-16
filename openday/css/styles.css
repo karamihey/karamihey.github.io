@@ -170,8 +170,13 @@ body {
 	font-size: 14px;
 	line-height: 22px;
 	margin: 0 auto;
-	max-width: 1280px;
 	min-width: 320px;
+}
+
+.content-wrapper {
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width: 1280px;
 }
 
 a {color: #009ac4;}
@@ -187,6 +192,10 @@ a {color: #009ac4;}
 }
 
 .navigation-fixed {
+	background-color: #242b28;
+	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .28);
+	   -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .28);
+	        box-shadow: 0 2px 3px rgba(0, 0, 0, .28);
 	height: 44px;
 	left: 0;
 	right: 0;
@@ -194,10 +203,6 @@ a {color: #009ac4;}
 }
 
 .top-navigation {
-	background-color: #242b28;
-	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .28);
-	   -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .28);
-	        box-shadow: 0 2px 3px rgba(0, 0, 0, .28);
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -210,7 +215,6 @@ a {color: #009ac4;}
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	padding: 0 40px 0 28px;
-	max-width: 1280px;
 	margin: 0 auto;
 	box-sizing: border-box;
 }
@@ -328,6 +332,9 @@ a {color: #009ac4;}
 .search-wrap {
 	background-color: #f9f9f9;
 	border-bottom: 1px solid #dbdbdb;
+}
+
+.content-wrapper_search {
 	padding: 17px 40px 7px;
 }
 
@@ -1039,8 +1046,11 @@ a {color: #009ac4;}
 	margin-top: 8px;
 }
 
-.content_hits {
+.content-wrapper_hits {
 	background-color: #f9f9f9;
+}
+
+.content_hits {
 	margin-top: 12px;
 	padding-top: 15px;
 }
@@ -1144,8 +1154,11 @@ a {color: #009ac4;}
 	text-align: center;
 }
 
-.footer__developers {
+.content-wrapper_developers {
 	background-color: #242b28;
+}
+
+.footer__developers {
 	color: #fff;
 	margin-top: 22px;
 	padding: 15px 40px;
@@ -2467,8 +2480,10 @@ h2 {
 	padding-top: 14px;
 }
 
+.add-file {display: none;}
+
 @media screen and (min-width: 940px) and (max-width: 1199px) {
-	.search-wrap {
+	..content-wrapper_search {
 		padding-left: 25px;
 		padding-right: 25px;
 	}
@@ -2621,7 +2636,7 @@ h2 {
 }
 
 @media screen and (min-width: 720px) and (max-width: 939px) {
-	.search-wrap {
+	.content-wrapper_search {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
@@ -2920,7 +2935,7 @@ h2 {
 }
 
 @media screen and (max-width: 719px) {
-	.search-wrap {
+	.content-wrapper_search {
 		border-bottom: none;
 		margin-bottom: 15px;
 		padding: 15px 12px;
