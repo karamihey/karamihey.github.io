@@ -122,14 +122,18 @@ jQuery(function() {
 // Counter
 function counter() {
 	var date_current = new Date();
+	var day = 60*60*1000*24;
+	var hour = 60*60*1000;
+	var min = 60*1000;
+	var sec = 1000;
+
 	$('.js-counter').each(function() {
 		var actionDate = $(this).data('time').split("/");
-		var date = new Date(actionDate[2], actionDate[1], actionDate[0]);
+		if (actionDate[1] > 0) {
+			actionDate[1] = actionDate[1] - 1;
+		}
+		var date = new Date(actionDate[2], actionDate[1], actionDate[0], 0, 0);
 		if (date > date_current) {
-			var day = 60*60*1000*24;
-			var hour = 60*60*1000;
-			var min = 60*1000;
-			var sec = 1000;
 			count = date - date_current;
 
 			if (actionDate[3]) {
@@ -158,11 +162,16 @@ function counter() {
 			if (!minutes_params[1]) {
 				minutes_params = [0, minutes_params[0]];
 			}
-			if (!days_params[1]) {
-				days_params = [0, days_params[0]];
+			if (!days_params[2]) {
+				if (!days_params[1]) {
+					days_params = ['', 0, days_params[0]];
+				}
+				else {
+					days_params = ['', days_params[0], days_params[1]];
+				}
 			}
-
-			var daysLeft = days_params[0] + days_params[1] + "д";
+			
+			var daysLeft = days_params[0] + days_params[1] + days_params[2] + "д";
 			var hoursLeft = hours_params[0] + hours_params[1] + "ч";
 			var minutesLeft = minutes_params[0] + minutes_params[1] + "мин";
 			var secondsLeft = seconds_params[0] + seconds_params[1] + "с";
