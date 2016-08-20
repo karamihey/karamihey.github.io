@@ -17,6 +17,15 @@ jQuery(function() {
 		}
 	});
 
+	$('.catalog-menu-dropdown > li').mouseover(function() {
+		var menuWidth = $('.catalog-navigation').width() - $(this).innerWidth() - 1;
+		$('.catalog-menu-submenu', this).css({width: menuWidth});
+	});
+
+	$('.catalog-menu-dropdown > li').mouseleave(function() {
+		$('.catalog-menu-submenu', this).css({width: 0});
+	});
+
 	// Select FormStyler
 	$('.js-select').styler({
 		selectSmartPositioning: false,
