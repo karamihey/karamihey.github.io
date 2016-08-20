@@ -477,6 +477,11 @@ a {color: #009ac4;}
 
 .jq-selectbox__dropdown > ul > li.sel, .jq-selectbox__dropdown > ul > li.selected {color: #72b221;}
 
+.search__line, .search-city, .search__submit {
+	box-sizing: border-box;
+	height: 56px;
+}
+
 .catalog-navigation {
 	padding: 0 40px;
 }
