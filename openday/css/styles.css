@@ -189,11 +189,11 @@ a {color: #009ac4;}
 .header__image {
 	display: block;
 	margin: 0 auto;
-	max-width: 1280px;
 }
 
 .header__image img {
 	vertical-align: top;
+	width: 100%;
 }
 
 
@@ -1998,6 +1998,7 @@ h2 {
 	border: solid 1px #dbdbdb;
 	box-sizing: border-box;
 	display: block;
+	max-height: 84px;
 	outline: none;
 	padding: 7px 12px 9px;
 	resize: none;
@@ -2977,6 +2978,7 @@ h2 {
 	.shop-info__elem br {content: '';}
 	.shop-info__elem br::after {content: "\00a0";}
 	.brand {width: 31%;}
+	.header__image {display: none;}
 }
 
 @media screen and (max-width: 659px) {
