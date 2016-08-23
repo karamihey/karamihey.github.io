@@ -2167,6 +2167,10 @@ h2 {
 
 .btn-order_topic {float: left;}
 
+.confirm-link {
+	text-decoration: none;
+}
+
 .confirm-checkbox {
 	float: right;
 	margin-top: 25px;
