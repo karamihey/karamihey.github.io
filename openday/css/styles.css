@@ -547,7 +547,7 @@ a {color: #009ac4;}
 
 .catalog-menu-dropdown_opened {
 	display: block;
-	position: static;
+	position: relative;
 }
 
 .catalog-menu > li:hover .catalog-menu-dropdown {
@@ -560,7 +560,6 @@ a {color: #009ac4;}
 	background: url(../img/catalog-menu-dropdown.png) no-repeat 14px 7px;
 	border-bottom: 1px dotted #e1e1e1;
 	padding: 1px 6px 4px 36px;
-	position: relative;
 }
 
 .catalog-menu-dropdown > li:last-of-type {border-bottom: none;}
