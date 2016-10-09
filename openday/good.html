@@ -412,10 +412,12 @@
 				<div class="form-title">Сделайте заказ</div>
 				<div class="form-content">
 					<label for="name">ФИО:</label>
-					<input class="form-field" type="text" id="name" name="name">
+					<input class="form-field validate_error" type="text" id="name" name="name">
+					<div class="form-message form-message_order form-message_error">Данные введены некорректно</div>
 
 					<label for="phone">Телефон<span class="required">*</span>:</label>
-					<input class="form-field" type="text" id="phone" name="phone" required="required">
+					<input class="form-field validate_error" type="text" id="phone" name="phone" required="required">
+					<div class="form-message form-message_order form-message_error">Телефон введен некорректно</div>
 
 					<div class="form-submit">
 						<input class="btn-order btn-order_submit" type="submit" value="Заказать">
