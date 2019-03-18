@@ -1,0 +1,16 @@
+@import "settings/variables";
+
+@import 
+  "generic/normalize",
+  "generic/base";
+
+@import
+  "objects/swiper",
+  "objects/navigation",
+  "objects/sections-navigation",
+  "objects/footer";
+
+@import
+  "components/intro",
+  "components/video",
+  "components/team";

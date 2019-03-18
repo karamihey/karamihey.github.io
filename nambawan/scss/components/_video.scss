@@ -1,0 +1,108 @@
+.section-video {
+	display: flex;
+	height: 100vh;
+	min-height: 740px;
+	padding: 0 98px 0 0;
+
+	.video-block {
+		background: url('../images/video.jpg') no-repeat 50% 50%;
+		background-size: cover;
+		flex-shrink: 0;
+		position: relative;
+		width: 52%;
+	}
+
+	.video-controls {
+		background-color: $c-video-overlay-bg;
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.play-button {
+		font-size: 15px;
+		font-weight: bold;
+		left: 50%;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		transform: translate3d(-50%, -50%, 0);
+
+		.icon {
+			border: 3px solid $c-video-control;
+			border-radius: 50%;
+			cursor: pointer;
+			display: inline-block;
+			height: 70px;
+			position: relative;
+			width: 70px;
+
+			&::after {
+				border-top: 12px solid transparent;
+				border-left: 20px solid $c-video-control;
+				border-bottom: 12px solid transparent;
+				content: '';
+				display: block;
+				left: 50%;
+				margin: -11px 0 0 -5px;
+				position: absolute;
+				top: 50%;
+			}
+		}
+	}
+
+	.video-title {
+		color: $c-video-title;
+		letter-spacing: -.4px;
+		margin-top: 18px;
+	}
+
+	.content {
+		font-size: 21px;
+		margin-left: 56px;
+		margin-top: 100px;
+	}
+
+	.title {
+		font-size: 48px;
+		font-weight: 800;
+		margin: 0 0 46px 0;
+	}
+
+	.text {
+		line-height: 1.6;
+		margin-right: 10%;
+	}
+}
+
+.work-geography {
+	display: flex;
+	list-style: none;
+	margin: 100px 0 0 0;
+	padding: 0;
+
+	.item {
+		background-color: $c-work-geography-bg;
+		box-sizing: border-box;
+		font-size: 16px;
+		line-height: 1.4;
+		padding: 30px 36px;
+		text-align: center;
+		width: 48%; 
+
+		+ .item {
+			margin-left: 4%;
+		}
+	}
+
+	.icon {
+		height: 82px;
+		margin-bottom: 12px;
+
+		img {
+			max-height: 100%;
+		}
+	}
+}
