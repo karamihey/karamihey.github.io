@@ -1,0 +1,79 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for video section
+// -----------------------------------------------------------------------------
+
+//  01. Default styles for video section
+.video {
+  @include css3-prefix(background, linear-gradient(45deg, $c-blue, $c-gradient-end));
+
+  video {
+    display: block;
+  }
+
+  .visible {
+    visibility: visible;
+  }
+
+  .play-pause-button {
+    @include border-radius(50%);
+    @include translateX(-50%);
+    border: 2px solid $c-white;
+    height: 62px;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    width: 62px;
+
+    &:hover {
+      border-color: $c-light-grey;
+    }
+
+    &.playing {
+      z-index: 20;
+
+      @media (max-width: $screen-md-min) {
+        @include transform(none);
+        bottom: 20px;
+        left: 20px;
+        top: auto;
+      }
+
+      @media (max-width: $screen-mxs-max) {
+        @include scale(.75);
+        @include transform-origin(left bottom);
+      }
+    }
+  }
+
+  .play {
+    .shape {
+      border-left: 6px solid $c-white;
+      border-right: 6px solid $c-white;
+      height: 35px;
+      width: 5px;
+    }
+
+    &:hover {
+      .shape {
+        border-color: $c-light-grey;
+      }
+    }
+  }
+
+  .pause {
+    .shape {
+      border: solid transparent;
+      border-left-color: $c-white;
+      border-width: 21px 36px;
+      left: 89%;
+    }
+
+    &:hover {
+      .shape {
+        border-left-color: $c-light-grey;
+      }
+    }
+  }
+}

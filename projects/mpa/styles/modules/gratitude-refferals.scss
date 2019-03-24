@@ -1,0 +1,318 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Refferals Chart
+//    01.01 Arrow
+//    01.02 Default chart styles
+//    01.03 Progress bar
+// -----------------------------------------------------------------------------
+
+//  01. Refferals Chart
+
+//    01.01 Arrow
+.refferals {
+  .arrow-down {
+    border: 23px solid;
+    border-color: $c-arrow transparent transparent transparent;
+    height: 0;
+    margin: 50px auto 0;
+    position: relative;
+    width: 0;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      border: 18px solid;
+      border-color: $c-arrow transparent transparent transparent;
+      margin-top: 30px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      border: 16px solid;
+      border-color: $c-arrow transparent transparent transparent;
+      margin-top: 26px;
+    }
+  }
+
+  .arrow-down:before {
+    border: 35px solid;
+    border-color: $c-white transparent transparent transparent;
+    content: "";
+    height: 0;
+    left: -35px;
+    position: absolute;
+    top: -41px;
+    width: 0;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      top: -40px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      border: 37px solid;
+      border-color: $c-white transparent transparent transparent;
+      left: -37px;
+      top: -40px;
+    }
+  }
+
+  .arrow-down:after {
+    @include rotate(45deg);
+    border: 8px solid $c-white;
+    content: "";
+    height: 41px;
+    left: -28px;
+    position: absolute;
+    top: -40px;
+    width: 41px;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      border: 5px solid $c-white;
+      top: -31px;
+      height: 26px;
+      left: -18px;
+      width: 26px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      height: 20px;
+      left: -18px;
+      top: -29px;
+      width: 20px;
+    }
+  }
+}
+
+//    01.02 Default chart styles
+.ref-count {
+  p {
+    @include font-size(24);
+    margin: 5px 0 0 0;
+    padding: 0 0 0 8px;
+    text-align: center;
+    color: $c-navy-blue;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(20);
+      margin-top: 0;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(15);
+      margin-top: 2px;
+    }
+  }
+
+  .integer {
+    @include font-size(21);
+    color: $c-sky-blue;
+    font-family: $default-font-family-light;
+  }
+}
+
+.ref-progress {
+  margin: 0 auto;
+  padding: 93px 0 88px 0;
+  position: relative;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    padding: 67px 0 34px 0;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding: 58px 0 14px 0;
+  }
+
+  .bar-title {
+    @include font-size(12);
+    color: $c-dark-grey;
+    left: 24.5%;
+    text-transform: uppercase;
+    top: 64px;
+    position: absolute;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      left: 13%;
+      top: 40px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      left: 9%;
+      top: 38px;
+    }
+
+    .up {
+      margin: 0 0 42px 0;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        margin-bottom: 38px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        margin-bottom: 0;
+      }
+    }
+
+    .down {
+      @media (max-width: $screen-xs-max) {
+        display: none;
+      }
+    }
+  }
+
+  .mobile-ref-info {
+    @include font-size(12);
+    color: $c-dark-grey;
+    display: none;
+    letter-spacing: 0.1px;
+    line-height: 1.3;
+    padding: 0 9%;
+
+    p {
+      line-height: 1.2;
+      margin: 14px 0 0 0;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      display: block;
+    }
+
+    span {
+      font-family: $default-font-family-bold;
+    }
+  }
+}
+
+.bar-block {
+  position: absolute;
+  text-align: center;
+  top: 38px;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    top: 22px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    top: 19px;
+  }
+
+  p {
+    @include font-size(12);
+    color: $c-grey;
+    text-transform: none;
+
+    @media (max-width: $screen-xs-max) {
+      display: none;
+    }
+  }
+
+  .ref-sum {
+    @include border-radius(50%);
+    @include font-size(18);
+    @include line-height(30);
+    background: $c-grey;
+    color: $c-white;
+    display: inline-block;
+    height: 35px;
+    line-height: 2.15;
+    margin: 0 0 32px 0;
+    width: 35px;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(14);
+      height: 30px;
+      line-height: 2.3;
+      margin-bottom: 27px;
+      width: 30px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(14);
+      height: 32px;
+      line-height: 2.4;
+      margin-bottom: 0;
+      width: 32px;
+    }
+  }
+}
+
+.zero-ref {
+  left: 39%;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    left: 35%;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    left: 43.5%;
+  }
+}
+
+.five-ref {
+  left: 54.5%;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    left: 56.5%;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    left: 63%;
+  }
+}
+
+.ten-ref {
+  left: 70%;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    left: 78%;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    left: 82%;
+  }
+}
+
+.zero-ref .ref-sum {
+  background: $c-sky-blue;
+}
+
+//    01.03 Progress bar
+.ref-progress {
+  .progressbar {
+    @include border-radius(30px);
+    background: $c-light-grey;
+    height: 7px;
+    margin: 0 auto;
+    position: relative;
+    width: 51%;
+    z-index: 1;
+
+    @media (min-width: $screen-xs-min) and (max-width: $screen-md-min) {
+      height: 10px;
+      width: 74%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      width: 81%;
+    }
+
+    .active-bar {
+      @include border-radius(30px);
+      background: $c-sky-blue;
+      display: inline-block;
+      height: 7px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 35%;
+      z-index: 2;
+
+      @media (min-width: $screen-xs-min) and (max-width: $screen-md-min) {
+        height: 10px;
+        width: 37%;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        width: 47%;
+      }
+    }
+  }
+}

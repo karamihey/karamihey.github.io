@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="174.434" height="121.781" viewBox="0 0 174.434 121.781">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 3px;
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <circle cx="7.985" cy="107.078" r="6.485" class="cls-1"/>
+      <circle cx="9.938" cy="80.969" r="2.5" class="cls-2"/>
+      <circle cx="28.438" cy="118.281" r="3.5" class="cls-2"/>
+    </g>
+    <g>
+      <circle cx="166.434" cy="14.688" r="6.5" class="cls-1"/>
+      <circle cx="167.314" cy="36.688" r="2.5" class="cls-2"/>
+      <circle cx="145.974" cy="3.5" r="3.5" class="cls-2"/>
+    </g>
+  </g>
+</svg>

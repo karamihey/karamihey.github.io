@@ -1,0 +1,361 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for cable config section
+//    01.01 Audio cables
+// -----------------------------------------------------------------------------
+
+//  01. Default styles for cable config section
+.cable-config {
+  .instruction {
+    @media (max-width: $screen-xs-max) {
+      letter-spacing: -.1px;
+    }
+  }
+
+  .current-device {
+    @include font-size(24);
+    color: $c-blue;
+    font-family: $default-font-family-bold;
+    letter-spacing: -.4px;
+    margin: 0 0 35px;
+    text-align: center;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(28);
+      margin-bottom: 38px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(20);
+      letter-spacing: -.4px;
+      margin-bottom: 25px;
+    }
+  }
+
+  .icon-ad-box {
+    margin: 6px 0;
+    text-align: center;
+
+    @media (max-width: $screen-xs-max) {
+    margin-bottom: 18px;
+  }
+
+    object {
+      height: 55px;
+      width: 55px;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        height: 68px;
+        width: 68px;
+      }
+    }
+  }
+
+  .soundstr-ad {
+    border-top: 2px solid $c-divider;
+    padding-top: 36px;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      margin-top: 38px;
+      padding-top: 34px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 14px;
+      padding-top: 24px;
+    }
+
+    .heading {
+      @include font-size(25);
+      margin-bottom: 19px;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        @include font-size(28);
+        margin-bottom: 24px;
+        margin-top: 18px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        @include font-size(20);
+        margin-bottom: 24px;
+      }
+    }
+
+    .instruction {
+      @include font-size(16);
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        @include font-size(20);
+        margin-bottom: 22px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        @include font-size(15);
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+//    01.01 Audio cables
+.audio-cables {
+  margin-bottom: 41px;
+
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 14px;
+  }
+
+  .heading {
+    @include font-size(24);
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(28);
+      margin-bottom: 23px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(20);
+      margin-bottom: 24px;
+    }
+  }
+
+  .instruction {
+    @include font-size(16);
+    font-family: $default-font-family;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    padding: 0 16%;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(20);
+      margin-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(15);
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+
+    span {
+      font-family: $default-font-family-bold;
+    }
+  }
+
+  .cable-types {
+    @include flexbox();
+    @include justify-content(space-between);
+    margin: 37px 0 0 0;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      margin-top: 25px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include flex-wrap(wrap);
+      margin-top: 36px;
+    }
+
+    .type-item {
+      @include border-radius(5px);
+      @include box-shadow(-3px, 2px, 10px, rgba($c-black, .22), "");
+      @include box-sizing(border-box);
+      color: $c-blue;
+      margin: 0;
+      text-align: center;
+      padding-bottom: 13px;
+      position: relative;
+      width: 22%;
+      z-index: 1;
+
+      @media (max-width: $screen-md-min) {
+        @include border-radius(3px);
+      }
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        padding-bottom: 17px;
+        width: 21%;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        @include box-shadow(0, 3px, 10px, rgba($c-black, .22), "");
+        margin-bottom: 16px;
+        padding-bottom: 18px;
+        width: 47.5%;
+      }
+
+      &:hover,
+      &.active {
+        @include box-shadow(0, 0, 0, rgba($c-black, .22), "");
+        cursor: pointer;
+
+        &:before {
+          @include border-radius(8px);
+          border: 2px solid $c-blue;
+          content: "";
+          display: block;
+          height: 100%;
+          left: -2px;
+          position: absolute;
+          top: -2px;
+          width: 100%;
+        }
+      }
+
+      figcaption {
+        @include font-size(15);
+        font-family: $default-font-family-bold;
+
+        @media (max-width: $screen-md-min) {
+          @include font-size(20);
+        }
+      }
+
+      .icon,
+      .icon-mobile {
+        position: relative;
+        z-index: -1;
+      }
+
+      .icon {
+        margin: 0 0 11px 0;
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+          margin-bottom: 19px;
+        }
+
+        @media (max-width: $screen-xs-max) {
+          display: none;
+        }
+      }
+
+      .icon-mobile {
+        display: none;
+        margin-bottom: 14px;
+
+        @media (max-width: $screen-xs-max) {
+          display: inline-block;
+        }
+      }
+    }
+
+    .xlr-m {
+      padding-top: 18px;
+
+      @media (max-width: $screen-xs-max) {
+        padding-top: 19px;
+      }
+
+      .icon {
+        height: 257px;
+        width: 38px;
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+          height: 270px;
+          width: 41px;
+        }
+      }
+
+      .icon-mobile {
+        height: 208px;
+        width: 50px;
+      }
+    }
+
+    .rca {
+      padding-top: 26px;
+
+      .icon {
+        height: 250px;
+        width: 33px;
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+          height: 263px;
+          width: 26px;
+        }
+      }
+
+      .icon-mobile {
+        height: 201px;
+        width: 30px;
+      }
+    }
+
+    .aux-4 {
+      padding-top: 26px;
+
+      @media (max-width: $screen-xs-max) {
+        padding-top: 19px;
+      }
+
+      .icon {
+        height: 251px;
+        width: 28px;
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+          height: 263px;
+          width: 32px;
+        }
+      }
+
+      .icon-mobile {
+        height: 204px;
+        margin-bottom: 18px;
+        width: 31px;
+      }
+    }
+
+    .aux-8 {
+      padding-top: 31px;
+
+      @media (max-width: $screen-xs-max) {
+        padding-top: 26px;
+      }
+
+      .icon {
+        height: 245px;
+        width: 16px;
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+          height: 258px;
+          width: 31px;
+        }
+      }
+
+      .icon-mobile {
+        height: 197px;
+        margin-bottom: 18px;
+        width: 19px;
+      }
+    }
+
+    .aux {
+      left: -3px;
+      letter-spacing: -.5px;
+      position: relative;
+    }
+
+    .xlr-f {
+      padding-top: 15px;
+
+      .icon {
+        height: 261px;
+        width: 37px;
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+          height: 274px;
+          width: 41px;
+        }
+      }
+
+      .icon-mobile {
+        height: 213px;
+        width: 44px;
+      }
+    }
+  }
+}

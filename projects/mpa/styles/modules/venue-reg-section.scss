@@ -1,0 +1,452 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for venue registration section
+//    01.02 Soundboards section
+//      01.02.01 Soundboard params
+//    01.03 Venue address section
+// -----------------------------------------------------------------------------
+
+//  01. Default styles for venue registration section
+.venue-reg {
+  .instruction {
+    padding: 0 11%;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+
+  .button-box {
+    @media (max-width: $screen-xs-max) {
+      @include flexbox();
+      @include flex-wrap(wrap);
+      @include justify-content(space-between);
+    }
+  }
+
+  .prev-step-btn {
+    @media (max-width: $screen-xs-max) {
+      order: 2;
+    }
+  }
+
+  .next-step-btn {
+    @media (max-width: $screen-xs-max) {
+      order: 3;
+    }
+  }
+
+  .step-add-btn {
+    margin: 0 23px 0 0;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      margin-right: 30px;
+      min-width: 270px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 15px;
+      margin-right: 0;
+      min-width: 100%;
+      order: 1;
+    }
+  }
+
+  .checkbox {
+    color: $c-dark-grey;
+
+    @media (max-width: $screen-md-min) {
+      letter-spacing: .1px;
+    }
+  }
+}
+
+//    01.02 Soundboards section
+.venue-reg {
+  .capacity-content {
+    display: inline-block;
+    width: 61%;
+
+    @media (max-width: $screen-md-min) {
+      display: block;
+      width: 100%;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      margin-top: 20px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 26px;
+    }
+  }
+
+  .soundboard-capacity {
+    position: relative;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      margin-bottom: -20px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: -15px;
+    }
+
+    .checkbox {
+      display: inline-block;
+      margin: 0 4.3% 0 0;
+      top: 3px;
+      width: 30%;
+
+      @media (max-width: $screen-md-min) {
+        @include box-sizing(border-box);
+        margin-right: 0;
+        width: 100%;
+      }
+
+      &:before {
+        top: 25%;
+
+        @media (max-width: $screen-md-min) {
+          top: 9px;
+        }
+      }
+    }
+
+    .soundboard-amount {
+      display: inline-block;
+      margin: 0 6.5% 0 0;
+      width: 34.3%;
+
+      @media (max-width: $screen-md-min) {
+        width: 47.3%;
+      }
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        margin-right: 4.6%;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        margin-right: 3.7%;
+      }
+    }
+
+    .capacity {
+      display: inline-block;
+      position: relative;
+      width: 57.7%;
+
+      @media (max-width: $screen-md-min) {
+        width: 47.3%;
+      }
+    }
+
+    .tooltip-box {
+      bottom: 32px;
+      left: auto;
+      position: absolute;
+      right: -29px;
+      top: auto;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        bottom: 88px;
+        right: 0;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        bottom: 77px;
+        left: 86px;
+        right: auto;
+      }
+    }
+  }
+
+  input#multipleSBExist:checked {
+    + label {
+      margin-right: 9.3%;
+      width: 40%;
+
+      @media (max-width: $screen-md-min) {
+        margin-right: 0;
+        width: 100%;
+      }
+    }
+
+    ~ #capacity-content {
+      width: 46.1%;
+
+      @media (max-width: $screen-md-min) {
+        width: 100%;
+      }
+
+      #amountSB {
+        margin-right: 0;
+        width: 100%;
+      }
+
+      #capacity,
+      #capacityTooltip {
+        display: none;
+      }
+    }
+
+    ~ #soundboard-content {
+      #multipleSB {
+        display: block;
+      }
+    }
+  }
+}
+
+//      01.02.01 Soundboard params
+.soundboard-capacity {
+  .multiple-soundboards {
+    border-top: 2px solid rgba($c-light-grey, 0.5);
+    border-bottom: 2px solid rgba($c-light-grey, 0.5);
+    display: none;
+    margin: 1px 0 17px 0;
+    padding-top: 23px;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      margin-bottom: 37px;
+      padding-top: 12px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 32px;
+      padding-top: 30px;
+    }
+
+    h3 {
+      margin: 0;
+
+      @media (max-width: $screen-xs-max) {
+        line-height: 0.8;
+      }
+    }
+
+    .params {
+      margin: 22px 0 0 0;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        margin-bottom: -6px;
+        margin-top: 13px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        margin-top: 24px;
+      }
+    }
+
+    .room {
+      @include box-sizing(border-box);
+      float: left;
+      width: 53%;
+
+      @media (max-width: $screen-md-min) {
+        width: 52.7%;
+      }
+
+      .input-label {
+        letter-spacing: 0.5px;
+      }
+
+      .room-wrap {
+        @include flexbox();
+        margin-left: 1px;
+        margin-top: 9px;
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+          margin-top: 5px;
+        }
+
+        @media (max-width: $screen-xs-max) {
+          margin-top: 3px;
+        }
+
+        .sb-icon {
+          height: 33px;
+          width: 33px;
+        }
+      }
+
+      p {
+        color: $c-navy-blue;
+        font-family: $default-font-family-semibold;
+        line-height: 1;
+        margin-bottom: auto;
+        margin-top: auto;
+        margin-right: 5px;
+        padding-left: 22px;
+        word-break: break-all;
+
+        @media (max-width: $screen-md-min) {
+          padding-left: 9px;
+        }
+      }
+    }
+
+    .capacity {
+      float: right;
+      padding: 5px 0 0 0;
+      width: 46%;
+
+      @media (max-width: $screen-md-min) {
+        padding-top: 0;
+        width: 47.3%;
+      }
+    }
+
+    .input-label {
+      display: none;
+    }
+
+    .params-item {
+      @include clearfix();
+
+      &:first-child {
+        .input-label {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+//    01.03 Venue address section
+.venue-reg {
+  .venue-address {
+    @include flexbox();
+    @include flex-wrap(wrap);
+    margin-bottom: 1px;
+
+    h3 {
+      display: inline-block;
+
+      @media (max-width: $screen-md-min) {
+        display: block;
+      }
+    }
+
+    .copy-address {
+      margin-left: 12px;
+      top: -2px;
+
+      @media (max-width: $screen-md-min) {
+        display: inline-block;
+        margin-bottom: 11px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .left-col {
+    order: 1;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .right-col {
+    display: none;
+    order: 2;
+  }
+
+  .address-wrap {
+    padding-bottom: 26px;
+    position: relative;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      padding-bottom: 25px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding-bottom: 10px;
+    }
+
+    .multiple-address {
+      margin: 0 auto;
+      order: 3;
+      width: 41%;
+
+      @media (max-width: $screen-md-min) {
+        margin-left: 2px;
+        width: 100%;
+      }
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        margin-bottom: 34px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        margin-bottom: 15px;
+        order: 2;
+      }
+
+      &:before {
+        left: -2px;
+      }
+    }
+  }
+
+  .left-col.diverse {
+    position: relative;
+    width: 46.4%;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      width: 47.3%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+    }
+
+    .copy-address {
+      float: right;
+      margin-top: 16px;
+      margin-right: -23px;
+      max-width: 105px;
+
+      @media (max-width: $screen-md-min) {
+        float: none;
+        max-width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+      }
+
+      &:before {
+        top: 25%;
+
+        @media (max-width: $screen-md-min) {
+          top: 50%;
+        }
+      }
+    }
+  }
+
+  .right-col.diverse {
+    display: block;
+    width: 46%;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      width: 47.3%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      order: 3;
+      width: 100%;
+    }
+
+    h3 {
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        margin-bottom: 41px;
+      }
+    }
+  }
+}

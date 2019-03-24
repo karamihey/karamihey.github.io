@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <title>Ocean Adventure</title>
+
+  <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body class="student-portal student-adventure-page ocean">
+
+<header class="header">
+  <div class="header-container">
+    <a class="logotype" href="/">
+      <img src="images/logo.png" alt="Little Sponges" />
+    </a>
+
+
+
+    <div class="controls">
+      <div class="stars">
+        <span class="star-image"></span>
+
+                <span class="quantity">
+                    68
+                </span>
+      </div>
+
+      <div class="user-control">
+
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <span class="avatar">
+                    <img src="images/avatar.png" alt="Little Sponges" />
+            </span>
+
+            <span class="user">Hello, John!</span>
+            <span class="arrow-down"></span>
+          </a>
+
+          <div class="dropdown-menu">
+            <div class="class-type">
+              <p>Pre-KII:</p>
+              <p>Spanish & English</p>
+            </div>
+            <div class="assessment">
+              <a href="#">Assessment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="logout"
+         href="#"
+         data-toggle="modal"
+         data-target="#confirmModal"
+         data-href="#"
+      data-content="#">
+      </a>
+    </div>
+
+
+    <div class="header-title">
+      Pre-KII: Spanish & English
+    </div>
+  </div>
+</header>
+
+  <div class="default-btn round-btn btn-map">
+    <span class="icon icon-map"></span>
+  </div>
+
+  <!-- Comprehension -->
+  <div class="video-section">
+    <div class="title title-adventure">Ocean Adventure</div>
+
+    <div class="video-container">
+      <div class="video video-chapters">
+        <div class="name">1. Learning Video</div>
+        <img src="images/video-1.png" alt=""/>
+
+        <div class="play"></div>
+
+        <div class="chapters">
+          <div class="default-btn btn-more">
+            Chapters
+            <span class="arrows"></span>
+          </div>
+
+          <div class="popup">
+            <ol class="chapters-list">
+              <li><a href="#">Marine Life</a></li>
+              <li><a href="#">Present Tense</a></li>
+              <li><a href="#">Marine Mammals</a></li>
+              <li><a href="#">Marine Plants</a></li>
+              <li><a href="#">Safety & Feelings</a></li>
+            </ol>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="games-section">
+    <div class="game-title">2. Comprehension Games</div>
+    
+    <div class="games">
+      <div class="game">
+        <img src="images/comprehension-ocean.jpg" alt=""/>
+
+        <div class="info">
+          <div class="language">English</div>
+
+          <span class="play-btn">
+            <span class="icon icon-sound"></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="game">
+        <img src="images/comprehension-ocean.jpg" alt=""/>
+
+        <div class="info">
+          <div class="language">Spanish</div>
+
+          <span class="play-btn">
+            <span class="icon icon-sound"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / Comprehension -->
+
+  <!-- Literacy -->
+  <div class="video-section">
+    <div class="video-container">
+      <div class="video">
+        <div class="name">3. Review Video</div>
+        <img src="images/video-1.png" alt=""/>
+
+        <div class="play"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="games-section">
+    <div class="game-title">4. Literacy Games</div>
+
+    <div class="games">
+      <div class="game">
+        <img src="images/literacy-ocean.jpg" alt=""/>
+
+        <div class="info">
+          <div class="language">English</div>
+
+          <span class="play-btn">
+            <span class="icon icon-book"></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="game">
+        <img src="images/literacy-ocean-spanish.jpg" alt=""/>
+
+        <div class="info">
+          <div class="language">Spanish</div>
+
+          <span class="play-btn">
+            <span class="icon icon-book"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / Literacy -->
+
+  <div class="characters">
+    <div class="character mishka">
+      <img src="images/mishka.png" alt=""/>
+    </div>
+
+    <div class="buttons">
+      <div>
+        <div class="default-btn dark-btn round-btn">
+          <span class="icon icon-star"></span>
+        </div>
+        <div>Adventure Shop</div>
+      </div>
+
+      <div>
+        <div class="default-btn round-btn">
+          <span class="icon icon-map icon-map-lg"></span>
+        </div>
+        <div>Adventure Map</div>
+      </div>
+    </div>
+
+    <div class="character frog">
+      <img src="images/frog.png" alt=""/>
+    </div>
+  </div>
+
+<div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        Are you sure that you want to do this?
+      </div>
+      <div class="modal-footer">
+        <div class="button-group">
+          <a href="#" data-dismiss="modal" class="btn btn-back">
+            <span class="icon icon-back"></span>
+          </a>
+          <span class="btn-text btn-text-back">Back</span>
+        </div>
+        <div class="button-group">
+          <a href="#" id="confirmModalAction" class="btn btn-confirm">
+            <span class="icon icon-confirm"></span>
+          </a>
+          <span class="btn-text btn-text-confirm">Confirm</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

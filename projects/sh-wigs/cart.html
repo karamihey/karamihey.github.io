@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content='Корзина'>
+		<meta name="keywords" content='Корзина'>
+		<title>Корзина</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/jquery.fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/mobile.css">
+		<script src="js/jquery-1.8.2.js"></script>
+		<!--[if lt IE 9]>
+			<script src="js/html5.js"></script>
+		<![endif]-->
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="css/ie-fix.css" />
+		<![endif]-->
+		<link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
+	</head>
+	<body>
+		<div class="mobile-menu clearfix s-top_menu_mobile">
+			<div class="mobile-menu-btns"><a href="#" class="mobile-menu-btn j-mobile-menu-btn"></a></div>
+			<div class="mobile-menu-navigation">
+				<a class="j-mobile-menu-up f-mobile-menu-up">Наверх</a>
+				<select name="language" class="j-language language-change mobile-menu-language">
+					<option class="flag-ru" value="/">RU</option>
+					<option class="flag-en" value="#">EN</option>
+				</select>
+			</div>
+			<div class="overflow-hidden"><div class="s-cart-top-mobile">														
+				<a href="cart.html" class="mobile-menu-basket">Корзина: (3)</a>
+			</div></div>
+		</div>
+		<div class="sidr-overlay"></div>
+
+		<div class="loading"><img alt="" src="images/loading.gif"></div>
+
+		<div class="g-container clearfix">
+			<select name="language" class="j-language language-change">
+				<option class="flag-ru" value="/">RU</option>
+				<option class="flag-en" value="#">EN</option>
+			</select>
+			<nav class="j-top-menu top-menu-wrap">	<ul class="top-menu d-fl fl-between">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="#">О компании</a></li>
+				<li>
+					<a href="#">Каталог</a>
+					<ul class="top-menu d-fl fl-between">
+						<li><a href="zhenskie-pariki.html">Женские парики</a></li>
+						<li><a href="#">Мужские парики</a></li>
+						<li><a href="#">Детские парики</a></li>
+						<li><a href="#">Полупарики и накладки</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Оптовым покупателям</a></li>
+				<li><a href="#">Оплата и доставка</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul></nav>
+			<div class="g-header d-ib_div">
+				<div class="header-logo">
+					<a class="d-ib vertical-middle" href="index.html"><img src="images/logotype.png" alt=""></a>
+					<div class="d-ib vertical-middle header-text"><b>Изготовление париков</b><br> из натуральных славянских <br>волос</div>
+				</div>
+				<div class="header-call">
+					<div class="header-phone">+7 (495) <b>281-50-46</b></div>
+					<div><a href="#" class="j-order-call order-call">Заказать звонок</a></div>
+				</div>
+				<div class="header-work-hours">
+					<div class="header-time"><b>8.00-19.00 </b>пн-пт</div>
+				</div>
+				<div class="s-cart-top">			
+					<a href="cart.html" class="basket basket_full"><span class="basket-info">
+						Товаров: <span class="basket-goods-count">3</span> <br>
+						(<span class="s-cart-total">12 000</span> $)
+					</span></a>
+				</div>
+			</div>
+
+			<div class="wrapper"><div class="g-content">
+				<ul class="catalog-menu">
+					<li class="catalog-menu-mobile-btn"><a href="#" class="j-mobile-menu-btn">Меню сайта</a></li>
+					<li><a href="zhenskie-pariki.html">Женские парики</a></li>
+					<li><a href="#">Мужские парики</a></li>
+					<li><a href="#">Детские парики</a></li>
+					<li><a href="#">Полупарики и накладки</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+
+				<div class="content">
+					<ul class="breadcrumbs d-ib_li">
+						<li><a href="/">Главная</a></li>
+					</ul>
+					<h1>Корзина</h1>
+						<div class="s-content">
+							<div class="basket-wrap">
+								<div class="s-elem basket-item clearfix" data-default_color="Dark blonde">
+									<a class="s-delete basket-delete" data-good_id="1" href="#">Удалить</a>
+									<a href="#" class="g-left basket-image">
+										<img alt="Парик Gold 10" src="images/bd995034077b85c706b6f4c637bde195.jpg">
+									</a>
+									<div class="overflow-hidden">
+										<div class="basket-good-name f-bold">1. Парик Gold 10</div>
+										<div class="f-bold">Выберите цвет:</div>
+										<ul class="color-selection color-selection_basket d-fl fl-start">
+											<li>
+												<label>
+													<img src="images/color_blonde.jpg" alt="Light blonde" class="color-image">
+													<input type="checkbox" name="color" class="s-color js-checkbox">Light blonde
+												</label>
+												<span class="goods-count-wrap"><span class="d-fl">
+													<b class="goods-count decrease">-</b>
+													<input data-good_id="1" class="s-cart-count goods-count-value" type="text" name="number" value="1">
+													<b class="goods-count increase">+</b>
+												</span></span>
+											</li>
+											<li>
+												<label>
+													<img src="images/color_brown.jpg" alt="Dark brown" class="color-image">
+													<input type="checkbox" name="color" class="s-color js-checkbox">Dark brown
+												</label>
+												<span class="goods-count-wrap"><span class="d-fl">
+													<b class="goods-count decrease">-</b>
+													<input data-good_id="1" class="s-cart-count goods-count-value" type="text" name="number" value="1">
+													<b class="goods-count increase">+</b>
+												</span></span>
+											</li>
+											<li>
+												<label>
+													<img src="images/color_natural_brown.jpg" alt="Light brown" class="color-image color-image_current">
+													<input checked="checked" type="checkbox" name="color" class="s-color js-checkbox">Light brown
+												</label>
+												<span class="d-b goods-count-wrap"><span class="d-fl">
+													<b class="goods-count decrease">-</b>
+													<input data-good_id="1" class="s-cart-count goods-count-value" type="text" name="number" value="1">
+													<b class="goods-count increase">+</b>
+												</span></span>
+											</li>
+											<li>
+												<label>
+													<img src="images/color_dark_blonde.jpg" alt="Blonde" class="color-image">
+													<input type="checkbox" name="color" class="s-color js-checkbox">Blonde
+												</label>
+												<span class="goods-count-wrap"><span class="d-fl">
+													<b class="goods-count decrease">-</b>
+													<input data-good_id="1" class="s-cart-count goods-count-value" type="text" name="number" value="1">
+													<b class="goods-count increase">+</b>
+												</span></span>
+											</li>
+											<li>
+												<label>
+													<img src="images/color_average_brown.jpg" alt="Dark blonde" class="color-image color-image_current">
+													<input checked="checked" type="checkbox" name="color" class="s-color js-checkbox">Dark blonde
+												</label>
+												<span class="d-b goods-count-wrap"><span class="d-fl">
+													<b class="goods-count decrease">-</b>
+													<input data-good_id="1" class="s-cart-count goods-count-value" type="text" name="number" value="1">
+													<b class="goods-count increase">+</b>
+												</span></span>
+											</li>
+											<li>
+												<label>
+													<img src="images/color_black.jpg" alt="Black" class="color-image">
+													<input type="checkbox" name="color" class="s-color js-checkbox">Black
+												</label>
+												<span class="goods-count-wrap"><span class="d-fl">
+													<b class="goods-count decrease">-</b>
+													<input data-good_id="1" class="s-cart-count goods-count-value" type="text" name="number" value="1">
+													<b class="goods-count increase">+</b>
+												</span></span>
+											</li>
+										</ul>
+										<div class="clearfix">
+											<ul class="good-about">
+												<li><b>Тип:</b> женский</li>
+												<li><b>Материал:</b> натуральные волосы</li>	
+												<li><b>Длина волос:</b> челка - 10 см, общая - 40 см</li>
+												<li><b>Шапка:</b> имитация кожи головы</li>
+												<li><b>Размер шапки:</b> 54 см</li>
+												<li><b>Способ изготовления:</b> тамбуровка (монопарик), ручная работа</li>					
+											</ul>
+											<div class="f-right overflow-hidden">
+												<div>
+													Цена:
+													<b class="good-price good-price_basket d-ib"><span class="s-good-price">4 000</span> $</b>
+												</div>
+											</div>
+										</div>
+										<div class="basket-price">Стоимость: <b class="full-price">
+											<span class="s-basket-price">8 000</span> $</b></div>
+									</div>
+								</div>
+								
+								<div class="s-elem basket-item clearfix" data-default_color="Dark blonde">
+									<a class="s-delete basket-delete" data-good_id="8" href="#">Удалить</a>
+									<a href="#" class="g-left basket-image"><img alt="Парик Gold 13" src="images/bd995034077b85c706b6f4c637bde195.jpg"></a>
+									<div class="overflow-hidden">
+										<div class="basket-good-name f-bold">2. Парик Gold 13</div>
+										<div class="f-bold">Выберите цвет:</div>
+											<ul class="color-selection color-selection_basket d-fl fl-start">
+												<li>
+													<label>
+														<img src="images/color_blonde.jpg" alt="Light blonde" class="color-image">
+														<input type="checkbox" name="color" class="s-color js-checkbox">Light blonde
+													</label>
+													<span class="goods-count-wrap"><span class="d-fl">
+														<b class="goods-count decrease">-</b>
+														<input data-good_id="8" class="s-cart-count goods-count-value" type="text" name="number" value="1">
+														<b class="goods-count increase">+</b>
+													</span></span>
+												</li>
+												<li>
+													<label>
+														<img src="images/color_brown.jpg" alt="Dark brown" class="color-image">
+														<input type="checkbox" name="color" class="s-color js-checkbox">Dark brown
+													</label>
+													<span class="goods-count-wrap"><span class="d-fl">
+														<b class="goods-count decrease">-</b>
+														<input data-good_id="8" class="s-cart-count goods-count-value" type="text" name="number" value="1">
+														<b class="goods-count increase">+</b>
+													</span></span>
+												</li>
+												<li>
+													<label>
+														<img src="images/color_natural_brown.jpg" alt="Light brown" class="color-image">
+														<input type="checkbox" name="color" class="s-color js-checkbox">Light brown
+													</label>
+													<span class="goods-count-wrap"><span class="d-fl">
+														<b class="goods-count decrease">-</b>
+														<input data-good_id="8" class="s-cart-count goods-count-value" type="text" name="number" value="1">
+														<b class="goods-count increase">+</b>
+													</span></span>
+												</li>
+												<li>
+													<label>
+														<img src="images/color_dark_blonde.jpg" alt="Blonde" class="color-image">
+														<input type="checkbox" name="color" class="s-color js-checkbox">Blonde
+													</label>
+													<span class="goods-count-wrap"><span class="d-fl">
+														<b class="goods-count decrease">-</b>
+														<input data-good_id="8" class="s-cart-count goods-count-value" type="text" name="number" value="1">
+														<b class="goods-count increase">+</b>
+													</span></span>
+												</li>
+												<li>
+													<label>
+														<img src="images/color_average_brown.jpg" alt="Dark blonde" class="color-image color-image_current">
+														<input checked="checked" type="checkbox" name="color" class="s-color js-checkbox">Dark blonde
+													</label>
+													<span class="d-b goods-count-wrap"><span class="d-fl">
+														<b class="goods-count decrease">-</b>
+														<input data-good_id="8" class="s-cart-count goods-count-value" type="text" name="number" value="1">
+														<b class="goods-count increase">+</b>
+													</span></span>
+												</li>
+												<li>
+													<label>
+														<img src="images/color_black.jpg" alt="Black" class="color-image">
+														<input type="checkbox" name="color" class="s-color js-checkbox">Black
+													</label>
+													<span class="goods-count-wrap"><span class="d-fl">
+														<b class="goods-count decrease">-</b>
+														<input data-good_id="8" class="s-cart-count goods-count-value" type="text" name="number" value="1">
+														<b class="goods-count increase">+</b>
+													</span></span>
+												</li>
+											</ul>
+											<div class="clearfix">
+												<ul class="good-about">
+												<li><b>Тип:</b> женский</li>
+												<li><b>Материал:</b> натуральные волосы</li>
+												<li><b>Длина волос:</b> челка - 10 см, общая - 40 см</li>
+												<li><b>Шапка:</b> имитация кожи головы</li>
+												<li><b>Размер шапки:</b> 54 см</li>
+												<li><b>Способ изготовления:</b> тамбуровка (монопарик), ручная работа</li>					
+											</ul>
+											<div class="f-right overflow-hidden">
+												<div>
+													Цена:
+													<b class="good-price good-price_basket d-ib"><span class="s-good-price">4 000</span> $</b>
+												</div>
+											</div>
+										</div>
+										<div class="basket-price">Стоимость: <b class="full-price">
+											<span class="s-basket-price">4 000</span> $</b>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix">
+									<div class="basket-total g-right f-bold">Итого: <span class="basket-total-price"><span class="s-basket-total">12 000</span> $</span></div>
+									<a href="#" class="j-clean-basket basket-clean">Очистить корзину</a>
+								</div>
+							</div>
+
+							<p class="h2">Контактная информация и адрес доставки</p>
+							<form action="" method="post">
+								<div class="basket-wrap basket-form d-fl fl-between">
+									<div>
+										<label class="form-label" for="name">ФИО:</label>
+										<input class="form-input" type="text" id="name" name="name" value="">
+										<label class="form-label" for="email">Ваш телефон/e-mail:<span class="icon-required">*</span></label>
+										<input class="form-input form-input_basket" type="text" id="email" name="email" data-required="required" value="">
+									</div>
+									<div>
+										<label class="form-label" for="address">Адрес доставки:</label>
+										<textarea class="form-textarea form-textarea_basket" id="address" name="address" rows="4"></textarea>
+									</div>
+								</div>
+								<p class="note"><span class="icon-required">*</span>Поля, обязательные для заполнения</p>
+
+								<p class="h2 title-delivery">Способ доставки товара</p>
+								<div class="h-mb10">
+									<label class="f-bold form-radio"><input checked="checked" type="radio" name="delivery" class="js-radio" data-required="required" data-group="1" value="Курьер">Курьер</label>
+									<div class="f-s14">Осуществляется ежедневно с <b>10-00 до 19-00</b><br>После того, как Ваш заказ будет укомплектован, по указанному Вами телефону с Вами свяжется менеджер отдела продаж, чтобы уточнить удобное время доставки.</div>
+								</div>
+								<div class="h-mb10">
+									<label class="f-bold form-radio"><input type="radio" name="delivery" class="js-radio" data-required="required" data-group="1" value="Экспресс-доставка">Экспресс-доставка</label>
+									<div class="f-s14">Доставка с помощью службы UPS. Подробнее о тарифах Вы можете узнать на <noindex><a class="official-site f-bold" rel="nofollow" target="_blank" href="https://www.ups.com/">официальном сайте</a></noindex></div>
+								</div>
+								<div>
+									<label class="f-bold form-radio"><input type="radio" name="delivery" class="js-radio" data-required="required" data-group="1" value="Самовывоз">Самовывоз</label>
+									<div class="f-s14">Перед приездом в офис обязательно свяжитесь с нами по указанным на сайте телефонам для подтверждения наличия заинтересовавшего Вас товара.</div>
+								</div>
+
+								<div class="f-right"><input type="submit" value="Отправить заказ" class="submit-btn submit-btn_basket validate_and_submit_this_form"></div>
+							</form>
+						</div>
+					</div>
+			</div></div>
+			<div class="g-footer">
+				<nav class="bottom-menu-wrap"><ul class="bottom-menu d-fl fl-between">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Оптовым покупателям</a></li>
+					<li><a href="#">Оплата и доставка</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul></nav>
+				<div class="footer d-fl fl-between">
+					<div class="footer-phone">+7 (495) <b>281-50-46</b></div>
+					<div class="footer-address">г. Москва, ул. Митинская, д. 43</div>
+					<div class="footer-email">e-mail: <a href="mailto:info@sunny-hairs.com">info@sunny-hairs.com</a></div>
+					<div><noindex>
+						<a rel="nofollow" target="_blank" href="https://www.instagram.com/sunny_hairs/"><img src="images/icon-instagram.png" alt="instagram"></a>
+						<a rel="nofollow" target="_blank" href="https://www.facebook.com/sunny.hair.16"><img src="images/icon-facebook.png" alt="facebook"></a>
+					</noindex></div>
+					<div>
+						<span class="footer-copyright">&copy; 2016 Парики. Все права защищены.</span>
+						<div class="footer-counters d-ib"><img src="images/liveinternet.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.sidr.min.js"></script>
+		<script src="js/jquery-ui-1.10.4.custom.js"></script>
+		<script src="js/jquery.infieldlabel.js"></script>
+		<script src="js/jquery.fancybox.js"></script>
+		<script src="js/jquery.fancybox-thumbs.js"></script>
+		<script src="js/jquery.bxslider.min.js"></script>
+		<script src="js/jquery.formstyler.min.js"></script>
+		<script src="js/slides.min.jquery.js"></script>
+		<script src="js/user.js"></script>
+	</body>
+</html>

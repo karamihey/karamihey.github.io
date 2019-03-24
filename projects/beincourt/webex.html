@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <title>BeInCourt - WebEx Controls</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    </head>
+    <body class="">
+        <div class="svg-sprite">
+            <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 9 5" id="arrow" xmlns="http://www.w3.org/2000/svg"><defs><style>.acls-1{fill:#54a009;stroke:#54a009;stroke-width:1px;fill-rule:evenodd}</style></defs><path id="aForma_1" data-name="Forma 1" class="acls-1" d="M1084.92 1175.08a.284.284 0 0 0-.4 0l-3.52 3.29-3.52-3.29a.284.284 0 0 0-.4 0 .249.249 0 0 0 0 .37l3.72 3.47a.279.279 0 0 0 .2.08.318.318 0 0 0 .2-.08l3.71-3.47a.242.242 0 0 0 .01-.37z" transform="translate(-1076.5 -1174.5)"/></symbol><symbol viewBox="0 0 6.5 6.5" id="clear" xmlns="http://www.w3.org/2000/svg"><path data-name="Forma 1" d="M3.78 3.25L6.14.889a.388.388 0 0 0 0-.531.375.375 0 0 0-.53 0L3.25 2.719.89.358a.375.375 0 0 0-.53 0 .37.37 0 0 0 0 .531L2.72 3.25.36 5.611a.37.37 0 0 0 0 .531.364.364 0 0 0 .26.11.37.37 0 0 0 .27-.11l2.36-2.361 2.36 2.361a.364.364 0 0 0 .26.11.376.376 0 0 0 .27-.641z"/></symbol><symbol viewBox="0 0 15.062 15.062" id="clock" xmlns="http://www.w3.org/2000/svg"><defs><style>.ccls-1{fill:#00a65a;stroke:#00a65a;stroke-width:1px;fill-rule:evenodd}</style></defs><path id="cForma_1" data-name="Forma 1" class="ccls-1" d="M880.5 852.469a7.031 7.031 0 1 0 7.031 7.031 7.039 7.039 0 0 0-7.031-7.031zm0 13.593a6.563 6.563 0 1 1 6.562-6.562 6.57 6.57 0 0 1-6.562 6.562zm.234-7.5v-2.372a.234.234 0 0 0-.468 0v2.377a.937.937 0 0 0-.67.67h-1.674a.235.235 0 1 0 0 .469h1.678a.935.935 0 1 0 1.134-1.139zm-.234 1.378a.469.469 0 1 1 .469-.469.469.469 0 0 1-.469.469zm0-5.156a.234.234 0 0 0 .234-.234v-.235a.234.234 0 0 0-.468 0v.235a.234.234 0 0 0 .234.234zm0 9.375a.234.234 0 0 0-.234.234v.235a.234.234 0 1 0 .468 0v-.235a.234.234 0 0 0-.234-.234zm5.156-4.922h-.234a.235.235 0 1 0 0 .469h.234a.235.235 0 1 0 0-.469zm-10.078 0h-.234a.235.235 0 1 0 0 .469h.234a.235.235 0 0 0 0-.469zm8.4-3.577l-.165.165a.234.234 0 0 0 .165.4.237.237 0 0 0 .166-.068l.166-.166a.234.234 0 1 0-.33-.331zm-7.126 7.126l-.166.166a.234.234 0 1 0 .332.331l.165-.166a.234.234 0 1 0-.329-.331zm7.292 0a.234.234 0 1 0-.331.331l.165.166a.234.234 0 1 0 .332-.331zm-7.126-7.126a.234.234 0 1 0-.332.331l.166.166a.237.237 0 0 0 .166.068.234.234 0 0 0 .165-.4z" transform="translate(-872.969 -851.969)"/></symbol><symbol viewBox="0 0 22.031 22" id="close" xmlns="http://www.w3.org/2000/svg"><path d="M21.739.24a.89.89 0 0 0-1.258 0L.24 20.481a.89.89 0 1 0 1.258 1.258L21.739 1.5a.89.89 0 0 0 0-1.26zm0 20.242L1.5.24A.891.891 0 0 0 .24 1.5l20.241 20.241a.89.89 0 1 0 1.258-1.26z"/></symbol><symbol viewBox="0 0 13.531 13.5" id="contact-phone" xmlns="http://www.w3.org/2000/svg"><defs><style>.ecls-1{fill:#00a65a;stroke:#00a65a;stroke-width:.5px;fill-rule:evenodd}</style></defs><path id="eShape_1_copy" data-name="Shape 1 copy" class="ecls-1" d="M875.619 718.641a13.855 13.855 0 0 0 4.612 3.594 7.188 7.188 0 0 0 2.58.759c.063 0 .122.006.185.006a2.141 2.141 0 0 0 1.657-.709.05.05 0 0 0 .011-.013 7.113 7.113 0 0 1 .522-.539c.128-.121.258-.248.382-.377a1.3 1.3 0 0 0 0-1.937l-1.628-1.619a1.32 1.32 0 0 0-.953-.436 1.363 1.363 0 0 0-.964.434l-.97.964a3.454 3.454 0 0 0-.268-.14 3.25 3.25 0 0 1-.3-.162 10.231 10.231 0 0 1-2.451-2.219 5.906 5.906 0 0 1-.829-1.315c.255-.229.493-.469.723-.7.081-.084.165-.167.249-.25a1.27 1.27 0 0 0 0-1.94l-.807-.8-.276-.28a14.712 14.712 0 0 0-.55-.541 1.353 1.353 0 0 0-.953-.415 1.4 1.4 0 0 0-.964.417l-1.013 1.008a2.069 2.069 0 0 0-.62 1.325 4.965 4.965 0 0 0 .377 2.155 12.478 12.478 0 0 0 2.248 3.73zm-1.966-5.834a1.423 1.423 0 0 1 .43-.916l1.008-1a.729.729 0 0 1 .5-.229.7.7 0 0 1 .488.234c.181.167.352.342.536.528l.281.286.807.8a.626.626 0 0 1 0 1.008c-.084.083-.167.17-.251.253-.252.253-.488.493-.748.722l-.013.014a.523.523 0 0 0-.136.6c0 .009.006.014.008.022a6.372 6.372 0 0 0 .951 1.538 10.793 10.793 0 0 0 2.61 2.365 3.7 3.7 0 0 0 .358.194c.108.054.208.105.3.162.011 0 .019.011.029.016a.567.567 0 0 0 .263.067.575.575 0 0 0 .4-.183l1.012-1.007a.722.722 0 0 1 .5-.24.68.68 0 0 1 .479.24l1.633 1.621a.648.648 0 0 1-.008 1.016 9.373 9.373 0 0 1-.36.358 7.682 7.682 0 0 0-.566.585 1.489 1.489 0 0 1-1.162.49h-.141a6.566 6.566 0 0 1-2.334-.695 13.172 13.172 0 0 1-4.39-3.421 12 12 0 0 1-2.139-3.543 4.327 4.327 0 0 1-.345-1.885z" transform="translate(-872.719 -709.75)"/></symbol><symbol viewBox="0 0 26 20" id="hamburger" xmlns="http://www.w3.org/2000/svg"><path data-name="Rounded Rectangle 539 copy 2" d="M1 0h24a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2zm0 9h24a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2zm0 9h24a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2z"/></symbol><symbol viewBox="0 0 12.125 15.125" id="location" xmlns="http://www.w3.org/2000/svg"><defs><style>.gcls-1{fill:#00a65a;stroke:#00a65a;stroke-width:.5px;fill-rule:evenodd}</style></defs><path class="gcls-1" d="M6.062 3.173a3.053 3.053 0 1 0 3 3.054 3.031 3.031 0 0 0-3-3.054zm0 5.374a2.32 2.32 0 1 1 2.283-2.32 2.3 2.3 0 0 1-2.283 2.32zm0-8.282h-.206a5.849 5.849 0 0 0-5.57 5.317 6.08 6.08 0 0 0 .076 1.681 1.838 1.838 0 0 0 .042.2 5.679 5.679 0 0 0 .388 1.159 16.287 16.287 0 0 0 4.743 6.043.828.828 0 0 0 1.065 0 16.31 16.31 0 0 0 4.737-6.031 5.811 5.811 0 0 0 .391-1.168c.018-.071.03-.131.039-.188a5.985 5.985 0 0 0 .105-1.12A5.865 5.865 0 0 0 6.062.262zm4.99 6.888a1.487 1.487 0 0 1-.029.149 5.392 5.392 0 0 1-.347 1.036 15.558 15.558 0 0 1-4.538 5.763.117.117 0 0 1-.074.027.122.122 0 0 1-.073-.027 15.592 15.592 0 0 1-4.544-5.775 5.166 5.166 0 0 1-.344-1.027c-.017-.077-.026-.125-.029-.14s0-.012 0-.018a5.346 5.346 0 0 1-.068-1.484 5.081 5.081 0 0 1 10.143.5 5.423 5.423 0 0 1-.101.996z"/></symbol><symbol viewBox="0 0 207 34" id="logo" xmlns="http://www.w3.org/2000/svg"><defs><style>.hlogo{fill-rule:evenodd;filter:url(#hfilter)}</style><filter id="hfilter" x="119" y="82" width="207" height="34" filterUnits="userSpaceOnUse"><feOffset result="offset" dy="1" in="SourceAlpha"/><feGaussianBlur result="blur" stdDeviation="1.414"/><feFlood result="flood" flood-opacity=".09"/><feComposite result="composite" operator="in" in2="blur"/><feBlend result="blend" in="SourceGraphic"/></filter></defs><path id="hlogo" class="hlogo" d="M318.755 94.905v-.015a10.3 10.3 0 0 0-5.117-8.89.015.015 0 0 0-.018 0l-1.685 2a.013.013 0 0 0 0 .02 7.728 7.728 0 0 1 4.209 6.869v.015a7.646 7.646 0 0 1-2.864 5.894.014.014 0 0 0 0 .019l1.654 1.962a.017.017 0 0 0 .02 0 10.2 10.2 0 0 0 3.81-7.877h-.007zm5.231 0A15.5 15.5 0 0 0 317.008 82a.015.015 0 0 0-.019 0l-1.668 1.979a.013.013 0 0 0 0 .02 12.922 12.922 0 0 1 6.056 10.913 12.8 12.8 0 0 1-4.716 9.9.013.013 0 0 0 0 .019l1.653 1.961a.014.014 0 0 0 .02 0A15.35 15.35 0 0 0 324 94.905h-.014zm-188.568-3.438a4.936 4.936 0 0 1 2.029 4.188 5.013 5.013 0 0 1-1.121 3.308 5.458 5.458 0 0 1-3 1.794.013.013 0 0 0 0 .025 6.006 6.006 0 0 1 3.712 1.9 5.621 5.621 0 0 1 1.368 3.862 5.372 5.372 0 0 1-2.226 4.579 10.154 10.154 0 0 1-6.151 1.646h-10.015a.014.014 0 0 1-.014-.014v-22.79a.014.014 0 0 1 .014-.014h9.847a9.093 9.093 0 0 1 5.557 1.516zm-2.407 7.268a3.029 3.029 0 0 0 1.17-2.558 2.95 2.95 0 0 0-1.17-2.51 5.289 5.289 0 0 0-3.315-.848h-6.516a.014.014 0 0 0-.014.014v6.784a.014.014 0 0 0 .014.014h6.52a5.355 5.355 0 0 0 3.311-.896zm.709 10.2a3.189 3.189 0 0 0 1.451-2.787 3.09 3.09 0 0 0-1.451-2.7 7.137 7.137 0 0 0-4.024-.978h-6.516a.014.014 0 0 0-.014.014v7.4a.014.014 0 0 0 .014.014h6.52a6.883 6.883 0 0 0 4.02-.962zm7.55-18.985h16a.014.014 0 0 1 .014.014v2.808a.014.014 0 0 1-.014.014h-12.834a.014.014 0 0 0-.014.014v7.012a.014.014 0 0 0 .014.014h11.483a.014.014 0 0 1 .014.014v2.808a.014.014 0 0 1-.014.014h-11.483a.014.014 0 0 0-.014.014v7.24a.014.014 0 0 0 .014.014h13.231a.014.014 0 0 1 .014.014v2.807a.014.014 0 0 1-.014.014h-16.4a.014.014 0 0 1-.014-.014V89.965a.014.014 0 0 1 .017-.014zm23.347 0h3.136l.012.015-4.065 22.785-.018.015h-3.135l-.013-.015 4.066-22.784zm22.608 0h3.1l.012.015-4.065 22.784-.018.015h-3.176l-.011-.006-10.013-17.621-.029.009-3.141 17.6-.018.015h-3.136l-.012-.015 4.065-22.784.018-.015h3.176l.011.006 10.044 17.655.029-.01 3.147-17.636zm20.45 3.34a9.007 9.007 0 0 0-8.08.407 8.755 8.755 0 0 0-3.233 3.178 8.779 8.779 0 0 0 0 8.816 8.7 8.7 0 0 0 3.233 3.193 8.84 8.84 0 0 0 4.485 1.174 9.114 9.114 0 0 0 3.562-.734 10.313 10.313 0 0 0 3.09-1.994.012.012 0 0 1 .019 0l1.895 2.033a.014.014 0 0 1 0 .019 12.908 12.908 0 0 1-4.047 2.647 12.253 12.253 0 0 1-10.719-.587 11.522 11.522 0 0 1-4.32-4.22 11.356 11.356 0 0 1-1.583-5.9 11.133 11.133 0 0 1 1.6-5.85 11.5 11.5 0 0 1 4.371-4.187 12.39 12.39 0 0 1 6.1-1.532 12.534 12.534 0 0 1 4.666.9 11.565 11.565 0 0 1 3.9 2.517.013.013 0 0 1 0 .019l-1.861 2.227a.014.014 0 0 1-.021 0 9.543 9.543 0 0 0-3.057-2.124zm26.082-2a11.6 11.6 0 0 1 4.4 4.188 11.048 11.048 0 0 1 1.617 5.85 11.211 11.211 0 0 1-1.617 5.883 11.631 11.631 0 0 1-4.4 4.237 12.862 12.862 0 0 1-12.235 0 11.624 11.624 0 0 1-4.4-4.237 11.21 11.21 0 0 1-1.616-5.883 11.047 11.047 0 0 1 1.616-5.85 11.629 11.629 0 0 1 4.386-4.187 13.014 13.014 0 0 1 12.249-.003zM223.2 93.732a8.955 8.955 0 0 0-3.281 3.178 8.326 8.326 0 0 0-1.221 4.416 8.411 8.411 0 0 0 1.221 4.433 9.041 9.041 0 0 0 3.281 3.21 8.782 8.782 0 0 0 4.468 1.19 8.61 8.61 0 0 0 4.436-1.19 9.017 9.017 0 0 0 3.233-3.21 8.507 8.507 0 0 0 1.2-4.433 8.42 8.42 0 0 0-1.2-4.416 8.93 8.93 0 0 0-3.233-3.178 8.7 8.7 0 0 0-4.436-1.173 8.874 8.874 0 0 0-4.468 1.173zm24.5 14.65a6.551 6.551 0 0 0 4.865 1.776 6.447 6.447 0 0 0 4.815-1.776 6.741 6.741 0 0 0 1.748-4.938V89.965a.013.013 0 0 1 .013-.014h3.139a.014.014 0 0 1 .014.014v13.479a9.371 9.371 0 0 1-2.589 7.007 9.752 9.752 0 0 1-7.14 2.542 9.855 9.855 0 0 1-7.19-2.542 9.338 9.338 0 0 1-2.605-7.007V89.965a.013.013 0 0 1 .013-.014h3.138a.014.014 0 0 1 .014.014v13.479a6.7 6.7 0 0 0 1.765 4.938zm32.392 4.377l-4.575-7.157a.014.014 0 0 0-.014-.006c-.523.043-.95.064-1.277.064h-5.858a.013.013 0 0 0-.013.014v7.077a.014.014 0 0 1-.014.014H265.2a.014.014 0 0 1-.014-.014V89.965a.014.014 0 0 1 .014-.014h9.023q4.385 0 6.777 2a7.008 7.008 0 0 1 2.391 5.687 8.019 8.019 0 0 1-1.3 4.66 7.291 7.291 0 0 1-3.727 2.732.014.014 0 0 0-.007.021l5.35 7.687a.014.014 0 0 1-.011.022H280.1a.014.014 0 0 1-.013-.001zm-5.866-9.934a7.052 7.052 0 0 0 4.551-1.288 4.606 4.606 0 0 0 1.583-3.8 4.437 4.437 0 0 0-1.583-3.7 7.19 7.19 0 0 0-4.551-1.255h-5.858a.013.013 0 0 0-.013.014v10.011a.014.014 0 0 0 .013.014h5.858zm15.812-5.21h6.891a.014.014 0 0 1 .014.014v15.358a.013.013 0 0 0 .014.013h2.567a.013.013 0 0 0 .014-.013V95.064a.014.014 0 0 0-.014-.014h-9.486a.014.014 0 0 0-.014.014V97.6a.014.014 0 0 0 .009.015zm17.124-7.692h-20.589a.014.014 0 0 0-.014.014v2.537a.014.014 0 0 0 .014.014h20.643a2.65 2.65 0 0 1 2.691 2.406 2.594 2.594 0 1 1-5.185.172.013.013 0 0 0-.013-.014h-2.567a.014.014 0 0 0-.014.014 5.192 5.192 0 0 0 10.361.407 5.213 5.213 0 0 0-5.332-5.55z" transform="translate(-119 -82)"/></symbol><symbol viewBox="0 0 17.175 13.175" id="mail" xmlns="http://www.w3.org/2000/svg"><defs><style>.icls-1{fill:#00a65a;stroke:#00a65a;stroke-width:.2px;fill-rule:evenodd}</style></defs><path class="icls-1" d="M15.011.087H2.166A2.086 2.086 0 0 0 .087 2.176v8.822a2.086 2.086 0 0 0 2.079 2.089h12.842a2.086 2.086 0 0 0 2.079-2.089V2.179A2.084 2.084 0 0 0 15.011.087zm1.129 10.911a1.132 1.132 0 0 1-1.129 1.134H2.166a1.132 1.132 0 0 1-1.129-1.134V2.179a1.133 1.133 0 0 1 1.129-1.134h12.842a1.133 1.133 0 0 1 1.129 1.134v8.819zm-5.332-4.521l4.158-3.746a.481.481 0 0 0 .035-.675.475.475 0 0 0-.672-.036L8.596 7.191l-1.119-1a.02.02 0 0 1-.007-.01.7.7 0 0 0-.077-.067L2.841 2.021a.473.473 0 0 0-.672.039.478.478 0 0 0 .039.675l4.207 3.778-4.189 3.941a.478.478 0 0 0 .327.827.471.471 0 0 0 .323-.127l4.253-4 1.158 1.033a.473.473 0 0 0 .316.12.468.468 0 0 0 .317-.124l1.185-1.067 4.228 4.037a.476.476 0 0 0 .672-.018.481.481 0 0 0-.018-.675z"/></symbol><symbol viewBox="0 0 10 10" id="phone" xmlns="http://www.w3.org/2000/svg"><path data-name="Forma 1" class="jcls-1" d="M10 7.89a.489.489 0 0 1-.15.424l-1.41 1.4a.781.781 0 0 1-.25.181.987.987 0 0 1-.3.1h-.07a1.125 1.125 0 0 1-.13.006 4.666 4.666 0 0 1-.65-.069 4.884 4.884 0 0 1-1.1-.339 9.086 9.086 0 0 1-1.48-.81A11.037 11.037 0 0 1 2.7 7.3a12.483 12.483 0 0 1-1.23-1.4 10.837 10.837 0 0 1-.78-1.234 6.6 6.6 0 0 1-.45-1.027 7.941 7.941 0 0 1-.2-.8A2.763 2.763 0 0 1 0 2.316c.01-.128.01-.2.01-.213a1.239 1.239 0 0 1 .1-.3.82.82 0 0 1 .18-.249L1.7.145a.446.446 0 0 1 .33-.148.4.4 0 0 1 .25.08.768.768 0 0 1 .18.2l1.13 2.151a.523.523 0 0 1 .05.37.617.617 0 0 1-.18.339l-.52.52a.257.257 0 0 0-.03.068.315.315 0 0 0-.02.08 1.93 1.93 0 0 0 .19.508 6.44 6.44 0 0 0 .39.62 6.97 6.97 0 0 0 .76.843 6.968 6.968 0 0 0 .84.756 5.5 5.5 0 0 0 .62.4 1.682 1.682 0 0 0 .38.154l.14.027a.276.276 0 0 0 .06-.016.115.115 0 0 0 .07-.038l.61-.614a.625.625 0 0 1 .44-.17.579.579 0 0 1 .29.063h.01l2.04 1.209a.539.539 0 0 1 .27.343z"/></symbol><symbol viewBox="0 0 9 9" id="search" xmlns="http://www.w3.org/2000/svg"><defs><style/></defs><path id="kForma_1" data-name="Forma 1" d="M1508.86 106.2l-2.22-2.228a3.545 3.545 0 0 0 .88-2.336 3.762 3.762 0 1 0-3.76 3.634 3.836 3.836 0 0 0 2.16-.658l2.23 2.245a.511.511 0 0 0 .36.145.529.529 0 0 0 .34-.132.465.465 0 0 0 .01-.67zm-5.1-7.25a2.687 2.687 0 1 1-2.78 2.686 2.733 2.733 0 0 1 2.78-2.69z" transform="translate(-1500 -98)"/></symbol></svg>
+        </div>
+
+        <div class="page-wrapper">
+            <header class="header">
+    <div class="wrapper header-top-line">
+        <div class="header-phones">
+            <a class="phone-number" href="tel:18332346268">
+                <svg class="icon icon-phone">
+                    <use xlink:href="#phone"></use>
+                </svg>
+                1-833-234-6268
+            </a>
+
+            <a class="phone-number" href="tel:1833BEINCOURT">
+                <svg class="icon icon-phone">
+                    <use xlink:href="#phone"></use>
+                </svg>
+                1-833-BEINCOURT
+            </a>
+        </div>
+    </div>
+
+    <div class="js-header header-container">
+        <div class="mobile-wrapper">
+            <a class="logotype-mobile" href="/">
+                <svg class="icon icon-logo">
+                    <use xlink:href="#logo"></use>
+                </svg>
+            </a>
+
+            <span class="hamburger">
+                <svg class="icon icon-hamburger">
+                    <use xlink:href="#hamburger"></use>
+                </svg>
+            </span>
+        </div>
+
+        <div class="wrapper">
+            <div id="menu" class="header-wrapper">
+                <span class="hamburger hamburger-close">
+                    <svg class="icon icon-hamburger icon-hamburger-close">
+                        <use xlink:href="#close"></use>
+                    </svg>
+                </span>
+
+                <div class="main-menu">
+                    <a class="logotype" href="/">
+                        <svg class="icon icon-logo">
+                            <use xlink:href="#logo"></use>
+                        </svg>
+                    </a>
+
+                    <ul class="top-menu">
+                        <li class="top-menu-item">
+                            <a class="top-menu-link" href="#">About Us</a>
+                        </li>
+                        <li class="top-menu-item">
+                            <a class="top-menu-link" href="/participating-courts.html">Participating courts</a>
+                        </li>
+                        <li class="top-menu-item">
+                            <a class="top-menu-link" href="#">Judges</a>
+                        </li>
+                        <li class="top-menu-item">
+                            <a class="top-menu-link" href="#">Attorneys</a>
+                        </li>
+                        <li class="top-menu-item">
+                            <a class="top-menu-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="additional">
+                    <form class="header-search-form" action="">
+                        <input class="form-input" type="text" name="search" placeholder="Search...">
+                    </form>
+
+                    <a href="#" class="button button-login">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+            <div class="page-content inner-page">
+                <div id="panel">
+                    
+    <div class="section section-tertiary section-cut webex-page-intro">
+        <div class="wrapper">
+            <div class="container">
+                <div class="head">
+                    <div class="title">WebEx Controls</div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="subtitle">How to start a BEINCOURT WebEx session</div>
+
+                    <div class="text">
+                        <p>
+                            Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean
+                            leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam
+                            lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
+                            nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam
+                            ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Vivamus
+                            elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
+                            porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+                            dapibus in, viverra quis, feugiat a, tellus.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="image-container">
+                    <div class="mobile-page-image">
+                        <img src="img/webex-mobile-img-1.jpg" class="left-img-mobile" alt=""/>
+                    </div>
+                </div>
+                <div class="step-by-step-container">
+                    <div class="step">
+                        <div class="number">1<span>st</span></div>
+                        <div class="step-description">
+                           Log in to your <span class="site-name">beincourt</span> profile at
+                            <a class="step-link" href="/">beincourt.com</a>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="number">2<span>nd</span></div>
+                        <div class="step-description">
+                            Under “My Activities” select the activity that you would like to join
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="number">3<span>rd</span></div>
+                        <div class="step-description">
+                            Click the green “JOIN” button to begin the scheduled WebEx session
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="number">4<span>th</span></div>
+                        <div class="step-description">
+                            Click to install the WebEx application if not already installed by clicking Test WebEx Meetings and accepting the download WebEx plugin
+                        </div>
+                        <a href="#" class="button">test webex meeting</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fullscreen">
+            <span class="garbage image">
+                 <img src="img/webex-page-img-1.jpg" alt="" class="right-img">
+            </span>
+            <span class="garbage buttons-1"></span>
+        </div>
+    </div>
+
+    <div class="section section-secondary section-bg page-section-controls">
+
+        <div class="fullscreen control-container">
+            <div class="controls-images">
+                <img src="img/webex-control.png" alt="">
+
+                <div class="control">
+                    <img src="img/webex-control-1.png" alt="">
+                    <img src="img/webex-line-1.png" alt="" class="line-1">
+                </div>
+                <div class="control">
+                    <img src="img/webex-control-2.png" alt="">
+                    <img src="img/webex-line-2.png" alt="" class="line-2">
+                </div>
+                <div class="control">
+                    <img src="img/webex-control-3.png" alt="">
+                </div>
+                <div class="control">
+                    <img src="img/webex-control-4.png" alt="">
+                </div>
+                <div class="control">
+                    <img src="img/webex-control-5.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="container">
+
+                <div class="content content-right">
+
+                    <div class="subtitle">Using the BEINCOURT WebEx Controls</div>
+
+                    <div class="control-list">
+                        <div class="mobile-controls">
+
+                        <div class="control">
+                            <img src="img/webex-control-1.png" alt="">
+                        </div>
+
+                        <div class="control-item">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+                            magnis dis parturient montes, nascetur ridiculus mus.
+                        </div>
+
+                        <div class="control">
+                            <img src="img/webex-control-2.png" alt="">
+                        </div>
+
+                        <div class="control-item">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+                            dis parturient montes, nascetur ridiculus mus.
+                        </div>
+
+                        <div class="control">
+                            <img src="img/webex-control-3.png" alt="">
+                        </div>
+
+                        <div class="control-item">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+                            dis parturient montes, nascetur ridiculus mus.
+                        </div>
+
+                        <div class="control">
+                            <img src="img/webex-control-4.png" alt="">
+                        </div>
+
+                        <div class="control-item">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+                            dis parturient montes, nascetur ridiculus mus.
+                        </div>
+
+                        <div class="control">
+                            <img src="img/webex-control-5.png" alt="">
+                        </div>
+
+                        <div class="control-item">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+                            dis parturient montes, nascetur ridiculus mus.
+                        </div>
+
+                        </div>
+                    </div>
+
+                    <a href="#" class="button">Learn more</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="fullscreen">
+            <span class="garbage circles-1"></span>
+            <span class="garbage triangle-1"></span>
+            <span class="garbage lines-1"></span>
+            <span class="garbage lines-2"></span>
+            <span class="garbage buttons-1"></span>
+        </div>
+    </div>
+
+    <div class="section page-section-sharing">
+        <div class="wrapper">
+            <div class="container">
+
+                <div class="content section-tertiary content-right">
+                    <div class="subtitle">Sharing your video feed in a BEINCOURT WebEx session</div>
+
+                    <div class="text">
+                        <ul>
+                            <li>From the Meeting menu, select Options to check that video is enabled</li>
+                            <li>Click the video button next to your name in the Participants panel
+                                (If you have an external camera in addition to a built-in one, click the gear icon to select one)
+                            </li>
+                            <li>Double-click the speaker's video to display it in full screen</li>
+                            <li>To stop sharing your video feed, click the video button again</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="image-container">
+                    <div class="mobile-right-image">
+                        <img src="img/webex-mobile-img-2.jpg" class="right-img-mobile" alt=""/>
+                    </div>
+                </div>
+                <div class="content section-secondary content-right">
+                    <div class="subtitle">Sharing Content in your BEINCOURT WebEx Session</div>
+
+                    <div class="text">
+                        <ul>
+                            <li>Click the button at the bottom of the sharing panel on the Quick Start tab</li>
+                            <li>Select what you want to share with everyone in your meeting, such as a whiteboard or file.</li>
+                            <li>Use Annotation Tools if you want to highlight or mark on shared content. You can also enable
+                                the tools for others. From the Participant menu, select Assign Privileges and check the box next to Annotate.
+                                Select what you want to share with everyone in your meeting, such as a whiteboard or file.
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="fullscreen">
+            <span class="garbage left-image">
+                 <img src="img/webex-page-img-2.jpg" alt="" class="left-img">
+            </span>
+            <span class="garbage lines-1"></span>
+        </div>
+    </div>
+
+    <div class="section section-tertiary section-test-webex">
+    <div class="wrapper">
+        <div class="container">
+            <div class="content">
+                <div class="subtitle">Test WebEx Meetings and Network Bandwidth</div>
+
+                <div class="text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                    </p>
+                </div>
+
+                <a href="#" class="button button-webex">Test WebEx Meetings</a>
+                <a href="#" class="button button-unfilled">Test Network</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+
+            <footer class="footer">
+    <div class="wrapper">
+        <div class="footer-info">
+            <div class="additional-info">
+                <a class="logotype" href="/">
+                    <svg class="icon icon-logotype">
+                        <use xlink:href="#logo"></use>
+                    </svg>
+                </a>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+            </div>
+
+            <ul class="footer-menu">
+                <li class="menu-item">
+                    <a class="menu-link" href="#">About us</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#">Participating courts</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#">Judges</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#">Attorneys</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#">Contact us</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#">Login</a>
+                </li>
+            </ul>
+
+            <div class="footer-contacts">
+                <div class="contact-elem phone"><a href="tel:18332346268">1-833-234-6268</a></div>
+                <div class="contact-elem phone"><a href="tel:1833BEINCOURT">1-833-BEINCOURT</a></div>
+
+                <div class="contact-elem email"><a href="mailto:info@beincourt.com">info@beincourt.com</a></div>
+
+                <div class="contact-elem address">
+                    411 Walnut Street #12538
+                    Green Cove Springs, FL 32043
+                </div>
+                <div class="contact-elem work-time">
+                    Monday - Friday, 7:00 am to 7:00pm
+                    Eastern Time Zone
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">2018 Beincourt. All right reserved</div>
+    </div>
+
+    <div class="fullscreen">
+        <span class="garbage circle-1"></span>
+        <span class="garbage circle-2"></span>
+        <span class="garbage trapeze-1"></span>
+    </div>
+</footer>
+        </div>
+
+        <script src="js/main.js"></script>
+
+        
+    </body>
+</html>

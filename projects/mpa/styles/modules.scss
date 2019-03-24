@@ -1,0 +1,57 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Base modules
+//  02. 'Thank You' Page
+//  03. 'Verify Email' Page
+//  04. 'Term & Policies' Page
+//  05. 'Checkout' Page
+//  06. Registration form
+//  07. 'Homepage' Page
+// -----------------------------------------------------------------------------
+
+//  01. Base modules
+@import 'modules/header';
+@import 'modules/footer';
+@import 'modules/buttons';
+@import 'modules/forms';
+@import 'modules/popup';
+@import 'modules/video';
+@import 'modules/bootstrap-tooltips';
+@import 'modules/bootstrap-dropdown';
+@import 'modules/bootstrap-modal';
+@import 'modules/bootstrap-tabs';
+
+//  02. 'Thank You' Page
+@import 'modules/gratitude-section';
+@import 'modules/gratitude-social';
+@import 'modules/gratitude-refferals';
+
+//  03. 'Verify Email' Page
+@import 'modules/verification-section';
+
+//  04. 'Term & Policies' Page
+@import 'modules/terms-section';
+
+//  05. 'Checkout' Page
+@import "modules/checkout-section";
+@import "modules/faq-section";
+
+//  06. Registration form
+@import 'modules/navigation-steps';
+@import "modules/business-reg-section";
+@import "modules/ads-section";
+@import "modules/business-type-section";
+@import "modules/comingsoon-section";
+@import "modules/pricing-section";
+@import "modules/cable-config-section";
+@import "modules/summary-section";
+@import "modules/venue-reg-section";
+
+//  07. 'Homepage' Page
+@import 'modules/homepage';
+@import 'modules/homepage-intro';
+@import 'modules/homepage-capabilities';
+@import 'modules/homepage-video';
+@import 'modules/homepage-customers';
+@import 'modules/homepage-get-started';

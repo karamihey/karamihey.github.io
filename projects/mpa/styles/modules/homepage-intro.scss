@@ -1,0 +1,111 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Homepage Intro
+//    01.01 Default styles
+//    01.02 SignUp form
+// -----------------------------------------------------------------------------
+
+//  01. Homepage Intro
+//    01.01 Default styles
+.slogan {
+  background: url(../images/bg_homepage_slogan.png) no-repeat 50% 100%;
+  padding: 96px 0 470px 0;
+  text-align: center;
+
+  @media (max-width: $screen-md-min) {
+    background-size: cover;
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    background-image: url(../images/bg_homepage_slogan_tablet@2x.png);
+    padding-bottom: 240px;
+    padding-top: 60px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    background-image: url(../images/bg_homepage_slogan_mobile@2x.png);
+    padding-bottom: 264px;
+    padding-top: 48px;
+  }
+
+  @media only screen and (max-device-width: $screen-xs-max) and (orientation: landscape) {
+    background-position: 50% 70%;
+  }
+
+  .mpa-container {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      min-height: 287px;
+    }
+  }
+
+  h1 {
+    @include font-size(40);
+    color: $c-white;
+    font-weight: normal;
+    letter-spacing: -.3px;
+    line-height: 1.2;
+    margin: 0 0 28px 0;
+    padding: 0 26%;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(38);
+      line-height: 1.3;
+      margin-bottom: 16px;
+      padding-left: 22%;
+      padding-right: 22%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(31);
+      line-height: 1.2;
+      margin-bottom: 14px;
+      padding-left: 13%;
+      padding-right: 13%;
+    }
+  }
+
+  h3 {
+    @include font-size(18);
+    color: $c-white;
+    font-family: $default-font-family-light;
+    font-weight: normal;
+    line-height: 1.3;
+    margin: 0 0 36px 0;
+    padding: 0 33%;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(20);
+      line-height: 1.7;
+      margin-bottom: 21px;
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(15);
+      line-height: 1.8;
+      margin-bottom: 22px;
+      padding-left: 13%;
+      padding-right: 13%;
+    }
+  }
+}
+
+//    01.02 SignUp form
+.signup-form {
+  margin: 0 auto;
+  min-width: 485px;
+  text-align: center;
+  width: 39.6%;
+
+  @media (max-width: $screen-md-min) {
+    min-width: 438px;
+    width: 57%;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    min-width: auto;
+    width: 74%;
+  }
+}

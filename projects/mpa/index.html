@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+  <title>Homepage | Soundstr</title>
+  <meta name="title" content="Homepage | Soundstr">
+  <meta name="description" content="Homepage | Soundstr">
+
+  <link rel="stylesheet" href="libs/icon-font-7-stroke/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+  <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="libs/wow-master/css/animate.css">
+  <link rel="stylesheet" href="styles/main.css">
+
+  <script src="libs/wow-master/dist/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="js/mpa-main.js"></script>
+</head>
+
+<body>
+
+  <div class="landing-pages">
+    <header class="header">
+      <div class="mpa-container">
+        <a class="header-logo" href="#">
+        <span>
+          <object type="image/svg+xml" data="images/soundstr_logo.svg"></object>
+        </span>
+        </a>
+
+        <a class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="true">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+
+        <a class="button login-box" data-toggle="modal" data-target="#login" href="#">Log in</a>
+        <a class="button signin-btn" href="#">Get Started</a>
+      </div>
+    </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <span class="close-btn" data-dismiss="modal" aria-label="Close"><i class="pe-7s-close"></i></span>
+          <div class="modal-header">
+              Log In
+          </div>
+          <div class="modal-body">
+            <form class="login-form">
+              <div class="form-group">
+                <label class="input-label input-label-title" for="email">Email</label>
+                <input class="form-control form-control-md" type="email" id="email" placeholder="name@company.com">
+              </div>
+
+              <div class="form-group">
+                <label class="input-label input-label-title" for="password">Password</label>
+                <input class="form-control form-control-md" type="password" id="password" placeholder="••••••••">
+              </div>
+
+              <div class="pass-features">
+                <input type="checkbox" id="signed">
+                <label for="signed" class="checkbox">Stay Signed In</label>
+
+                <a href="#" class="pass-recovery">Forgot Password?</a>
+              </div>
+
+              <button class="button login-btn">Log In</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="workEmail" tabindex="-1" role="dialog" aria-labelledby="workEmail">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content modal-content-sm">
+          <span class="close-btn" data-dismiss="modal" aria-label="Close"><i class="pe-7s-close"></i></span>
+          <div class="modal-title">
+            Enter a work email address
+          </div>
+          <div class="modal-body">
+            <p class="instruction">
+              <span>corey@gmail.com</span> looks like a personal email address.
+              If you want to register your business with soundstr,
+              please use your work email address.
+            </p>
+
+            <button class="button next-step-btn">Enter a work email address</button>
+
+            <div class="button-box">
+              <a class="question-link" id="emailQue">Why are we asking?</a>
+              <a class="continue-btn" href="#">Continue with my email</a>
+            </div>
+
+            <p class="email-note" id="emailNote">
+              Soundstr is built for businesses to track their music usage,
+              and the only way to auto-connect with other venues in your company
+              is by signing up with your work email address.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="event" tabindex="-1" role="dialog" aria-labelledby="event">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content modal-content-sm">
+          <span class="close-btn" data-dismiss="modal" aria-label="Close"><i class="pe-7s-close"></i></span>
+          <div class="modal-title">
+            For your information!
+          </div>
+          <div class="modal-body">
+            <p class="instruction instruction-lg">
+              If you would like to <span>proceed</span> with registering your business as
+              a festival or event, please be informed that by continuing with
+              your registration, your account will be set to <span>standby mode</span> until
+              a later time when we launch this business type out on the Soundstr
+              Pulse Platform. We greatly appreciate your patience!
+            </p>
+
+            <button class="button next-step-btn">I understand, Let’s continue</button>
+
+            <div class="button-box">
+              <a class="question-link" href="tel:+18442779820">Can’t wait? Contact us</a>
+              <a class="continue-btn" href="#">Select another business type</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / Modal -->
+
+    <main>
+      <div class="content homepage-wrap">
+        <section class="slogan">
+          <div class="mpa-container">
+            <h1>Pay Fairer Music License Fees and Earn More Money</h1>
+            <h3>Get your First Month Free. After that, it's just a few bucks a month.</h3>
+
+            <form>
+              <div class="form-inline signup-form">
+                <div class="form-group form-group-action">
+                  <input class="form-control form-control-lg" type="text" placeholder="name@company.com">
+                </div>
+                <div class="form-group form-group-action-btn">
+                  <button class="button button-lg">Get Started</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </section>
+
+        <section class="capabilities">
+          <div class="mpa-container">
+            <h2 class="heading">Capabilities</h2>
+            <h3 class="clarification">
+              Soundstr has developed a patent-pending system to
+              revolutionize the identification of song performances.
+            </h3>
+
+            <div class="benefits">
+              <div class="benefit-item">
+                <div class="icon-box">
+                  <object data="images/loop_icon.svg" type="image/svg+xml"></object>
+                </div>
+                <h4>identifying</h4>
+                <p>Leverage best-in-class music recognition technology to
+                  identify the music performed and broadcast in a business.</p>
+              </div>
+              <div class="benefit-item">
+                <div class="icon-box">
+                  <object data="images/clipboard_icon.svg" type="image/svg+xml"></object>
+                </div>
+                <h4>reporting</h4>
+                <p>Receive emailed breakdowns of music performances in
+                  a venue or repertoire.</p>
+              </div>
+              <div class="benefit-item">
+                <div class="icon-box">
+                  <object data="images/chart_icon.svg" type="image/svg+xml"></object>
+                </div>
+                <h4>analytics</h4>
+                <p>Understand where songs are played in the real world.</p>
+              </div>
+              <div class="benefit-item">
+                <div class="icon-box">
+                  <object data="images/beacon_icon.svg" type="image/svg+xml"></object>
+                </div>
+                <h4>beacons</h4>
+                <p>Bluetooth Beacons in every Soundstr device allows advertisers new
+                  ways to engage with fans and customers and venues to make more money.</p>
+              </div>
+              <div class="benefit-item">
+                <div class="icon-box">
+                  <object data="images/lock_icon.svg" type="image/svg+xml"></object>
+                </div>
+                <h4>security</h4>
+                <p>Keychain encryption lets you rest assured knowing song performances
+                  originate from the location of a specific device.</p>
+              </div>
+              <div class="benefit-item">
+                <div class="icon-box">
+                  <object data="images/megaphone_icon.svg" type="image/svg+xml"></object>
+                </div>
+                <h4>advertising</h4>
+                <p>Broadcast advertisements between bands at concerts and events.
+                  Generate additional revenue from new and existing sponsors.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="main-video video">
+          <video id="video" src="video/soundstr_overview.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+
+          <a class="play-pause-button pause" id="playPauseBtn"><span class="shape absolute centering"></span></a>
+
+          <div class="description absolute" id="video-description">
+            <div class="title">Get started today</div>
+            <p>Watch as founder Eron Brucciarelli-Tieger explains
+              the story of how Soundstr began it’s journey.</p>
+          </div>
+
+          <div class="overlay top-overlay"></div>
+          <div class="overlay bottom-overlay"></div>
+        </div>
+
+        <section class="focus-group">
+          <div class="mpa-container">
+            <h2 class="heading">Our customers</h2>
+            <div class="customers">
+              <div class="customer-item">
+                <div class="field-container disallow-flex-grow">
+                  <div class="icon-box">
+                    <object data="images/brands_icon.svg" type="image/svg+xml"></object>
+                  </div>
+                  <h4 class="customer-title">
+                    Brands
+                  </h4>
+                </div>
+                <p class="allow-flex-grow">
+                  Soundstr Ad connects brands to consumers at live music
+                  events like never before. We use the power of data to
+                  help align you with highly engaged audiences.
+                </p>
+                <div>
+                  <a class="link" href="#">Learn More</a>
+                </div>
+              </div>
+              <div class="customer-item">
+                <div class="field-container disallow-flex-grow">
+                  <div class="icon-box">
+                    <object data="images/venues_icon.svg" type="image/svg+xml"></object>
+                  </div>
+                  <h4 class="customer-title">
+                    Venues
+                  </h4>
+                </div>
+                <p class="allow-flex-grow">
+                  Soundstr ID helps businesses pay fairer music license
+                  fees based on actual music usage, and make more money
+                  through a patent-pending advertising system.
+                </p>
+                <div>
+                  <a class="link" href="#">Learn More</a>
+                </div>
+              </div>
+              <div class="customer-item">
+                <div class="field-container disallow-flex-grow">
+                  <div class="icon-box">
+                    <object data="images/songwriters_icon.svg" type="image/svg+xml"></object>
+                  </div>
+                  <h4 class="customer-title">
+                    Songwriters
+                  </h4>
+                </div>
+                <p class="allow-flex-grow">
+                  Our data can help you route tours, promote upcoming
+                  releases and discover the places playing your music –
+                  allowing you to find your fans in real life.
+                </p>
+                <div>
+                  <a class="link" href="#">Learn More</a>
+                </div>
+              </div>
+              <div class="customer-item">
+                <div class="field-container disallow-flex-grow">
+                  <div class="icon-box">
+                    <object data="images/pros_icon.svg" type="image/svg+xml"></object>
+                  </div>
+                  <h4 class="customer-title">
+                    Pros
+                  </h4>
+                </div>
+                <p class="allow-flex-grow">
+                  Soundstr can help performing rights organizations
+                  accurately pay songwriters when their songs are played
+                  in licensed businesses.
+                </p>
+                <div>
+                  <a class="link" href="#">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="get-started">
+          <div class="mpa-container">
+            <h2 class="heading">Get started today</h2>
+            <h3 class="clarification">
+              Get started registering your business on Soundstr.
+            </h3>
+
+            <form>
+              <div class="form-inline signup-form">
+                <div class="form-group form-group-action">
+                  <input class="form-control form-control-lg form-control-start" type="text" placeholder="name@company.com">
+                </div>
+                <div class="form-group form-group-action-btn">
+                  <button class="button button-lg button-start">Get Started</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </section>
+
+        <div class="soundstr-device">
+          <div class="mpa-container">
+            <img class="desktop-image" src="images/soundstr_device&app@1x.png" alt="Soundstr device & application">
+            <img class="devices-image" src="images/soundstr_device&app_tablet@1x.png" alt="Soundstr device & application">
+          </div>
+        </div>
+
+        <div class="newsletter">
+          <div class="mpa-container">
+            <p>Soundstr Newsletter</p>
+
+            <form>
+              <div class="form newsletter-form">
+                <div class="form-group">
+                  <input class="form-control form-control-lg form-control-subscribe" type="text" placeholder="name@company.com">
+                </div>
+                <button class="button button-lg button-subscribe">Submit</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer-wrap">
+      <footer id="mobile-menu" class="footer mobile-menu">
+        <div class="mpa-container">
+          <div class="contacts">
+            <h4>contact</h4>
+            <ul>
+              <li class="phone">
+                <i class="pe-7s-call font-icon"></i>
+                <a href="tel:+18442779820">+1 (844) 277-9820</a>
+              </li>
+              <li class="email">
+                <i class="pe-7s-mail font-icon"></i>
+                <a href="mailto:info@soundstr.com">info[at}soundstr[dot]com</a>
+              </li>
+              <li class="address">
+                <i class="pe-7s-map-2 font-icon"></i>
+                1311 Vine St. Cincinnati, OH 45202
+              </li>
+            </ul>
+          </div>
+          <div class="general-links">
+            <h4>useful links</h4>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Brands</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Venues</a>
+              </li>
+              <li>
+                <a href="#">About Pulse</a>
+              </li>
+              <li>
+                <a href="#">Songwriters</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Pros</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="customer-info">
+            <h4>for customers</h4>
+            <ul>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Style Guide</a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook sn-icon" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-twitter sn-icon" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-linkedin sn-icon" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="signup-info">
+            <h4>try soundstr</h4>
+            <p>Soundstr identifies the music broadcast in businesses to create transparency for songwriters and businesses
+              alike.</p>
+            <a class="button singup" href="#">Get Started Now</a>
+          </div>
+        </div>
+      </footer>
+
+      <div class="footer logo-icon">
+        <object type="image/svg+xml" data="images/logo_icon.svg"></object>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

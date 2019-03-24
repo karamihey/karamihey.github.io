@@ -1,0 +1,522 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for navigation steps
+//    01.01 Icons
+//    01.02 Step links (dots)
+//    01.03 Additional step info
+// -----------------------------------------------------------------------------
+
+//  01. Default styles for navigation steps
+.steps-nav {
+  position: absolute;
+  right: -108px;
+  top: 250px;
+  white-space: nowrap;
+
+  @media (max-width: $screen-mlg-min) {
+    right: auto;
+    top: auto;
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+    bottom: -80px;
+    left: 61px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    bottom: -55px;
+    left: 30px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    @media (max-width: $screen-xs-max) {
+      margin-left: 99px;
+      margin-top: -39px;
+    }
+  }
+
+  .step-number {
+    @include font-size(35);
+    color: $c-white;
+    letter-spacing: 1.6px;
+    margin: 0 0 16px 4px;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+      display: none;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(25);
+    }
+  }
+
+  .step {
+    @include font-size(18);
+    color: $c-white;
+    position: relative;
+
+    @media (max-width: $screen-mlg-min) {
+      @include font-size(15);
+      display: inline-block;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+      margin-right: 43px;
+
+      &:before {
+        background-color: $c-light-grey;
+        display: block;
+        content: '';
+        height: 5px;
+        left: 50%;
+        position: absolute;
+        top: 10px;
+        width: 76px;
+        z-index: -1;
+      }
+
+      &:last-child:before {
+        display: none;
+      }
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-right: 4px;
+      position: static;
+    }
+
+    .step-info {
+      @include clearfix();
+      display: none;
+      left: 24px;
+      position: absolute;
+      top: -12px;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+        @include translateX(-50%);
+        bottom: -32px;
+        display: block;
+        left: 50%;
+        top: auto;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        left: 4px;
+        top: 28px;
+      }
+
+      .step-title {
+        line-height: 2.5;
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+          visibility: hidden;
+        }
+      }
+    }
+
+    &.active-step {
+      .step-info {
+        display: block;
+      }
+
+      .step-title {
+        @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+          visibility: visible;
+        }
+      }
+    }
+
+    &.resolved-step {
+      @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+        &:before {
+          background-color: $c-sky-blue;
+        }
+      }
+    }
+  }
+}
+
+//    01.01 Icons
+.steps-nav {
+  .icon {
+    @include border-radius(50%);
+    @include box-sizing(border-box);
+    background-position: center center;
+    background-size: 40px 40px;
+    border: 2px solid $c-blue;
+    float: left;
+    height: 40px;
+    margin: 0 9px 0 0;
+    width: 40px;
+    z-index: 100;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+      @include translateX(-50%);
+      background-color: $c-light-grey;
+      background-size: 30px 30px;
+      border: none;
+      height: 30px;
+      left: 50%;
+      position: absolute;
+      top: -31px;
+      width: 30px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      display: none;
+    }
+
+    &.index {
+      display: none;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+        color: $c-footer-txt;
+        display: block;
+        font-size: 18px;
+        line-height: 31px;
+        text-align: center;
+      }
+    }
+
+    &.user-account {
+      background-image: url("../images/user_icon_active.svg");
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+        background-image: url("../images/user_icon.svg");
+      }
+    }
+
+    &.business-registration {
+      background-image: url("../images/business_icon_active.svg");
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+        background-image: url("../images/business_icon.svg");
+      }
+    }
+
+    &.venue-registration {
+      background-image: url("../images/venue-reg_icon_active.svg");
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+        background-image: url("../images/venue-reg_icon.svg");
+      }
+    }
+  }
+
+  .active-step,
+  .resolved-step {
+    .icon {
+      &.index {
+        color: $c-white;
+      }
+
+      &.user-account {
+        @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+          background-image: url("../images/user_icon_active.svg");
+        }
+      }
+
+      &.business-registration {
+        @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+          background-image: url("../images/business_icon_active.svg");
+        }
+      }
+
+      &.venue-registration {
+        @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+          background-image: url("../images/venue-reg_icon_active.svg");
+        }
+      }
+    }
+  }
+
+  .active-step {
+    .icon {
+      @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+        background-color: $c-blue;
+      }
+    }
+  }
+
+  .resolved-step {
+    .icon {
+      background-color: $c-sky-blue;
+    }
+  }
+}
+
+//    01.02 Step links (dots)
+.steps-nav {
+  .step {
+    .link {
+      @include border-radius(50%);
+      background-color: $c-light-grey;
+      display: inline-block;
+      height: 10px;
+      position: relative;
+      top: -2px;
+      width: 10px;
+      z-index: 200;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+        background-color: transparent;
+        height: 30px;
+        width: 30px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        height: 8px;
+        width: 8px;
+      }
+
+      &:hover {
+        background-color: $c-white;
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+          background-color: transparent;
+
+          + .step-info {
+            .icon {
+              background-color: $c-white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .active-step {
+    .link {
+      background-color: $c-sky-blue;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+        background-color: transparent;
+      }
+
+      &:hover {
+        background-color: $c-blue;
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+          background-color: transparent;
+
+          + .step-info {
+            .icon {
+              background-color: $c-btn-active-blue;
+            }
+          }
+        }
+      }
+
+      &::before {
+        @include border-radius(50%);
+        @include box-sizing(border-box);
+        border: 2px solid $c-blue;
+        display: block;
+        content: '';
+        height: 18px;
+        left: -4px;
+        position: absolute;
+        top: -4px;
+        width: 18px;
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+          display: none;
+        }
+
+        @media (max-width: $screen-xs-max) {
+          height: 16px;
+          width: 16px;
+        }
+      }
+    }
+  }
+
+  .resolved-step {
+    .link {
+      background-color: $c-dark-grey;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+        background-color: transparent;
+      }
+
+      &:hover {
+        background-color: $c-white;
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+          background-color: transparent;
+
+          + .step-info {
+            .icon {
+              background-color: $c-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//    01.03 Additional step info
+.steps-nav {
+  .venue-name,
+  .soundboard {
+    color: $c-dark-grey;
+    font-size: 1rem;
+    left: 19px;
+    position: relative;
+
+    @media (max-width: $screen-mlg-min) {
+      font-size: 0.86rem;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+      display: none;
+      font-family: $default-font-family-light;
+      left: 16px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-left: 0;
+    }
+
+    li {
+      margin: 5px 0 8px;
+      position: relative;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+        margin-bottom: 3px;
+      }
+
+      @media (max-width: $screen-mlg-min) {
+        letter-spacing: -0.2px;
+        margin-top: 3px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        margin-bottom: 0;
+      }
+    }
+
+    a:hover {
+      color: $c-super-light-grey;
+    }
+
+    .arr {
+      @include font-size(30);
+      color: $c-blue;
+      visibility: hidden;
+      left: -32px;
+      position: absolute;
+      top: -7px;
+
+      @media (max-width: $screen-mlg-min) {
+        top: -6px;
+      }
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+        @include font-size(28);
+        left: -25px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        left: -27px;
+      }
+    }
+
+    .double-arr {
+      left: -28px;
+      visibility: hidden;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+        left: -22px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        left: -24px;
+      }
+    }
+  }
+
+  .active-step {
+    .venue-name {
+      @media (max-width: $screen-mlg-min) {
+        display: block;
+      }
+    }
+  }
+
+  .venue-name {
+    top: -11px;
+
+    @media (max-width: $screen-mlg-min) {
+      top: 28px;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-mlg-min) {
+      position: absolute;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      left: 16px;
+    }
+  }
+
+  .step:nth-of-type(5) {
+    .venue-name {
+      left: 68px;
+
+      @media (max-width: $screen-mlg-min) {
+        left: 16px;
+      }
+    }
+  }
+
+  .soundboard {
+    display: none;
+
+    @media (max-width: $screen-mlg-min) {
+      margin-top: -1px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(15);
+      left: 17px;
+    }
+  }
+
+  .checked {
+    color: $c-white;
+
+    & > .soundboard {
+      display: block;
+    }
+
+    & > .arr,
+    & > .double-arr {
+      visibility: visible;
+    }
+
+    & a:hover {
+      color: $c-blue;
+    }
+  }
+
+  .edit {
+    display: none;
+    text-decoration: underline;
+  }
+
+  .edit-btn {
+    margin: 0 8px 0 3px;
+  }
+
+  .editable {
+    &:hover .edit {
+      display: inline-block;
+    }
+  }
+}

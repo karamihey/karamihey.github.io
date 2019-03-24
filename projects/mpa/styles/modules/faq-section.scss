@@ -1,0 +1,208 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for FAQ section
+// -----------------------------------------------------------------------------
+
+//  01. Default styles for FAQ section
+.faq {
+  @include clearfix();
+  padding: 10px 11.5%;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    padding-left: 16%;
+    padding-right: 16%;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .question-box {
+    margin: 0 0 24px 0;
+    width: 46%;
+
+    @media (max-width: $screen-md-min) {
+      border-bottom: 1px solid $c-divider;
+      width: 100%;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 26px;
+      padding-bottom: 9px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &:nth-of-type(2n-1) {
+      float: left;
+
+      .question {
+        padding: 0 20% 0 0;
+
+        @media (max-width: $screen-md-min) {
+          padding: 0;
+        }
+      }
+    }
+
+    &:nth-of-type(2n) {
+      float: right;
+
+      .question {
+        padding: 0 0 0 22%;
+        text-align: right;
+
+        @media (max-width: $screen-md-min) {
+          text-align: left;
+          padding: 0;
+        }
+      }
+
+      .answer {
+        text-align: right;
+
+        @media (max-width: $screen-md-min) {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .question {
+    @include font-size(14);
+    color: $c-sapphire;
+    font-family: $default-font-family-bold;
+    letter-spacing: -0.3px;
+    margin: 0 0 6px 0;
+    position: relative;
+
+    @media (max-width: $screen-md-min) {
+      font-family: $default-font-family;
+      font-weight: normal;
+      line-height: 1.5;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(18);
+      letter-spacing: -.2px;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(16);
+      letter-spacing: -.5px;
+      line-height: 1.1;
+      margin-bottom: 14px;
+    }
+
+    &[aria-expanded="false"] {
+      &::after {
+        @include rotate(-45deg);
+        border-color: $c-dark-grey;
+        top: 4px;
+
+        @media (max-width: $screen-xs-max) {
+          top: -2px;
+        }
+      }
+    }
+
+    &::after {
+      @include rotate(135deg);
+      @include transition(all $s-collapsing-arrow ease);
+      border-bottom: 3px solid $c-dark-blue;
+      border-left: 3px solid $c-dark-blue;
+      content: '';
+      display: none;
+      height: 14px;
+      position: absolute;
+      right: -11%;
+      top: 13px;
+      width: 14px;
+
+      @media (max-width: $screen-md-min) {
+        display: block;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        border-bottom-width: 2px;
+        border-left-width: 2px;
+        height: 9px;
+        right: -8.4%;
+        top: 6px;
+        width: 9px;
+      }
+    }
+  }
+
+  .answer {
+    @include font-size(13);
+    @include transition(height, visibility $s-collapsing ease);
+    color: $c-dark-grey;
+    height: 100% !important;
+    line-height: 1.6;
+    margin: 0;
+
+    @media (max-width: $screen-md-min) {
+      font-family: $default-font-family-light;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(15);
+      margin-bottom: 45px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(12);
+      margin-bottom: 16px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin: 0;
+
+      @media (max-width: $screen-xs-max) {
+        line-height: 1.45;
+      }
+    }
+  }
+
+  .question,
+  .answer {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      margin-right: 10%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-right: 8%;
+    }
+  }
+
+  .collapse {
+    @media (max-width: $screen-md-min) {
+      display: none;
+    }
+
+    &.in {
+      @media (max-width: $screen-md-min) {
+        display: block;
+      }
+    }
+  }
+
+  .collapsing {
+    @media (max-width: $screen-md-min) {
+      height: 0;
+      overflow: hidden;
+      position: relative;
+    }
+  }
+}

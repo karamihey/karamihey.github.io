@@ -1,0 +1,351 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for pricing section
+//    01.01 Tabs
+//    01.02 Pricing plan
+// -----------------------------------------------------------------------------
+
+//  01. Default styles for pricing section
+.pricing {
+  @include border-radius(5px);
+  background: $c-white url(../images/bg_pricing_waves_desktop@1x.png) no-repeat 50% 100%;
+  background-size: 100%;
+  margin: -8px -89px -30px;
+  padding: 8px 68px 238px;
+  position: relative;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    background-image: url(../images/bg_pricing_waves_desktop@2x.png);
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    margin: -9px -60px -60px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    @include border-radius(0);
+    margin-bottom: -45px;
+    margin-left: -35px;
+    margin-right: -35px;
+    padding-bottom: 165px;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .instruction {
+    letter-spacing: -.2px;
+    margin: 0 0 38px;
+
+    @media (max-width: $screen-md-min) {
+      letter-spacing: 0;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding-left: 8%;
+      padding-right: 8%;
+    }
+  }
+
+  .soundstr-device {
+    background: url("../images/soundstr_device@1x.png") no-repeat 50% 0;
+    background-size: 82%;
+    bottom: 35px;
+    height: 162px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+      background-image: url("../images/soundstr_device@2x.png");
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      background-position-x: 49%;
+      bottom: 29px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      background-size: 112%;
+      bottom: 36px;
+      height: 96px;
+      margin: 0 auto;
+      max-width: 340px;
+      right: 0;
+    }
+  }
+
+  .continue-btn {
+    margin: 3px 0 1px;
+    text-align: center;
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 1px;
+    }
+  }
+}
+
+//    01.01 Tabs
+.pricing {
+  .tabs-pricing {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+
+    input {
+      display: none;
+    }
+
+    label {
+      @include font-size(14);
+      border: 1px solid $c-light-grey;
+      color: $c-sapphire;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      padding: 8px 0;
+      width: 169px;
+
+      @media (max-width: $screen-md-min) {
+        @include font-size(15);
+        padding-top: 7px;
+      }
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        width: 163px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        max-width: 151px;
+        width: 44.5%;
+      }
+    }
+
+    .overall-cost {
+      @include border-radius(5px 0 0 5px);
+      left: 2px;
+    }
+
+    .per-month-cost {
+      @include border-radius(0 5px 5px 0);
+      right: 3px;
+    }
+
+    input:checked + label {
+      @include box-shadow(-1px, 1px, 10px, rgba($c-sapphire, 0.2), inset);
+      background: $c-input-disabled;
+    }
+
+    #tabs-content {
+      padding: 45px 0 42px;
+      position: relative;
+      z-index: 5;
+
+      @media (max-width: $screen-md-min) {
+        padding-top: 37px;
+      }
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        padding-bottom: 48px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        max-width: 340px;
+        margin: 0 auto;
+        padding-bottom: 38px;
+      }
+
+      & > div {
+        opacity: 0;
+        position: absolute;
+        top: -9999px;
+        z-index: -100;
+      }
+    }
+
+    input#overall-cost:checked ~ #tabs-content #overall-cost-content,
+    input#per-venue-cost:checked ~ #tabs-content #per-venue-cost-content {
+      opacity: 1;
+      position: relative;
+      top: 0;
+      z-index: 100;
+    }
+  }
+}
+
+//    01.02 Pricing plan
+.pricing-plan {
+  @include flexbox();
+  @include justify-content(space-between);
+
+  @media (max-width: $screen-xs-max) {
+    @include flex-wrap(wrap);
+  }
+
+  & > div {
+    width: 46.5%;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      width: 47.5%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+    }
+  }
+
+  p {
+    @include font-size(15);
+    letter-spacing: .3px;
+    margin: 0;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      letter-spacing: .4px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(18);
+      letter-spacing: .6px;
+    }
+  }
+
+  .device-amount,
+  .month-cost {
+    @include border-radius(6px);
+    @include box-sizing(border-box);
+    padding: 21px 0 0 0;
+  }
+
+  .device-amount {
+    @include css3-prefix(background, linear-gradient(45deg, $c-blue, $c-gradient-end));
+    background-size: cover;
+    color: $c-white;
+    padding-top: 23px;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      padding-top: 28px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include border-radius(6px 6px 0 0);
+      @include css3-prefix(background, linear-gradient(0deg, $c-blue, $c-gradient-end));
+      padding-bottom: 20px;
+    }
+
+    .amount {
+      @include font-size(150);
+      font-family: $default-font-family-hairline;
+      line-height: 1;
+      margin-bottom: -6px;
+      margin-top: -9px;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        margin-bottom: -4px;
+        margin-top: 14px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        @include font-size(160);
+        margin-bottom: -2px;
+        margin-top: -2px;
+      }
+    }
+
+    .register-link {
+      letter-spacing: 0;
+      margin-top: 10px;
+      padding: 0 7%;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        @include font-size(13);
+        letter-spacing: .3px;
+        line-height: 1.4;
+        margin-top: 19px;
+        padding-left: 8%;
+        padding-right: 8%;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        @include font-size(16);
+        letter-spacing: .3px;
+        line-height: 1.128;
+        margin-top: 24px;
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+
+      a {
+        display: inline-block;
+
+        &:hover {
+          color: $c-super-light-grey;
+        }
+      }
+    }
+  }
+
+  .month-cost {
+    border: 2px solid $c-blue;
+    color: $c-blue;
+
+    @media (max-width: $screen-md-min) {
+      border-width: 3px;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      padding-top: 25px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include border-radius(0 0 6px 6px);
+      padding-top: 23px;
+    }
+
+    .price {
+      @include font-size(60);
+      font-family: $default-font-family-light;
+      letter-spacing: -3px;
+      line-height: 1;
+      margin-top: 22px;
+      word-wrap: break-word;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        @include font-size(65);
+        letter-spacing: 0;
+        margin-bottom: 13px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        @include font-size(75);
+        letter-spacing: -1.5px;
+        margin-bottom: 3px;
+        margin-top: 30px;
+      }
+    }
+
+    .extra-bonus {
+      letter-spacing: -.3px;
+      margin-bottom: 20px;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        @include font-size(13);
+        letter-spacing: 0;
+        margin-bottom: 22px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        @include font-size(17);
+      }
+    }
+  }
+}
+
+#per-venue-cost-content {
+  .amount {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      margin-top: 2px;
+    }
+  }
+}

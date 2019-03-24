@@ -1,0 +1,318 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for buttons
+//    01.02. Backward button
+//    01.03. Next step button and Previous step button(Registration form)
+// -----------------------------------------------------------------------------
+//  01. Default styles for buttons
+.button {
+  @include border-radius(3px);
+  border: 2px solid $c-btn;
+  color: $c-btn;
+  display: inline-block;
+  font-family: $default-font-family;
+  font-size: $default-font-size + px;
+  text-align: center;
+
+  &:hover {
+    background: $c-btn;
+    color: $c-btn-active;
+    cursor: pointer;
+  }
+}
+
+.button-md {
+  letter-spacing: .5px;
+  padding: 10px 18px;
+}
+
+.button-lg {
+  @include border-radius(5px);
+  @include box-sizing(border-box);
+  @include font-size(16);
+  background: $c-btn;
+  border-color: $c-btn;
+  color: $c-white;
+  max-height: 50px;
+  padding: 15px 0 13px;
+
+  @media (max-width: $screen-md-min) {
+    @include font-size(15);
+    padding-bottom: 9px;
+    padding-top: 10px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  &:hover {
+    background: $c-btn-active-blue;
+    border-color: $c-btn-active-blue;
+  }
+}
+
+.button-start {
+  background: $c-herbal;
+  border-color: $c-herbal;
+  color: $c-white;
+
+  &:hover {
+    background: $c-herbal-active;
+    border-color: $c-herbal-active;
+  }
+}
+
+.button-subscribe {
+  background: $c-purple;
+  border-color: $c-purple;
+  padding: 12px 30px 11px;
+
+  @media (max-width: $screen-md-min) {
+    padding-bottom: 8px;
+    padding-top: 10px;
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding-left: 49px;
+    padding-right: 49px;
+  }
+
+  &:hover {
+    background: $c-purple-active;
+    border-color: $c-purple-active;
+  }
+}
+
+.button-purchase {
+  @include font-size(22);
+  background: $c-btn;
+  color: $c-white;
+  display: block;
+  margin: 0 auto;
+  padding: 8px 77px 9px;
+
+  @media (max-width: $screen-md-min) {
+    @include font-size(16);
+    padding-top: 9px;
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    width: 88.5%;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    width: 100%;
+  }
+
+  &:hover {
+    background: $c-btn-active-blue;
+  }
+}
+
+.button-continue {
+  @include border-radius(20px);
+  @include font-size(14);
+  background: $c-purple;
+  border: none;
+  color: $c-white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $default-font-family-bold;
+  letter-spacing: 0.5px;
+  padding: 13px 53px 11px;
+  text-transform: uppercase;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    @include box-sizing(border-box);
+    max-width: 305px;
+    padding-bottom: 12px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+  }
+
+  &:hover {
+    background: $c-purple-active;
+  }
+}
+
+.button-resend {
+  background: $c-email-link;
+  border-color: $c-email-link;
+  color: $c-white;
+  font-family: $default-font-family;
+
+  &:hover {
+    background: $c-email-link-active;
+    border-color: $c-email-link-active;
+  }
+}
+
+.login-btn {
+  background: $c-btn;
+  color: $c-white;
+  line-height: 2.5;
+  margin: 26px 0 0 0;
+  width: 100%;
+
+  @media (max-width: $screen-xs-max) {
+    margin-top: 29px;
+  }
+
+  &:hover {
+    background: $c-btn-active-blue;
+  }
+}
+
+.signup-btn {
+  border: 1px solid $c-white;
+  color: $c-white;
+  margin: -7px 0 0 6px;
+  padding: 6px;
+
+  &:hover {
+    border-color: $c-btn;
+  }
+}
+
+//    01.02. Backward button
+.backward-btn {
+  margin: 39px 0 0 0;
+  padding: 0 12.4%;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    letter-spacing: 0.5px;
+    margin-top: 58px;
+    padding-left: 5.7%;
+    padding-right: 5.7%;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding-left: 12%;
+  }
+
+  .link {
+    @include font-size(14);
+    display: inline-block;
+    color: $c-sky-blue;
+    position: relative;
+
+    &:hover {
+      color: $c-blue;
+    }
+  }
+
+  .arrow {
+    font-size: 1.8em;
+    position: absolute;
+    left: -20px;
+    line-height: .9;
+    top: -3px;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      left: -25px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      left: -23px;
+    }
+  }
+}
+
+//    01.03. Next step button and Previous step button(Registration form)
+.next-step-btn,
+.prev-step-btn {
+  @include box-sizing(border-box);
+  @include font-size(12);
+  background: $c-btn;
+  color: $c-white;
+  float: right;
+  font-family: $default-font-family-bold;
+  min-width: 115px;
+  padding: 13px 14px 10px;
+  text-transform: uppercase;
+
+  @media (max-width: $screen-md-min) {
+    @include font-size(14);
+    font-family: $default-font-family-semibold;
+    letter-spacing: .5px;
+    min-width: 120px;
+    padding-bottom: 9px;
+    padding-top: 11px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    min-width: 124px;
+  }
+
+  &:hover {
+    background: $c-btn-active-blue;
+    border-color: $c-btn-active-blue;
+  }
+}
+
+.prev-step-btn {
+  background: $c-white;
+  color: $c-btn;
+  float: left;
+
+  &:hover {
+    background: $c-btn;
+    border-color: $c-btn;
+  }
+}
+
+.next-step-btn-md,
+.prev-step-btn-md {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    min-width: 300px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    min-width: 100%;
+    margin-top: 15px;
+  }
+}
+
+.next-step-btn-lg,
+.prev-step-btn-lg {
+  @include font-size(14);
+  font-family: $default-font-family;
+  min-width: 250px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-transform: none;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    min-width: 240px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    font-family: $default-font-family-semibold;
+    margin-top: 15px;
+    min-width: 100%;
+  }
+}
+
+.step-add-btn {
+  background: $c-night;
+  border-color: $c-night;
+
+  &:hover {
+    background: $c-sapphire;
+    border-color: $c-sapphire;
+  }
+}

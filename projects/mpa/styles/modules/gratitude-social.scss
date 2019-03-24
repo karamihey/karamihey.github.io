@@ -1,0 +1,251 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for social section on 'Thank You' page
+//    01.01 Titles
+//    01.02 Social Networks
+//    01.03 Share Link
+// -----------------------------------------------------------------------------
+
+//  01. Default styles for social section on 'Thank You' page
+.social {
+  padding: 85px 0 39px 0;
+  width: 100%;
+
+  @media (min-width: $screen-xs-min) and (max-width: $screen-md-min) {
+    padding: 50px 0;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding-bottom: 6px;
+  }
+
+  //    01.01 Titles
+  .promotion,
+  .social-links,
+  .ref-link,
+  .share-link {
+    text-align: center;
+  }
+}
+
+.promotion {
+  h2 {
+    @include font-size(40);
+    color: $c-sapphire;
+    font-weight: normal;
+    letter-spacing: -0.4px;
+    line-height: 1.25;
+    margin: 13px auto 0;
+    padding: 0 24%;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(38);
+      letter-spacing: -.3px;
+      line-height: 1.25;
+      margin-top: 40px;
+      padding: 0 21%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(31);
+      margin-top: 12px;
+      padding: 0 13%;
+    }
+  }
+
+  p {
+    @include font-size(18);
+    color: $c-dark-grey;
+    line-height: 1.3;
+    margin: 10px auto 0;
+    padding: 0 32%;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(20);
+      line-height: 1.7;
+      margin-top: 12px;
+      padding: 0 24%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(20);
+      line-height: 1.7;
+      margin-top: 14px;
+      padding: 0 13%;
+    }
+
+    span {
+      font-family: $default-font-family-bold;
+    }
+  }
+
+  .icon-box object {
+    width: 64px;
+    height: 64px;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      width: 90px;
+      height: 90px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      width: 43px;
+      height: 43px;
+    }
+  }
+}
+  //    01.02 Social Networks
+.social-links {
+  margin: 60px 0 0 0;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    margin-top: 49px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    margin-top: 27px;
+  }
+
+  .link-btn {
+    @include border-radius(3px);
+    @include box-sizing(border-box);
+    @include font-size(18);
+    color: $c-white;
+    display: inline-block;
+    margin: 0 6px;
+    padding: 10px 0 9px 0;
+    position: relative;
+    text-align: center;
+    width: 130px;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(14);
+      letter-spacing: 0.7px;
+      margin: 0 13px 30px 13px;
+      padding-bottom: 11px;
+      padding-top: 11px;
+      width: 210px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(14);
+      margin-bottom: 16px;
+      padding-bottom: 13px;
+      width: 81.5%;
+    }
+
+    .link-icon {
+      font-size: 1.1em;
+      margin: 0 4px 0 0;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  .facebook {
+    background: $c-facebook;
+
+    &:hover {
+      background: $c-facebook-active;
+    }
+  }
+
+  .twitter {
+    background: $c-twitter;
+
+    &:hover {
+      background: $c-twitter-active;
+    }
+  }
+
+  .linkedin {
+    background: $c-linkedin;
+
+    &:hover {
+      background: $c-linkedin-active;
+    }
+  }
+
+  .email {
+    background: $c-email-link;
+
+    &:hover {
+      background: $c-email-link-active;
+    }
+  }
+}
+
+//    01.03 Share Link
+.share-link {
+  color: $c-sapphire;
+  margin: 54px 0 0 0;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    margin-top: 30px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    margin-top: 13px;
+  }
+
+  p {
+    @include font-size(22);
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(20);
+    }
+    @media (max-width: $screen-xs-max) {
+      @include font-size(15);
+      margin-top: 0;
+    }
+  }
+
+  .share-box {
+    @include border-radius(3px);
+    @include box-sizing(border-box);
+    @include user-select(all);
+    border: 1px solid $c-light-grey;
+    display: inline-block;
+    font-size: $default-font-size + px;
+    letter-spacing: 0.22px;
+    line-height: 2.75;
+    padding: 0 21px 0 9px;
+    text-align: left;
+
+    @media (max-width: $screen-md-min) {
+      display: none;
+    }
+  }
+
+  .copy-link-btn {
+    @include border-radius(3px);
+    @include font-size(14);
+    background: $c-super-dark-grey;
+    display: none;
+    color: $c-white;
+    margin: 5px 0 0 0;
+    padding: 10px 125px 11px 113px;
+    text-align: center;
+
+    @media (min-width: $screen-xs-min) and (max-width: $screen-md-min) {
+      display: inline-block;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 5px;
+      padding: 10px 0 11px;
+      width: 81.5%;
+    }
+
+    i {
+      @include font-size(17);
+      margin: 0px 8px 0 0;
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+

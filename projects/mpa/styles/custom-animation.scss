@@ -1,0 +1,126 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Progress bar filling
+//  02. Hamburger Menu
+// -----------------------------------------------------------------------------
+
+//  01. Progress bar filling
+
+@-webkit-keyframes fill-progress-bar {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 35%;
+  }
+}
+
+@keyframes fill-progress-bar {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 35%;
+  }
+}
+
+.fill-progress-bar {
+  -webkit-animation-name: fill-progress-bar;
+  animation-name: fill-progress-bar;
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+  @-webkit-keyframes fill-progress-bar {
+    0% {
+      width: 0%;
+    }
+
+    100% {
+      width: 37%;
+    }
+  }
+
+  @keyframes fill-progress-bar {
+    0% {
+      width: 0%;
+    }
+
+    100% {
+      width: 37%;
+    }
+  }
+}
+
+@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+  @-webkit-keyframes fill-progress-bar {
+    0% {
+      width: 0%;
+    }
+
+    100% {
+      width: 47%;
+    }
+  }
+
+  @keyframes fill-progress-bar {
+    0% {
+      width: 0%;
+    }
+
+    100% {
+      width: 47%;
+    }
+  }
+}
+
+//  02. Hamburger Menu
+@-webkit-keyframes menuShow {
+  0% {
+    @include translate3d(0, 0, 0);
+  }
+
+  100% {
+    @include translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes menuShow {
+  0% {
+    @include translate3d(0, 0, 0);
+  }
+
+  100% {
+    @include translate3d(100%, 0, 0);
+  }
+}
+
+@-webkit-keyframes menuHide {
+  0% {
+    @include translate3d(100%, 0, 0);
+  }
+
+  100% {
+    @include translate3d(0, 0, 0);
+  }
+}
+
+@keyframes menuHide {
+  0% {
+    @include translate3d(100%, 0, 0);
+  }
+
+  100% {
+    @include translate3d(0, 0, 0);
+  }
+}
+
+.showMenu {
+  @include animation-name(menuShow);
+}
+
+.hideMenu {
+  @include animation-name(menuHide);
+}

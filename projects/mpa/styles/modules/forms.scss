@@ -1,0 +1,490 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for forms controls
+//    01.01 Labels
+//    01.02 Helper classes (a.k.a. required, etc.)
+//  02. Checkbox
+//  03. Elements layout
+//    03.01 Default layouts
+//    03.02 Input + Button inline
+// -----------------------------------------------------------------------------
+
+//  01. Default styles for forms controls
+form {
+  display: block;
+
+  button {
+    cursor: pointer;
+  }
+}
+
+.form-control {
+  @include border-radius(3px);
+  @include box-sizing(border-box);
+  border: 1px solid $c-light-grey;
+  color: $c-dark-grey;
+  display: block;
+  font-family: $default-font-family;
+  padding: 7px 10px 5px;
+  width: 100%;
+
+  @media (max-width: $screen-md-min) {
+    padding-bottom: 10px;
+    padding-top: 12px;
+  }
+
+  @include placeholder {
+    @include transition();
+    color: $c-dark-grey;
+    font-family: $default-font-family;
+    opacity: 1;
+  }
+
+  &:focus {
+    border-color: $c-blue;
+    opacity: 1;
+    outline: none;
+
+    @include placeholder {
+      opacity: 0;
+    }
+  }
+
+  &[type="password"] {
+    font-family: sans-serif;
+    letter-spacing: 3px;
+
+    @include placeholder {
+      font-family: sans-serif;
+    }
+  }
+
+  &[disabled] {
+    background-color: $-control-disabled;
+    border-color: $c-border;
+  }
+}
+
+.form-control-md {
+  margin-bottom: 29px;
+  padding-bottom: 11px;
+  padding-top: 11px;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    margin-bottom: 41px;
+  }
+}
+
+.form-control-lg {
+  line-height: 16px;
+  padding: 17px 14px 15px;
+
+  @media (min-width: $screen-md-min + 1 ) {
+    height: 50px;
+  }
+
+  @media (max-width: $screen-md-min) {
+    padding-bottom: 11px;
+    padding-top: 11px;
+  }
+}
+
+.form-control-checked {
+  &:disabled {
+    background-color: $c-default-disabled;
+    border-color: $c-light-grey;
+    width: 91%;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      width: 92%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      width: 88%;
+    }
+
+    + .checkmark {
+      display: block;
+    }
+  }
+
+  + .checkmark {
+    @include font-size(31);
+    color: $c-blue;
+    display: none;
+    position: absolute;
+    right: -2px;
+    bottom: 6px;
+  }
+}
+
+.form-control-filled {
+  background: $c-super-light-blue;
+  color: $c-sapphire;
+
+  @include placeholder {
+    color: $c-sapphire;
+  }
+}
+
+.form-control-start {
+  &:focus {
+    border-color: $c-herbal;
+  }
+}
+
+.form-control-subscribe {
+  &:focus {
+    border-color: $c-purple;
+  }
+}
+
+.form-control-cvv,
+.form-control-date {
+  display: inline-block;
+  text-align: center;
+}
+
+.form-control-date {
+  margin-left: 2px;
+  margin-right: 4px;
+  max-width: 50px;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    max-width: 110px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    max-width: 60px;
+  }
+
+  &:first-of-type {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      margin-left: 9px;
+    }
+  }
+}
+
+.form-control-cvv {
+  max-width: 60px;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    max-width: 110px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    max-width: 60px;
+  }
+}
+
+.form-control-zip {
+  padding-left: 6px;
+  padding-right: 5px;
+
+  @media (max-width: $screen-md-min) {
+    padding-left: 10px;
+  }
+}
+
+//    01.01 Labels
+.input-label {
+  @include font-size(12);
+  color: $c-grey;
+  cursor: pointer;
+  font-family: $default-font-family-semibold;
+  text-transform: uppercase;
+
+  @media (max-width: $screen-md-min) {
+    @include font-size(14);
+  }
+
+  &.disabled-control {
+    color: $-control-text-disabled;
+    opacity: 1;
+  }
+}
+
+.input-label-bold {
+  @include font-size(12);
+  color: $c-navy-blue;
+  font-family: $default-font-family-bold;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+}
+
+.input-label-title {
+  display: block;
+  margin-bottom: 7px;
+  margin-top: 19px;
+}
+
+.input-label-line {
+  color: rgba($c-sapphire, .5);
+  display: block;
+  font-family: $default-font-family;
+  letter-spacing: .25px;
+  margin-bottom: 5px;
+
+  @media (max-width: $screen-md-min) {
+    font-family: $default-font-family-semibold;
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    letter-spacing: 0.4px;
+    margin-bottom: 9px;
+  }
+}
+
+.input-label-cvv {
+  margin-left: 20px;
+  margin-right: 9px;
+
+  @media (max-width: $screen-xs-max) {
+    margin-left: 9px;
+  }
+}
+
+//    01.02 Helper classes (a.k.a. required, etc.)
+.required-input {
+  border-color: $c-required;
+}
+
+.required-mark {
+  color: $c-required;
+  font-size: 1.3em;
+  line-height: 0;
+}
+
+.error-message {
+  @include font-size(12);
+  bottom: -14px;
+  color: $c-error;
+  left: 0;
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+}
+
+.form-control-md ~ .error-message {
+  bottom: -17px;
+}
+
+.has-error {
+  .form-control,
+  .dropdown .dropdown-label {
+    border-color: $c-error;
+  }
+
+  .error-message {
+    visibility: visible;
+  }
+}
+
+//  02. Checkbox
+.checkbox {
+  @include font-size(14);
+  color: $c-sapphire;
+  cursor: pointer;
+  font-family: $default-font-family;
+  padding: 0 0 0 20px;
+  position: relative;
+  text-transform: none;
+
+  @media (max-width: $screen-md-min) {
+    @include font-size(15);
+    padding-left: 28px;
+  }
+
+  &:before {
+    @include translateY(-50%);
+    background: url("../images/checkbox_normal.svg") no-repeat;
+    background-size: cover;
+    content: '';
+    height: 13px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    width: 13px;
+
+    @media (max-width: $screen-md-min) {
+      height: 15px;
+      width: 15px;
+    }
+  }
+
+  &:hover {
+    color: $c-btn-active-blue;
+  }
+}
+
+input[type="checkbox"] {
+  &:not(:checked),
+  &:checked {
+    position: absolute;
+    left: -9999px;
+  }
+
+  &:checked + .checkbox {
+    &:before {
+      background-image: url("../images/checkbox_checked.svg");
+    }
+  }
+
+  &:disabled {
+    & + .checkbox {
+      color: $c-navy-blue;
+      cursor: default;
+
+      &:before {
+        background-image: url("../images/checkbox_normal_disabled.svg");
+      }
+    }
+
+    &:checked + .checkbox {
+      &:before {
+        background-image: url("../images/checkbox_checked_disabled.svg");
+      }
+    }
+  }
+}
+
+//  03. Elements layout
+//    03.01 Default layouts
+.form-group {
+  margin-bottom: 15px;
+  position: relative;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 23px;
+  }
+}
+
+.form-inline {
+  .form-group {
+    @include clearfix();
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .form-group-half {
+    width: 48.5%;
+
+    @media (max-width: $screen-md-min) {
+      width: 100%;
+    }
+
+    &:last-of-type {
+      float: right;
+
+      @media (max-width: $screen-md-min) {
+        float: none;
+      }
+    }
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .form-group-sm {
+    width: 22%;
+
+    @media (max-width: $screen-md-min) {
+      width: 100%;
+    }
+
+    &:last-of-type {
+      float: right;
+
+      @media (max-width: $screen-md-min) {
+        float: none;
+      }
+    }
+  }
+
+  .form-group-md {
+    width: 75%;
+
+    @media (max-width: $screen-md-min) {
+      width: 100%;
+    }
+
+    &:last-of-type {
+      float: right;
+
+      @media (max-width: $screen-md-min) {
+        float: none;
+      }
+    }
+  }
+}
+
+//    03.02 Input + Button inline
+.form-inline {
+  .form-group-action {
+    margin: 0 1.2% 0 0;
+    width: 61.5%;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      margin-right: 2.3%;
+      width: 62%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 19px;
+      width: 100%;
+    }
+  }
+
+  .form-group-action-lg {
+    width: 71%;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      margin-right: 6%;
+      width: 60.5%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 15px;
+      margin-right: 0;
+      width: 100%;
+    }
+
+    .form-control-md {
+      @media (max-width: $screen-xs-max) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .form-group-action-btn {
+    margin-bottom: 0;
+    width: 36%;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      width: 34%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      width: auto;
+    }
+  }
+
+  .form-group-action-btn-lg {
+    width: 26%;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      width: 27%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+    }
+  }
+}

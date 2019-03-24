@@ -1,0 +1,92 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Capabilities section
+// -----------------------------------------------------------------------------
+
+//  01. Capabilities section
+.capabilities {
+  padding: 100px 0 17px;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    padding-top: 64px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding-top: 78px;
+  }
+
+  .benefits {
+    @include flexbox();
+    @include flex-wrap(wrap);
+    margin: 114px 0 0 0;
+    text-align: center;
+
+    @media (max-width: $screen-md-min) {
+      margin-top: 48px;
+      padding: 0 7%;
+    }
+  }
+
+  .benefit-item {
+    margin: 0 0 31px 0;
+    width: 32%;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      margin-bottom: 50px;
+      width: 48%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 36px;
+      width: 100%;
+    }
+
+    &:nth-child(3n - 1) {
+      margin-left: 2%;
+      margin-right: 2%;
+
+      @media (max-width: $screen-md-min) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    &:nth-child(2n + 1) {
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        margin-right: 4%;
+      }
+    }
+
+    .icon-box {
+      @include flexbox();
+      @include justify-content(center);
+      min-height: 41px;
+    }
+
+    h4 {
+      color: $c-sapphire;
+      font-family: $default-font-family-bold;
+      letter-spacing: .5px;
+      margin: 31px 0 10px;
+      text-transform: uppercase;
+
+      @media (max-width: $screen-md-min) {
+        @include font-size(15);
+        margin-top: 26px;
+      }
+    }
+
+    p {
+      color: $c-dark-grey;
+      line-height: 1.75;
+      margin: 0;
+      padding: 0 7.1%;
+
+      @media (max-width: $screen-md-min) {
+        @include font-size(15);
+        padding: 0;
+      }
+    }
+  }
+}

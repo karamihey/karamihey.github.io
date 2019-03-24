@@ -1,0 +1,126 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for homepage video section
+//    01.01 Text
+//    01.02 Controls
+//    01.03 Overlay
+// -----------------------------------------------------------------------------
+
+//  01. Default styles for homepage video section
+.main-video {
+  min-height: 810px;
+  overflow: hidden;
+  position: relative;
+
+  @media (max-width: $screen-md-max) {
+    min-height: inherit;
+  }
+
+  video {
+    height: 100%;
+    min-height: 810px;
+    min-width: 100%;
+    position: relative;
+    visibility: hidden;
+
+    @media (max-width: $screen-md-max) {
+      min-height: inherit;
+      width: 100%;
+    }
+  }
+
+  //    01.01 Text
+  .description {
+    @include translateX(-50%);
+    color: $c-white;
+    left: 50%;
+    line-height: 1.8;
+    padding: 0 9%;
+    text-align: center;
+    top: 43.3%;
+
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+      min-width: 420px;
+    }
+
+    @media (max-width: $screen-md-min) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      min-width: 70%;
+    }
+
+    @media (max-width: $screen-mxs-max) {
+      top: 54.3%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      min-width: 90%;
+    }
+
+    p {
+      @include font-size(19);
+      letter-spacing: -.1px;
+      margin: 15px 0;
+
+      @media (max-width: $screen-mxs-max) {
+        display: none;
+      }
+    }
+
+    .title {
+      @include font-size(40);
+      letter-spacing: -.2px;
+      line-height: 1;
+      margin: 12px 0 20px;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        @include font-size(38);
+      }
+
+      @media (max-width: $screen-xs-max) {
+        @include font-size(31);
+      }
+    }
+  }
+
+  //    01.02 Controls
+  .play-pause-button {
+    left: 50%;
+    top: 33.6%;
+
+    @media (max-width: $screen-md-min) {
+      top: 20.6%;
+    }
+  }
+
+  .playing {
+    left: 5%;
+    top: 85%;
+  }
+
+  //    01.03 Overlay
+  .overlay {
+    height: 17.6%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+
+    @media (max-width: $screen-md-min) {
+      display: none;
+    }
+  }
+
+  .top-overlay {
+    @include css3-prefix(background, linear-gradient(175.8deg, $c-white 0%, $c-white 50%, transparent 51%, transparent 100%));
+    top: 0;
+  }
+
+  .bottom-overlay {
+    @include css3-prefix(background, linear-gradient(175.8deg, transparent 0%, transparent 50%, $c-white 51%, $c-white 100%));
+    bottom: 0;
+  }
+}

@@ -1,0 +1,54 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for business registration step
+// -----------------------------------------------------------------------------
+
+//  01. Default styles for business registration step
+.business-reg {
+  .instruction {
+    letter-spacing: -.2px;
+
+    @media (max-width: $screen-md-min) {
+      letter-spacing: 0;
+    }
+  }
+
+  .business-address {
+    @include clearfix();
+    margin: 0 0 24px 0;
+
+    @media (max-width: $screen-md-min) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      margin-top: -18px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: -3px;
+    }
+  }
+
+  .left-col,
+  .right-col {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+
+    @media (max-width: $screen-md-min) {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .right-col {
+    float: right;
+    padding: 0 0 0 7.5%;
+
+    @media (max-width: $screen-md-min) {
+      padding-left: 0;
+    }
+  }
+}

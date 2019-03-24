@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+  <title>Venue Registration | Soundstr</title>
+  <meta name="title" content="Venue Registration | Soundstr">
+  <meta name="description" content="Venue Registration | Soundstr">
+
+  <link rel="stylesheet" href="libs/icon-font-7-stroke/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+  <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="libs/wow-master/css/animate.css">
+  <link rel="stylesheet" href="styles/main.css">
+
+  <script src="libs/wow-master/dist/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="js/mpa-main.js"></script>
+</head>
+
+<body>
+
+<div class="popup-parent reg-steps">
+  <div class="popup">
+    <div class="logo-box">
+      <a href="#">
+          <span>
+            <object type="image/svg+xml" data="images/logo_white.svg"></object>
+          </span>
+      </a>
+    </div>
+
+    <div class="gradient-border"></div>
+
+    <main>
+      <div class="venue-reg">
+        <h2 class="heading">Venue details</h2>
+        <p class="instruction">
+          On this step, you will need to register the venue(s) that
+          have music licenses.
+        </p>
+
+        <form>
+          <div class="form-group">
+            <h3>Venue Name</h3>
+            <input class="form-control form-control-md" type="text" placeholder="Venue Name">
+          </div>
+
+          <div class="form-group">
+            <input type="checkbox" id="licenseExist">
+            <label for="licenseExist" class="checkbox">Do you sell alcohol?</label>
+
+            <span class="info-icon info-icon-md">
+                <i class="fa fa-question-circle" aria-hidden="true" data-toggle="tooltip" data-placement="right"
+                   title="Tooltip on right"></i>
+              </span>
+          </div>
+
+          <div class="form-group">
+            <label class="input-label input-label-line" for="licenseNum">Liquor License Number</label>
+            <input class="form-control form-control-md" id="licenseNum" type="text" placeholder="" disabled>
+          </div>
+
+          <div class="soundboard-capacity">
+            <input type="checkbox" id="multipleSBExist">
+            <label for="multipleSBExist" class="checkbox">
+              Does this venue have multiple soundboards?
+            </label>
+
+            <div id="capacity-content" class="capacity-content">
+              <div class="soundboard-amount" id="amountSB">
+                <label class="input-label input-label-line disabled-control">Soundboards</label>
+                <div class="dropdown dropdown-md dropdown-right">
+                  <button disabled class="dropdown-label dropdown-toggle" id="soundboardAmount" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                    1
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="soundboardAmount">
+                    <li class="dropdown-menu-item"><span class="link">1</span></li>
+                    <li class="dropdown-menu-item"><span class="link">2</span></li>
+                    <li class="dropdown-menu-item"><span class="link">3</span></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="capacity" id="capacity">
+                <label class="input-label input-label-line">Capacity</label>
+                <div class="tooltip-box info-icon info-icon-md" id="capacityTooltip">
+                  <i class="fa fa-question-circle" aria-hidden="true" data-toggle="tooltip" data-placement="bottom"
+                     title="Tooltip on bottom"></i>
+                </div>
+                <div class="dropdown dropdown-md dropdown-right">
+                  <button class="dropdown-label dropdown-toggle" id="dLabel12" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                    250-499
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dLabel12">
+                    <li class="dropdown-menu-item"><span class="link">250-499</span></li>
+                    <li class="dropdown-menu-item"><span class="link">500-749</span></li>
+                    <li class="dropdown-menu-item"><span class="link">750-999</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div id="soundboard-content">
+              <div class="multiple-soundboards" id="multipleSB">
+                <h3>
+                  Configure capacity for each room
+                  <span class="info-icon info-icon-md">
+                      <i class="fa fa-question-circle" aria-hidden="true" data-toggle="tooltip" data-placement="right"
+                         title="Tooltip on right"></i>
+                  </span>
+                </h3>
+
+                <div class="params">
+                  <div class="params-item">
+                    <div class="room">
+                      <span class="input-label input-label-line">Rooms</span>
+                      <div class="room-wrap">
+                        <object class="sb-icon" type="image/svg+xml" data="images/soundboard_icon.svg"></object>
+                        <p>Soundboard 1</p>
+                      </div>
+                    </div>
+                    <div class="capacity" id="capacity2">
+                      <label class="input-label input-label-line">Capacity</label>
+                      <div class="dropdown dropdown-md dropdown-right">
+                        <button class="dropdown-label dropdown-toggle" id="dLabel15" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                          250-499
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel15">
+                          <li class="dropdown-menu-item"><span class="link">250-499</span></li>
+                          <li class="dropdown-menu-item"><span class="link">500-749</span></li>
+                          <li class="dropdown-menu-item"><span class="link">750-999</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="params-item">
+                    <div class="room">
+                      <span class="input-label input-label-line">Rooms</span>
+                      <div class="room-wrap">
+                        <object class="sb-icon" type="image/svg+xml" data="images/soundboard_icon.svg"></object>
+                        <p>Soundboard 2</p>
+                      </div>
+                    </div>
+                    <div class="capacity" id="capacity3">
+                      <label class="input-label">Capacity</label>
+                      <div class="dropdown dropdown-md dropdown-right">
+                        <button class="dropdown-label dropdown-toggle" id="dLabel16" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                          250-499
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel16">
+                          <li class="dropdown-menu-item"><span class="link">250-499</span></li>
+                          <li class="dropdown-menu-item"><span class="link">500-749</span></li>
+                          <li class="dropdown-menu-item"><span class="link">750-999</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="address-wrap">
+            <section class="venue-address">
+
+              <div class="left-col" id="venueAddress">
+                <h3>Venue Address</h3>
+                <input type="checkbox" id="copyAddress">
+                <label for="copyAddress" class="checkbox copy-address">
+                  Copy business address
+                </label>
+
+                <div class="form-group">
+                  <label class="input-label input-label-line">Country</label>
+                  <div class="dropdown dropdown-md">
+                    <button class="dropdown-label dropdown-toggle" id="dLabel13" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                      United States of America
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel13">
+                      <li class="dropdown-menu-item"><span class="link">Country 1</span></li>
+                      <li class="dropdown-menu-item"><span class="link">Country 2</span></li>
+                      <li class="dropdown-menu-item"><span class="link">Country 3</span></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="input-label input-label-line" for="address-1">Street Address #1</label>
+                  <input class="form-control form-control-md" id="address-1" type="text" placeholder="Address 1">
+                </div>
+
+                <div class="form-group">
+                  <label class="input-label input-label-line" for="address-2">Street Address #2</label>
+                  <input class="form-control form-control-md" id="address-2" type="text" placeholder="Address 2">
+                </div>
+
+                <div class="form-group">
+                  <label class="input-label input-label-line" for="city">City</label>
+                  <input class="form-control form-control-md" id="city" type="text" placeholder="City">
+                </div>
+
+                <div class="form-group">
+                  <label class="input-label input-label-line" for="dLabel14">State</label>
+                  <div class="dropdown dropdown-md">
+                    <button class="dropdown-label dropdown-toggle" id="dLabel14" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                      State 1
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel14">
+                      <li class="dropdown-menu-item"><span class="link">State 2</span></li>
+                      <li class="dropdown-menu-item"><span class="link">State 3</span></li>
+                      <li class="dropdown-menu-item"><span class="link">State 4</span></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="input-label input-label-line" for="zipCode">Zip/postal code</label>
+                  <input class="form-control form-control-md" id="zipCode" type="text" placeholder="12345">
+                </div>
+              </div>
+
+              <input type="checkbox" id="multipleAddress" checked>
+              <label for="multipleAddress" class="checkbox multiple-address">
+                Mailing address same as venue
+              </label>
+
+              <div class="right-col" id="mailingAddress">
+                <h3>Mailing Address</h3>
+                <!--
+                '-m' in input's id means mailing
+                -->
+                <div class="form-group">
+                  <label class="input-label input-label-line">Country</label>
+                  <div class="dropdown dropdown-md">
+                    <button class="dropdown-label dropdown-toggle" id="dLabel" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                      United States of America
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                      <li class="dropdown-menu-item"><span class="link">Country 1</span></li>
+                      <li class="dropdown-menu-item"><span class="link">Country 2</span></li>
+                      <li class="dropdown-menu-item"><span class="link">Country 3</span></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="input-label input-label-line" for="address-1-m">Street Address #1</label>
+                  <input class="form-control form-control-md" id="address-1-m" type="text" placeholder="Address 1">
+                </div>
+
+                <div class="form-group">
+                  <label class="input-label input-label-line" for="address-2-m">Street Address #2</label>
+                  <input class="form-control form-control-md" id="address-2-m" type="text" placeholder="Address 2">
+                </div>
+
+                <div class="form-group">
+                  <label class="input-label input-label-line" for="city-m">City</label>
+                  <input class="form-control form-control-md" id="city-m" type="text" placeholder="City">
+                </div>
+
+                <div class="form-group">
+                  <label class="input-label input-label-line">State</label>
+                  <div class="dropdown dropdown-md">
+                    <button class="dropdown-label dropdown-toggle" id="dLabel2" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                      State 1
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel2">
+                      <li class="dropdown-menu-item"><span class="link">State 2</span></li>
+                      <li class="dropdown-menu-item"><span class="link">State 3</span></li>
+                      <li class="dropdown-menu-item"><span class="link">State 4</span></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="input-label input-label-line" for="zipCode-m">Zip/postal code</label>
+                  <input class="form-control form-control-md" id="zipCode-m" type="text" placeholder="12345">
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="button-box">
+            <button class="button prev-step-btn">Back</button>
+            <button class="button next-step-btn">Continue</button>
+            <button class="button next-step-btn step-add-btn">Add another venue</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <nav class="steps-nav">
+      <p class="step-number">5/8</p>
+      <ul>
+        <li class="step resolved-step">
+          <a class="link" href="#"></a>
+          <div class="step-info">
+            <span class="icon user-account"></span>
+            <span class="step-title">User Account</span>
+          </div>
+        </li>
+        <li class="step resolved-step">
+          <a class="link" href="#"></a>
+          <div class="step-info">
+            <span class="icon index">2</span>
+            <span class="step-title">Advertising</span>
+          </div>
+        </li>
+        <li class="step resolved-step">
+          <a class="link" href="#"></a>
+          <div class="step-info">
+            <span class="icon business-registration"></span>
+            <span class="step-title">Business Registration</span>
+          </div>
+        </li>
+        <li class="step resolved-step">
+          <a class="link" href="#"></a>
+          <div class="step-info">
+            <span class="icon index">4</span>
+            <span class="step-title">Business Type</span>
+          </div>
+        </li>
+        <li class="step active-step">
+          <a class="link" href="#"></a>
+          <div class="step-info">
+            <span class="icon venue-registration"></span>
+            <span class="step-title">Venue Registration</span>
+            <ul class="venue-name">
+              <li>
+                <div class="editable">
+                  <a class="editable" href="#">Venue Name 1</a>
+                  <a class="edit edit-btn" href="#">Edit</a>
+                  <a class="edit delete-venue-btn" href="#">Delete</a>
+                </div>
+                <i class="pe-7s-angle-right arr"></i>
+              </li>
+              <li class="checked">
+                <a href="#" class="add-venue-btn">+ Add New Venue</a>
+                <i class="pe-7s-angle-right arr"></i>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="step">
+          <a class="link" href="#"></a>
+          <div class="step-info">
+            <span class="icon index">6</span>
+            <span class="step-title">Pricing Plan</span>
+          </div>
+        </li>
+        <li class="step">
+          <a class="link" href="#"></a>
+          <div class="step-info">
+            <span class="icon index">7</span>
+            <span class="step-title">Cable Configuration</span>
+            <ul class="venue-name">
+              <li>
+                <div class="editable">
+                  <a class="editable" href="#">Venue Name 1</a>
+                  <span class="edit edit-btn"><a href="#">Edit</a></span>
+                  <span class="edit"><a href="#">Delete</a></span>
+                </div>
+                <i class="pe-7s-angle-right arr"></i>
+                <ul class="soundboard">
+                  <li>
+                    <div class="editable">
+                      <a class="editable" href="#">Soundboard 1</a>
+                      <span class="edit edit-btn"><a href="#">Edit</a></span>
+                      <span class="edit"><a href="#">Delete</a></span>
+                    </div>
+                    <i class="pe-7s-angle-right arr"></i>
+                    <i class="pe-7s-angle-right arr double-arr"></i>
+                  </li>
+                  <li class="checked">
+                    <div class="editable">
+                      <a class="editable" href="#">Soundboard 2</a>
+                      <span class="edit edit-btn"><a href="#">Edit</a></span>
+                      <span class="edit"><a href="#">Delete</a></span>
+                    </div>
+                    <i class="pe-7s-angle-right arr"></i>
+                    <i class="pe-7s-angle-right arr double-arr"></i>
+                  </li>
+                </ul>
+              </li>
+              <li class="checked">
+                <div class="editable">
+                  <a class="editable" href="#">Venue Name 2</a>
+                  <span class="edit edit-btn"><a href="#">Edit</a></span>
+                  <span class="edit"><a href="#">Delete</a></span>
+                </div>
+                <i class="pe-7s-angle-right arr"></i>
+                <ul class="soundboard">
+                  <li>
+                    <div class="editable">
+                      <a class="editable" href="#">Soundboard 1</a>
+                      <span class="edit edit-btn"><a href="#">Edit</a></span>
+                      <span class="edit"><a href="#">Delete</a></span>
+                    </div>
+                    <i class="pe-7s-angle-right arr"></i>
+                    <i class="pe-7s-angle-right arr double-arr"></i>
+                  </li>
+                  <li class="checked">
+                    <div class="editable">
+                      <a class="editable" href="#">Soundboard 2</a>
+                      <span class="edit edit-btn"><a href="#">Edit</a></span>
+                      <span class="edit"><a href="#">Delete</a></span>
+                    </div>
+                    <i class="pe-7s-angle-right arr"></i>
+                    <i class="pe-7s-angle-right arr double-arr"></i>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="step">
+          <a class="link" href="#"></a>
+          <div class="step-info">
+            <span class="icon index">8</span>
+            <span class="step-title">Summary</span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for tooltips
+//    01.01 Positioning
+//    01.02 Tooltip icon
+//  02. Validation error tooltip
+// -----------------------------------------------------------------------------
+
+//  01. Default styles for tooltips
+.tooltip {
+  display: block;
+  font-size: $default-font-size + px;
+  max-width: 200px;
+  min-width: 150px;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  z-index: 1070;
+
+  &.in {
+    opacity: 1;
+  }
+
+  .tooltip-inner {
+    @include border-radius(5px);
+    background: $c-dark-grey;
+    color: $c-white;
+    display: block;
+    padding: 10px 5px;
+  }
+
+  .tooltip-arrow {
+    border-color: transparent;
+    border-style: solid;
+    height: 0;
+    position: absolute;
+    width: 0;
+  }
+
+  //    01.01 Positioning
+  &.top {
+    margin-top: -1px;
+    padding: 8px 0;
+
+    .tooltip-arrow {
+      border-top-color: $c-dark-grey;
+      border-width: 8px 8px 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -5px;
+    }
+  }
+
+  &.right {
+    margin-left: 3px;
+    padding: 0 8px;
+
+    .tooltip-arrow {
+      border-right-color: $c-dark-grey;
+      border-width: 8px 8px 8px 0;
+      left: 0;
+      margin-top: -6px;
+      top: 50%;
+    }
+  }
+
+  &.bottom {
+    margin-top: 3px;
+    padding: 8px 0;
+
+    .tooltip-arrow {
+      border-bottom-color: $c-dark-grey;
+      border-width: 0 8px 8px;
+      left: 50%;
+      margin-left: -5px;
+      top: 0;
+    }
+  }
+
+  &.left {
+    margin-left: -3px;
+    padding: 0 8px;
+
+    .tooltip-arrow {
+      border-left-color: $c-dark-grey;
+      border-width: 8px 0 8px 8px;
+      margin-top: -6px;
+      right: 0;
+      top: 50%;
+    }
+  }
+}
+
+//    01.02 Tooltip icon
+.info-icon {
+  @include font-size(19);
+  color: $c-tooltip-icon;
+  left: 3px;
+  line-height: normal;
+  position: relative;
+  top: 2px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .tooltip {
+    margin-top: -3px;
+
+    &.top,
+    &.bottom {
+      margin-left: -3px;
+    }
+  }
+}
+
+.info-icon-md {
+  @media (max-width: $screen-md-min) {
+    top: 0;
+  }
+
+  > i {
+    font-size: 23px;
+
+    @media (max-width: $screen-md-min) {
+     font-size: 17px;
+    }
+  }
+
+  .tooltip {
+    &.top,
+    &.bottom {
+      margin-top: 1px;
+    }
+  }
+}
+
+//  02. Validation error tooltip
+.has-error {
+  .tooltip {
+    color: $c-error;
+    left: 50%;
+    position: absolute;
+    top: 6px;
+
+    &.top {
+      .tooltip-arrow {
+        border-top-color: $c-error;
+      }
+    }
+
+    &.right {
+      .tooltip-arrow {
+        border-right-color: $c-error;
+      }
+    }
+
+    &.bottom {
+      .tooltip-arrow {
+        border-bottom-color: $c-error;
+      }
+    }
+
+    &.left {
+      .tooltip-arrow {
+        border-left-color: $c-error;
+      }
+    }
+
+    .tooltip-inner {
+      background: $c-error;
+    }
+  }
+}

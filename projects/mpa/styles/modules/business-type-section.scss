@@ -1,0 +1,178 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for business type step
+// -----------------------------------------------------------------------------
+
+//  01. Default styles for business type step
+.biz-types {
+  @include flexbox();
+  @include justify-content(space-between);
+  margin: 0 0 40px;
+  padding: 0 1%;
+
+
+  @media (max-width: $screen-md-min) {
+    @include flex-direction(column);
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    margin-bottom: 29px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 13px;
+  }
+
+  .type-item {
+    @include border-radius(5px);
+    @include box-shadow(-3px, 3px, 10px, rgba($c-black, 0.22), "");
+    @include box-sizing(border-box);
+    @include font-size(16);
+    border: 1px solid $c-border;
+    cursor: pointer;
+    margin: 0;
+    padding: 15px 0 16px;
+    text-align: center;
+    position: relative;
+    width: 31.5%;
+    z-index: 1;
+
+    @media (max-width: $screen-md-min) {
+      @include flexbox();
+      padding-bottom: 14px;
+      padding-top: 14px;
+      text-align: left;
+      width: 100%;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(20);
+      margin-bottom: 15px;
+      padding-left: 29px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include box-shadow(0, 3px, 10px, rgba($c-black, 0.22), "");
+      @include font-size(14);
+      margin-bottom: 14px;
+      padding-left: 14px;
+    }
+
+    &:before {
+      @include border-radius(5px);
+      border: 2px solid transparent;
+      content: "";
+      display: block;
+      height: 100%;
+      left: -2px;
+      position: absolute;
+      top: -2px;
+      width: 100%;
+    }
+
+    &:hover {
+      @include box-shadow(0, 0, 0, rgba($c-black, 0.2), "");
+    }
+
+    figcaption {
+      margin: 13px 0 0 0;
+      padding: 0 8%;
+
+      @media (max-width: $screen-md-min) {
+        margin-bottom: auto;
+        margin-top: auto;
+        padding-left: 0;
+        padding-right: 4%;
+      }
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        margin-left: 28px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        margin-left: 17px;
+      }
+    }
+
+    object,
+    img {
+      height: 137px;
+      position: relative;
+      width: 137px;
+      z-index: -1;
+
+      @media (max-width: $screen-md-min) {
+        margin-bottom: auto;
+        margin-top: auto;
+      }
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        height: 120px;
+        width: 120px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        height: 73px;
+        width: 73px;
+      }
+    }
+  }
+
+  .retail {
+    figcaption {
+      color: $c-blue;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        letter-spacing: -.25px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        letter-spacing: -.1px;
+      }
+    }
+
+    &:hover,
+    &.active {
+      &:before {
+        border-color: $c-blue;
+      }
+    }
+  }
+
+  .venues {
+    figcaption {
+      color: $c-purple;
+
+      @media (max-width: $screen-xs-max) {
+        letter-spacing: .1px;
+      }
+    }
+
+    &:hover,
+    &.active {
+      &:before {
+        border-color: $c-purple;
+      }
+    }
+  }
+
+  .concerts {
+    figcaption {
+      color: $c-emerald;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        letter-spacing: -.1px;
+      }
+    }
+
+    &:hover,
+    &.active {
+      &:before {
+        border-color: $c-emerald;
+      }
+    }
+  }
+}

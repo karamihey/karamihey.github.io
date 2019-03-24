@@ -1,0 +1,156 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for 'Thank You' section
+//    01.01 Titles
+//    01.02 Confirmation Code
+// -----------------------------------------------------------------------------
+
+//  01. Default styles for 'Thank You' section
+.gratitude {
+  background: url(../images/bg_page_thankyou_web.jpg) no-repeat center top;
+  background-size: cover;
+  padding: 136px 0 135px 0;
+  text-align: center;
+  width: 100%;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    background-image: url(../images/bg_page_thankyou_tablet@1x.jpg);
+    padding: 50px 0;
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    background-image: url(../images/bg_page_thankyou_tablet@2x.jpg);
+  }
+
+  @media (max-width: $screen-xs-max) {
+    background-image: url(../images/bg_page_thankyou_mobile@1x.jpg);
+    padding: 38px 0 50px;
+  }
+
+  @media (max-width: $screen-xs-max) and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    background-image: url(../images/bg_page_thankyou_mobile@2x.jpg);
+  }
+
+  .title-box,
+  .confirmcode-box {
+    color: $c-white;
+    text-align: center;
+  }
+}
+
+//    01.01 Titles
+
+.title-box {
+
+  h3 {
+    @include font-size(39);
+    font-weight: normal;
+    margin: 19px 0 0 0;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(38);
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(31);
+      margin-top: 25px;
+    }
+  }
+
+  p {
+    @include font-size(16);
+    font-family: $default-font-family-light;
+    margin: 19px 0 0 0;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(20);
+      margin-top: 21px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(15);
+      line-height: 1.35;
+      margin-top: 11px;
+      padding: 0 13%;
+    }
+
+    span {
+      font-family: $default-font-family;
+    }
+  }
+
+  .icon-box {
+    position: relative;
+
+    .email-icon,
+    .dots {
+      width: 174px;
+      height: 135px;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        width: 135px;
+        height: 104px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        width: 114px;
+        height: 88px;
+      }
+
+    }
+
+    .dots {
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+//    01.02 Confirmation Code
+.confirmcode-box {
+
+  p {
+    @include font-size(16);
+    font-family: $default-font-family-bold;
+    margin: 7px 0 0 0;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(20);
+      font-family: $default-font-family;
+      margin-top: 11px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(15);
+      font-family: $default-font-family;
+      margin-top: 1px;
+    }
+  }
+
+  .code span {
+    @include border-radius(3px);
+    @include box-sizing(border-box);
+    @include font-size(27);
+    @include user-select(all);
+    border: 1px solid $c-white;
+    display: inline-block;
+    margin: 26px 0 0 0;
+    padding: 8px 29px 9px;
+
+    @media (min-width: $screen-xs-min) and (max-width: $screen-md-min) {
+      @include font-size(20);
+      margin-top: 37px;
+      padding: 6px 17px 6px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 21px;
+      padding-bottom: 4px;
+    }
+  }
+}
+

@@ -1,0 +1,144 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for advertising step
+//    01.01 Advantages
+//    01.02 Video
+// -----------------------------------------------------------------------------
+
+//  01. Default styles for advertising step
+.advertising {
+  .heading {
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 19px;
+      padding-left: 1%;
+      padding-right: 1%;
+    }
+  }
+
+  .instruction {
+    letter-spacing: -.2px;
+    line-height: 1.6;
+    margin: 0 0 37px 0;
+
+    @media (max-width: $screen-md-min) {
+      letter-spacing: 0;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      line-height: 1.35;
+      margin-bottom: 24px;
+      padding-left: 6%;
+      padding-right: 6%;
+    }
+  }
+}
+
+//    01.01 Advantages
+.advantages {
+  border-bottom: 1px solid $c-divider;
+  border-top: 1px solid $c-divider;
+  list-style: none;
+  margin: 25px 0 32px;
+  padding: 28px 0 18px 23px;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    margin-bottom: 33px;
+    margin-top: 39px;
+    padding-bottom: 17px;
+    padding-left: 39px;
+    padding-top: 30px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 27px;
+    margin-top: 30px;
+    padding-bottom: 18px;
+    padding-left: 0;
+    padding-top: 33px;
+  }
+
+  li {
+    @include font-size(16);
+    color: $c-dark-grey;
+    margin: 0 0 15px 0;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(20);
+      letter-spacing: -.05px;
+      line-height: 1.65;
+      margin-bottom: 11px;
+      padding-left: 33px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(15);
+      line-height: 1.4;
+      margin-bottom: 15px;
+      padding-left: 29px;
+    }
+  }
+
+  .checkmark {
+    @include font-size(21);
+    color: $c-blue;
+    margin: 0 17px 0 0;
+    position: relative;
+    top: 3px;
+
+    @media (max-width: $screen-md-min) {
+      top: 0;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      font-size: 1em;
+      margin-left: -33px;
+      margin-right: 13px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 1.1em;
+      margin-left: -30px;
+      margin-right: 14px;
+    }
+  }
+}
+
+//    01.02 Video
+.ads-video {
+  min-height: 304px;
+  position: relative;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    min-height: 320px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    margin-left: -35px;
+    margin-right: -35px;
+    min-height: inherit;
+  }
+
+  video {
+    visibility: hidden;
+    width: 100%;
+  }
+
+  .play-pause-button {
+    top: 41%;
+
+    @media (max-width: $screen-xs-max) {
+      top: 35%;
+    }
+  }
+
+  .playing {
+    left: 8%;
+    top: 75%;
+  }
+}

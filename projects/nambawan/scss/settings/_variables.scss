@@ -1,0 +1,64 @@
+// Fonts
+@import "fonts";
+$font-family: 'Raleway';
+
+// Colors
+$c-white: #fff;
+
+$c-black: #000;
+
+$c-gray-1: #b9b3b1;
+$c-gray-2: #f2f2f2;
+$c-gray-3: #303030;
+$c-gray-4: #b3b3b3;
+
+$c-green-1: #10e08b;
+
+// Theme
+$c-page-bg: $c-white;
+
+$c-sections-navigation-line: $c-white;
+$c-sections-navigation-line-active: $c-green-1;
+$c-sections-navigation-line-dark: $c-black;
+
+$c-navigation-bg: $c-white;
+$c-navigation-border: $c-gray-1;
+$c-navigation-menu-text: rgba($c-black, .5);
+$c-navigation-social: rgba($c-black, .4);
+
+$c-header-phone: $c-white;
+$c-header-phone-active: $c-green-1;
+$c-header-phone-details: rgba($c-white, .7);
+
+$c-intro-overlay: rgba($c-black, .7);
+$c-intro-text: $c-white;
+$c-intro-company-text: $c-green-1;
+$c-intro-button-bg: $c-green-1;
+$c-intro-button-bg-active: darken($c-intro-button-bg, 15);
+$c-intro-button-text: $c-white;
+
+$c-advantages-border: rgba($c-white, .49);
+
+$c-video-overlay-bg: rgba($c-black, .5);
+$c-video-control: $c-green-1;
+$c-video-title: $c-white;
+
+$c-work-geography-bg: $c-gray-2;
+
+$c-slider-controls-bg: $c-white;
+$c-slider-pagination: $c-gray-4;
+$c-slide-title: $c-gray-4;
+$c-slide-title-emphasizing: $c-green-1;
+
+$c-title-emphasizing: $c-green-1;
+
+$c-footer-bg: $c-gray-3;
+$c-footer-subtitle: rgba($c-white, .5);
+$c-footer-text: $c-white;
+
+// Animations
+$speed-navigation-social: 200ms;
+$speed-sections-navigation: 300ms;
+$speed-phone: 250ms;
+$speed-button: 250ms;
+$speed-slide-title: 500ms;

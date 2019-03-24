@@ -1,0 +1,99 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Helpers
+//    01.01 Browser prefixes for the property
+//    01.02 Clearfix
+//    01.03 Box sizing
+//    01.04 Truncate Text
+//    01.05 Opacity
+//    01.06 Box shadow
+//    01.07 Border radius
+//    01.08 User select
+//    01.09 Placeholders
+//    01.10 Font-size 'px' to 'em' converter
+//    01.11 Line-height 'px' to 'number' converter
+// -----------------------------------------------------------------------------
+
+//  01. Helpers
+//    01.01 Browser prefixes for the property
+@mixin css3-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+  -khtml-#{$property}: #{$value};
+  -moz-#{$property}: #{$value};
+  -ms-#{$property}: #{$value};
+  -o-#{$property}: #{$value};
+  #{$property}: #{$value};
+}
+
+//    01.02 Clearfix
+@mixin clearfix() {
+  &::before,
+  &::after {
+    content: ' ';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+//    01.03 Box sizing
+@mixin box-sizing($type: border-box) {
+  @include css3-prefix('box-sizing', $type);
+}
+
+//    01.04 Truncate Text
+@mixin truncate($truncation-boundary) {
+  max-width: $truncation-boundary;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//    01.05 Opacity
+@mixin opacity($opacity) {
+  $opacityMultiplied: ($opacity * 100);
+  filter:         alpha(opacity=$opacityMultiplied);
+  -ms-filter:     "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + $opacityMultiplied + ")";
+  @include css3-prefix('opacity', $opacity);
+}
+
+//    01.06 Box shadow
+@mixin box-shadow($x, $y, $blur, $color, $inset: "") {
+  @if ($inset != "") {
+    @include css3-prefix('box-shadow', $inset $x $y $blur $color);
+  }
+  @else {
+    @include css3-prefix('box-shadow', $x $y $blur $color);
+  }
+}
+
+//    01.07 Border radius
+@mixin border-radius($radius) {
+  @include css3-prefix('border-radius', $radius);
+}
+
+//    01.08 User select
+@mixin user-select($value) {
+  @include css3-prefix('user-select', $value);
+}
+
+//    01.09 Placeholders
+@mixin placeholder {
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+//    01.10 Font-size 'px' to 'em' converter
+@mixin font-size($value) {
+  font-size: $value / $default-font-size + em;
+}
+
+//    01.11 Line-height 'px' to 'number' converter
+@mixin line-height($value) {
+  line-height: $value / $default-font-size;
+}

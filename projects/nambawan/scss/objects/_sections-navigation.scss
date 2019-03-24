@@ -1,0 +1,41 @@
+.sections-navigation {
+  margin-top: -72px;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  z-index: 1;
+
+  .line {
+    background-color: $c-sections-navigation-line;
+    display: block;
+    font-size: 0;
+    height: 2px;
+    margin-bottom: 18px;
+    margin-left: auto;
+    transition: transform $speed-sections-navigation ease-in-out;
+    transform-origin: right;
+    width: 20px;
+
+    &.is-active {
+      background-color: $c-sections-navigation-line-active;
+      width: 40px;
+    }
+
+    &:not(.is-active) {
+      &:hover {
+        transform: scaleX(2);
+      }
+    }
+  }
+}
+
+.section-video {
+  .sections-navigation {
+    margin-top: 4px;
+    right: 40px;
+  }
+
+  .line {
+    background-color: $c-sections-navigation-line-dark;
+  }
+}

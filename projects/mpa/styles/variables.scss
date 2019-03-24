@@ -1,0 +1,130 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Typography
+//  02. Colors
+//    02.01 Basic colors
+//    02.02 Logical colors
+//    02.03 Social networks colors
+//  03. Media queries breakpoints
+//    03.01 Extra small screen / phone
+//    03.02 Small screen / tablet
+//    03.03 Medium screen / desktop
+//    03.04 Large screen / wide desktop
+//    03.06 Additional media queries
+//    03.06 So media queries don't overlap when required, provide a maximum
+//  04. Animations speed
+// -----------------------------------------------------------------------------
+
+//  01. Typography
+$default-font-size: 14;
+$default-line-height: 1.6;
+
+$default-font-family: "Montserrat-Regular", Helvetica, Arial, sans-serif;
+$default-font-family-light: "Montserrat-Light", Helvetica, Arial, sans-serif;
+$default-font-family-semibold: "Montserrat-SemiBold", Helvetica, Arial, sans-serif;
+$default-font-family-bold: "Montserrat-Bold", Helvetica, Arial, sans-serif;
+$default-font-family-extrabold: "Montserrat-ExtraBold", Helvetica, Arial, sans-serif;
+$default-font-family-hairline: "Montserrat-Hairline", Helvetica, Arial, sans-serif;
+
+//  02. Colors
+//    02.01 Basic colors
+$c-white: #fff;
+$c-super-light-blue: #deecfe;
+$c-sky-blue: #00b1ff;
+$c-azure: #009cff;
+$c-light-blue: #22b3fc;
+$c-blue: #0072ff;
+$c-dark-blue: #1076fc;
+$c-ultra-light-grey: #f3f6f8;
+$c-super-light-grey: #cbd0d4;
+$c-light-grey: #c7ccd1;
+$c-grey: #8f9aa3;
+$c-dark-grey: #586775;
+$c-super-dark-grey: #74808c;
+$c-navy-blue: #3c4e5e;
+$c-sapphire: #041b30;
+$c-night: #203447;
+$c-purple: #9733ee;
+$c-purple-active: #8233ee;
+$c-emerald: #21ca8f;
+$c-herbal: #0bd58e;
+$c-herbal-active: #01e192;
+$c-black: #000;
+$c-aqua: #039efd;
+
+//    02.02 Logical colors
+$c-bg: $c-white;
+$c-btn: $c-blue;
+$c-btn-active: $c-white;
+$c-btn-active-blue: #0054ff;
+$c-footer-txt: #74808c;
+$c-footer-txt-active: #b6c9db;
+$c-arrow: #abb3ba;
+$c-gradient-end: #00c6ff;
+$c-border: #e3e6e8;
+$c-input-disabled: $c-border;
+$c-required: #dd2476;
+$c-option-active-start: #318dff;
+$c-option-active-end: #0173ff;
+$c-divider: #eee;
+$c-error: #d33d29;
+$c-tooltip-icon: #abb3ba;
+$c-bg-reg-steps-mobile: #19232e;
+$c-bg-reg-steps-tablet: #171e26;
+$-control-disabled: #f3f5f7;
+$-control-text-disabled: #abb3ba;
+$c-default-disabled: #ebebe4;
+
+
+//    02.03 Social networks colors
+$c-facebook: #48629b;
+$c-facebook-active: #28468a;
+$c-twitter: #23b0e6;
+$c-twitter-active: #1f8db7;
+$c-linkedin: #0e76a8;
+$c-linkedin-active: #145e81;
+$c-email-link: #dc4b38;
+$c-email-link-active: #d33d29;
+
+//  03. Media queries breakpoints
+//    03.01 Extra small screen / phone
+$screen-xs: 320px !default;
+$screen-xs-min: $screen-xs !default;
+
+//    03.02 Small screen / tablet
+$screen-sm: 768px !default;
+$screen-sm-min: $screen-sm !default;
+
+//    03.03 Medium screen / desktop
+$screen-md: 1024px !default;
+$screen-md-min: $screen-md !default;
+
+//    03.04 Large screen / wide desktop
+$screen-lg: 1280px !default;
+$screen-lg-min: $screen-lg !default;
+
+//    03.05 Additional media queries
+$screen-xs-plus: 480px !default;
+$screen-xs-plus-min: $screen-xs-plus !default;
+$screen-mxs: 640px !default;
+$screen-mxs-min: $screen-mxs !default;
+$screen-sm-plus: 800px !default;
+$screen-sm-plus-min: $screen-sm-plus !default;
+$screen-mlg: 1380px !default;
+$screen-mlg-min: $screen-mlg !default;
+
+//    03.06 So media queries don't overlap when required, provide a maximum
+$screen-xs-max:  ($screen-sm-min - 1) !default;
+$screen-xs-plus-max: ($screen-xs-plus-min - 1) !default;
+$screen-mxs-max: ($screen-mxs-min - 1) !default;
+$screen-sm-max:  ($screen-md-min - 1) !default;
+$screen-sm-plus-max: ($screen-sm-plus-min - 1) !default;
+$screen-md-max:  ($screen-lg-min - 1) !default;
+
+//  04. Animations speed
+$s-menu: 400ms;
+$s-menu-icon: 250ms;
+$s-modal: 300ms;
+$s-collapsing: 150ms;
+$s-collapsing-arrow: 250ms;

@@ -1,0 +1,27 @@
+.footer {
+	background-color: $c-footer-bg;
+	color: $c-footer-text;
+	font-size: 21px;
+	font-weight: 300;
+	padding: 82px 20px;
+
+	.content {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		max-width: 740px;
+	}
+
+	.developer,
+	.time {
+		min-width: 240px;
+	}
+
+	.subtitle {
+		color: $c-footer-subtitle;
+		font-size: 12px;
+		font-weight: 800;
+		margin-bottom: 23px;
+		text-transform: uppercase;
+	}
+}

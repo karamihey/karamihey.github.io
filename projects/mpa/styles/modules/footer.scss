@@ -1,0 +1,332 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for footer
+//    01.01 Contacts
+//    01.02 Useful links
+//    01.03 Links for Customers
+//    01.04 Try Soundstr
+//  02. Default styles for hamburger menu
+// -----------------------------------------------------------------------------
+
+//  01. Default styles for footer
+.footer-wrap {
+  @include flex-grow(0);
+  @include flex-shrink(0);
+}
+
+.footer {
+  @include clearfix();
+  background: $c-sapphire;
+  color: $c-white;
+  padding: 62px 0 77px;
+  width: 100%;
+
+  @media (max-width: $screen-md-min) {
+    padding-bottom: 12px;
+    padding-top: 16px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding-top: 15px;
+  }
+
+  &.logo-icon {
+    display: none;
+    text-align: center;
+
+    @media (max-width: $screen-md-min) {
+      display: block;
+    }
+
+    object {
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        height: 33px;
+        width: 37.5px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        height: 30.5px;
+        width: 35px;
+      }
+    }
+  }
+
+  .mpa-container {
+    padding: 0 0 0 2%;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      padding: 34px 50px 150px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding: 20px 35px 150px;
+    }
+  }
+
+  .contacts {
+    @media (max-width: $screen-md-min) {
+      display: none;
+    }
+  }
+
+  .contacts,
+  .general-links,
+  .customer-info,
+  .signup-info {
+    float: left;
+    width: 25.1%;
+
+    @media (max-width: $screen-md-min) {
+      float: none;
+      width: 100%;
+    }
+
+    h4 {
+      @include font-size(12);
+      margin: 0 0 19px 0;
+      text-transform: uppercase;
+    }
+
+    li {
+      list-style: none;
+
+      a:hover {
+        color: $c-footer-txt-active;
+      }
+    }
+
+    li,
+    p {
+      @include line-height(22);
+      color: $c-footer-txt;
+      font-family: $default-font-family-light;
+      font-size: $default-font-size + px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+//    01.01 Contacts
+.footer {
+  .contacts {
+    @media (min-width: $screen-md-min + 1) and (max-width: $screen-lg-min) {
+      width: 29%;
+    }
+
+    h4 {
+      letter-spacing: 3.8px;
+    }
+
+    li {
+      margin: 0 0 22px 39px;
+      position: relative;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .phone {
+      letter-spacing: .42px;
+    }
+
+    .email {
+      letter-spacing: 1px;
+    }
+
+    .address {
+      letter-spacing: 0.6px;
+      margin-right: 2px;
+
+      .font-icon {
+        left: -40px;
+      }
+    }
+
+    .font-icon {
+      @include font-size(25);
+      left: -43px;
+      position: absolute;
+      top: -2px;
+    }
+  }
+}
+
+//    01.02 Useful links
+.footer {
+  .general-links {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      margin-bottom: 33px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 11px;
+    }
+
+    h4 {
+      letter-spacing: 3.5px;
+
+      @media (max-width: $screen-md-min) {
+        letter-spacing: 2.8px;
+        margin-bottom: 15px;
+      }
+    }
+
+    li {
+      letter-spacing: .8px;
+      margin: 0 0 6px 0;
+      width: 48%;
+
+      @media (max-width: $screen-md-min) {
+        margin-bottom: 16px;
+        width: 100%;
+      }
+    }
+
+    ul {
+      @include flexbox();
+      @include flex-wrap(wrap);
+    }
+  }
+}
+
+//    01.03 Links for Customers
+.footer {
+  .customer-info {
+    @media (min-width: $screen-md-min + 1) and (max-width: $screen-lg-min) {
+      width: 20%;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      margin-bottom: 45px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 37px;
+    }
+
+    h4 {
+      letter-spacing: 3.5px;
+
+      @media (max-width: $screen-md-min) {
+        letter-spacing: 3px;
+        margin-bottom: 15px;
+      }
+    }
+
+    li {
+      letter-spacing: .7px;
+      margin: 0 0 6px 0;
+
+      @media (max-width: $screen-md-min) {
+        letter-spacing: 1.4px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .sn-icon {
+      font-size: 20px;
+      margin: 1px 9px 0 0;
+
+      @media (max-width: $screen-md-min) {
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+//    01.04 Try Soundstr
+.footer {
+  .signup-info {
+    width: 24.7%;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      width: 60%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+    }
+
+    h4 {
+      letter-spacing: 3.5px;
+
+      @media (max-width: $screen-md-min) {
+        letter-spacing: 3px;
+        margin-bottom: 23px;
+      }
+    }
+
+    p {
+      @include line-height(22.4);
+      letter-spacing: .6px;
+
+      @media (max-width: $screen-md-min) {
+        letter-spacing: 1.3px;
+      }
+    }
+
+    .singup {
+      color: $c-white;
+      display: inline-block;
+      margin: 14px 0 0 -2px;
+      padding: 7px 18px 6px;
+      text-align: center;
+
+      @media (max-width: $screen-md-min) {
+        letter-spacing: .4px;
+        padding: 11px 17px 9px;
+      }
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        margin-top: 30px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+//  02. Default styles for hamburger menu
+html.is-open-menu {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  body {
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+.mobile-menu {
+  @media (max-width: $screen-md-min) {
+    @include animation-duration($s-menu);
+    @include animation-fill-mode(both);
+    height: 100% !important;
+    margin-left: -100%;
+    left: 0;
+    overflow: scroll;
+    position: fixed;
+    right: 0;
+    z-index: 100;
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    top: 60px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    top: 54px;
+  }
+}

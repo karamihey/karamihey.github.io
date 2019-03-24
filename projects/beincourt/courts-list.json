@@ -1,0 +1,641 @@
+[
+  {
+    "id": 1,
+    "agencyName": "10th Judicial Circuit - Peoria County",
+    "lat": 40.692936,
+    "lng": -89.589831,
+    "agencyDetails": {
+      "city": "Peoria",
+      "state": "Illinois",
+      "addressLine1": "324 Main St",
+      "addressLine2": "Phenix, 111",
+      "zip": 12345,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 2,
+    "agencyName": "10th Judicial Circuit - Putnam County",
+    "lat": 41.253974,
+    "lng": -89.342574,
+    "agencyDetails": {
+      "city": "Hennepin",
+      "state": "Illinois",
+      "addressLine1": "120 N. 4th Street",
+      "addressLine2": null,
+      "zip": 67890,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 3,
+    "agencyName": "10th Judicial Circuit - Stark County",
+    "lat": 41.093967,
+    "lng": -89.865145,
+    "agencyDetails": {
+      "city": "Toulon",
+      "state": "Illinois",
+      "addressLine1": "130 West Main Street",
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 4,
+    "agencyName": "10th Judicial Circuit - Tazewell County",
+    "lat": 40.569234,
+    "lng": -89.647782,
+    "agencyDetails": {
+      "city": "Pekin",
+      "state": "Illinois",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 5,
+    "agencyName": "10th Judicial Circuit of Florida - Polk County",
+    "lat": 27.897598,
+    "lng": -81.844252,
+    "agencyDetails": {
+      "city": "Bartow",
+      "state": "Florida",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 6,
+    "agencyName": "10th Judicial District Court of Nevada",
+    "lat": 39.475903,
+    "lng": -118.777031,
+    "agencyDetails": {
+      "city": "Fallon",
+      "state": "Nevada",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 7,
+    "agencyName": "11th Judicial Circuit of Florida- Miami/Dade",
+    "lat": 25.774602,
+    "lng": -80.195146,
+    "agencyDetails": {
+      "city": "Miami",
+      "state": "Florida",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 8,
+    "agencyName": "11th Judicial Circuit of Illinois - McLean County",
+    "lat": 40.477858,
+    "lng": -88.993999,
+    "agencyDetails": {
+      "city": "Bloomington",
+      "state": "Illinois",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 9,
+    "agencyName": "11th Judicial District Court of Nevada-Hawthorne",
+    "lat": 36.220778,
+    "lng": -115.986246,
+    "agencyDetails": {
+      "city": "Pahrump",
+      "state": "Nevada",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 10,
+    "agencyName": "12th Judicial Circuit of South Carolina-Florence County",
+    "lat": 34.198850,
+    "lng": -79.767761,
+    "agencyDetails": {
+      "city": "Florence",
+      "state": "South Carolina",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 11,
+    "agencyName": "13th Judicial Circuit of Florida - Hillsborough County",
+    "lat": 27.951235,
+    "lng": -82.453949,
+    "agencyDetails": {
+      "city": "Tampa",
+      "state": "Florida",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 12,
+    "agencyName": "14th Chancery Court District of Mississippi",
+    "lat": 33.496754,
+    "lng": -88.427884,
+    "agencyDetails": {
+      "city": "Columbus",
+      "state": "Mississippi",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 13,
+    "agencyName": "15th Judicial Circuit of Florida-Palm Beach",
+    "lat": 26.715317,
+    "lng": -80.053936,
+    "agencyDetails": {
+      "city": "West Palm Beach",
+      "state": "Florida",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 14,
+    "agencyName": "163rd District Court of Texas",
+    "lat": 30.089488,
+    "lng": -93.736542,
+    "agencyDetails": {
+      "city": "Orange",
+      "state": "Texas",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 15,
+    "agencyName": "16th Judicial Circuit - Kane County",
+    "lat": 41.886459,
+    "lng": -88.308982,
+    "agencyDetails": {
+      "city": "Geneva",
+      "state": "Illinois",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 16,
+    "agencyName": "16th Judicial Circuit Court of Florida - Monroe County",
+    "lat": 24.554490,
+    "lng": -81.804767,
+    "agencyDetails": {
+      "city": "Key West",
+      "state": "Florida",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 17,
+    "agencyName": "17th Judicial Circuit - Boone County",
+    "lat": 42.264902,
+    "lng": -88.844800,
+    "agencyDetails": {
+      "city": "Belvedere",
+      "state": "Illinois",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 18,
+    "agencyName": "17th Judicial Circuit Court of Kentucky-Campbell County",
+    "lat": 39.092250,
+    "lng": -84.496983,
+    "agencyDetails": {
+      "city": "Newport",
+      "state": "Kentucky",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 19,
+    "agencyName": "17th Judicial Circuit of Florida - Broward County",
+    "lat": 26.115324,
+    "lng": -80.141397,
+    "agencyDetails": {
+      "city": "Fort Lauderdale",
+      "state": "Florida",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 20,
+    "agencyName": "17th Judicial Circuit of Illinois - Winnebago County",
+    "lat": 42.271662,
+    "lng": -89.096732,
+    "agencyDetails": {
+      "city": "Rockford",
+      "state": "Illinois",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 21,
+    "agencyName": "17th Judicial District - Adams County",
+    "lat": 39.969618,
+    "lng": -104.760949,
+    "agencyDetails": {
+      "city": "Brighton",
+      "state": "Colorado",
+      "addressLine1": "1100 Judicial Center Dr.",
+      "addressLine2": null,
+      "zip": 80601,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 22,
+    "agencyName": "18th Judicial Circuit - DuPage County",
+    "lat": 41.868334,
+    "lng": -88.138548,
+    "agencyDetails": {
+      "city": "Wheaton",
+      "state": "Illinois",
+      "addressLine1": " ",
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 23,
+    "agencyName": "18th Judicial Circuit of Florida - Brevard County",
+    "lat": 28.246308,
+    "lng": -80.739486,
+    "agencyDetails": {
+      "city": "Viera",
+      "state": "Florida",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 24,
+    "agencyName": "18th Judicial Circuit of Florida - Seminole County",
+    "lat": 28.813959,
+    "lng": -81.2676666,
+    "agencyDetails": {
+      "city": "Sanford",
+      "state": "Florida",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 25,
+    "agencyName": "18th Judicial District of Colorado",
+    "lat": 39.582644,
+    "lng": -104.831230,
+    "agencyDetails": {
+      "city": "Centennial",
+      "state": "Colorado",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 26,
+    "agencyName": "19th Judicial Circuit of Florida",
+    "lat": 27.197215,
+    "lng": -80.250880,
+    "agencyDetails": {
+      "city": "Stuart",
+      "state": "Florida",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 27,
+    "agencyName": "19th Judicial Circuit of Florida - Indian River County",
+    "lat": 27.639193,
+    "lng": -80.400889,
+    "agencyDetails": {
+      "city": "Vero Beach",
+      "state": "Florida",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 28,
+    "agencyName": "19th Judicial Circuit of Florida - Martin County",
+    "lat": 27.197165,
+    "lng": -80.250880,
+    "agencyDetails": {
+      "city": "Stuart",
+      "state": "Florida",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 29,
+    "agencyName": "19th Judicial Circuit of Florida - Okeechobee County",
+    "lat": 27.246342,
+    "lng": -80.832695,
+    "agencyDetails": {
+      "city": "Okeechobee",
+      "state": "Florida",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 30,
+    "agencyName": "19th Judicial Circuit of Florida - St. Lucie County",
+    "lat": 27.446000,
+    "lng": -80.322938,
+    "agencyDetails": {
+      "city": "Fort Pierce",
+      "state": "Florida",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 31,
+    "agencyName": "1st Judicial District Court of New Mexico-Santa Fe, Rio Arriba, Los Alamos, Tierra Amarilla",
+    "lat": 35.690757,
+    "lng": -105.940701,
+    "agencyDetails": {
+      "city": "Santa Fe",
+      "state": "New Mexico",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 32,
+    "agencyName": "20th Judicial Circuit of Tennessee - Davidson",
+    "lat": 36.167264,
+    "lng": -86.778600,
+    "agencyDetails": {
+      "city": "Nashville",
+      "state": "Tennessee",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 33,
+    "agencyName": "21st Judicial Circuit Court of Missouri",
+    "lat": 38.648523,
+    "lng": -90.339082,
+    "agencyDetails": {
+      "city": "Clayton",
+      "state": "Missouri",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 34,
+    "agencyName": "22nd Judicial Circuit - McHenry County",
+    "lat": 42.340454,
+    "lng": -88.440897,
+    "agencyDetails": {
+      "city": "Woodstock",
+      "state": "Illinois",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 35,
+    "agencyName": "22nd Judicial Circuit Court of Missouri - St. Louis City",
+    "lat": 38.627593,
+    "lng": -90.197161,
+    "agencyDetails": {
+      "city": "St. Louis",
+      "state": "Missouri",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 36,
+    "agencyName": "23rd Judicial Circuit - Kendall County",
+    "lat": 41.659219,
+    "lng": -88.462528,
+    "agencyDetails": {
+      "city": "Yorkville",
+      "state": "Illinois",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 37,
+    "agencyName": "279th Civil District Court",
+    "lat": 30.078771,
+    "lng": -94.092968,
+    "agencyDetails": {
+      "city": "Beaumont",
+      "state": "Texas",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 38,
+    "agencyName": "286th District Court of Texas-Levelland Co./Hockley",
+    "lat": 33.587309,
+    "lng": -102.376687,
+    "agencyDetails": {
+      "city": "Levelland",
+      "state": "Texas",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 39,
+    "agencyName": "29th District Court - Wayne County",
+    "lat": 42.283229,
+    "lng": -83.381356,
+    "agencyDetails": {
+      "city": "Wayne",
+      "state": "Michigan",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  },
+
+  {
+    "id": 40,
+    "agencyName": "29th Judicial Circuit - Jasper County",
+    "lat": 37.097230,
+    "lng": -94.515892,
+    "agencyDetails": {
+      "city": "Joplin",
+      "state": "Missouri",
+      "addressLine1": null,
+      "addressLine2": null,
+      "zip": null,
+      "territory": null,
+      "county": null
+    }
+  }
+]

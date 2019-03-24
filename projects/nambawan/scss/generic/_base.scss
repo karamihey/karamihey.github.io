@@ -1,0 +1,16 @@
+html,
+body {
+  background-color: $c-page-bg;
+  font-family: $font-family;
+}
+
+.page-wrapper {
+  margin: 0 auto;
+  max-width: 1400px;
+  min-width: 1180px;
+}
+
+.section {
+  margin-left: 77px;
+  position: relative;
+}

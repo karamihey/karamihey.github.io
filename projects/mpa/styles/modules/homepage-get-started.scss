@@ -1,0 +1,134 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Get Started section
+//    01.01 Default styles
+//    01.02 Devices
+//    01.03 SignUp form
+//    01.04 Newsletter form
+// -----------------------------------------------------------------------------
+
+//  01. Get Started section
+//    01.01 Default styles
+.get-started {
+  padding: 66px 0 110px 0;
+
+  @media (max-width: $screen-md-min) {
+    padding-bottom: 52px;
+  }
+
+  .clarification {
+    letter-spacing: -.6px;
+    margin: 18px 0 69px;
+
+    @media (max-width: $screen-md-min) {
+      letter-spacing: -.2px;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      margin-bottom: 72px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 38px;
+      margin-top: 18px;
+    }
+  }
+}
+
+//    01.02 Devices
+.homepage-wrap {
+  .soundstr-device {
+    background: url("../images/bg_waves_homepage_desktop@1x.png") no-repeat 50% 100%;
+    padding: 0 0 86px 0;
+    text-align: center;
+
+    @media (max-width: $screen-md-min) {
+      background-size: contain;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding-bottom: 31px;
+    }
+
+    .mpa-container {
+      max-width: 1481px;
+    }
+
+    img {
+      display: block;
+      margin: 0 0 0 50px;
+      max-width: 100%;
+    }
+
+    .desktop-image {
+      display: block;
+
+      @media (max-width: $screen-md-min) {
+        display: none;
+      }
+    }
+
+    .devices-image {
+      display: none;
+
+      @media (max-width: $screen-md-min) {
+        display: block;
+        margin: 0 auto;
+      }
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        max-width: 85%;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        max-width: 90%;
+        padding-left: 18px;
+      }
+    }
+  }
+}
+
+//    01.04 Newsletter form
+.newsletter {
+  background: $c-aqua;
+  padding: 61px 0 35px;
+  text-align: center;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    padding-bottom: 25px;
+    padding-top: 26px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding-bottom: 37px;
+    padding-top: 33px;
+  }
+
+  p {
+    @include font-size(30);
+    color: $c-white;
+    margin: 0 -8px 23px 0;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .newsletter-form {
+    margin: 0 auto;
+    width: 55.7%;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      width: 59%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      width: 74%;
+    }
+  }
+}

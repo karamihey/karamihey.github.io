@@ -1,0 +1,51 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for Homepage
+// -----------------------------------------------------------------------------
+
+//  01. Default styles for Homepage
+.homepage-wrap {
+  .heading {
+    @include font-size(40);
+    color: $c-sapphire;
+    font-weight: normal;
+    letter-spacing: -.2px;
+    margin: 0;
+    text-align: center;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(38);
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(31);
+    }
+  }
+
+  .clarification {
+    @include font-size(20);
+    color: $c-dark-grey;
+    font-weight: normal;
+    line-height: 1.7;
+    margin: 26px 0 0 0;
+    padding: 0 27%;
+    text-align: center;
+
+    @media (max-width: $screen-md-min) {
+      font-family: $default-font-family-light;
+      letter-spacing: -.1px;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 18px;
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Transformations
+//    01.01 Default properties
+//    01.02 Scale
+//    01.03 Translate
+//    01.04 Rotate
+//  02. Transitions
+//  03. Animations
+// -----------------------------------------------------------------------------
+
+//  01. Transformations
+//    01.01 Default properties
+@mixin transform($params) {
+  @include css3-prefix('transform', $params);
+}
+
+@mixin transform-origin($params) {
+  @include css3-prefix('transform-origin', $params);
+}
+
+@mixin transform-style($style: preserve-3d) {
+  @include css3-prefix('transform-style', $style);
+}
+
+//    01.02 Scale
+@mixin scale($ratio) {
+  @include css3-prefix('transform', scale($ratio));
+}
+
+@mixin scaleXY($ratioX, $ratioY) {
+  @include css3-prefix('transform', scale($ratioX, $ratioY));
+}
+
+@mixin scaleX($ratio) {
+  @include css3-prefix('transform', scaleX($ratio));
+}
+
+@mixin scaleY($ratio) {
+  @include css3-prefix('transform', scaleY($ratio));
+}
+
+//    01.03 Translate
+@mixin translate($x, $y) {
+  @include css3-prefix('transform', translate($x, $y));
+}
+
+@mixin translateX($x) {
+  @include css3-prefix('transform', translateX($x));
+}
+
+@mixin translateY($y) {
+  @include css3-prefix('transform', translateY($y));
+}
+
+@mixin translate3d($x, $y, $z) {
+  @include css3-prefix('transform', translate3d($x, $y, $z));
+}
+
+//    01.04 Rotate
+@mixin rotate($degrees) {
+  @include css3-prefix('transform', rotate($degrees));
+}
+
+@mixin rotateX($degrees) {
+  @include css3-prefix('transform', rotateX($degrees));
+}
+
+@mixin rotateY($degrees) {
+  @include css3-prefix('transform', rotateY($degrees));
+}
+
+//  02. Transitions
+@mixin transition($properties...) {
+  @if length($properties) >= 1 {
+    @include css3-prefix('transition', $properties);
+  }
+  @else {
+    @include css3-prefix('transition',  "all 0.2s ease-in-out 0s");
+  }
+}
+
+@mixin transition-property($property...) {
+  @include css3-prefix('transition-property', $property);
+}
+
+@mixin transition-delay($transition-delay) {
+  @include css3-prefix('transition-delay', $transition-delay);
+}
+
+@mixin transition-duration($transition-duration) {
+  @include css3-prefix('transition-duration', $transition-duration);
+}
+
+@mixin transition-timing-function($timing-function) {
+  @include css3-prefix('transition-timing-function', $timing-function);
+}
+
+//  03. Animations
+@mixin animation($str) {
+  @include css3-prefix('animation', $str);
+}
+
+@mixin animation-name($name) {
+  @include css3-prefix('animation-name', $name);
+}
+
+@mixin animation-duration($duration) {
+  @include css3-prefix('animation-duration', $duration);
+}
+
+@mixin animation-delay($delay) {
+  @include css3-prefix('animation-delay', $delay);
+}
+
+@mixin animation-iteration-count($iteration-count) {
+  @include css3-prefix('animation-iteration-count', $iteration-count);
+}
+
+@mixin animation-fill-mode($type) {
+  @include css3-prefix('animation-fill-mode', $type);
+}

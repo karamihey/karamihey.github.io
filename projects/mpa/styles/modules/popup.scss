@@ -1,0 +1,493 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for popup
+//    01.01 Centering, fixed position, absolute position
+//    01.02 Close button
+//    01.03 Registration steps
+//    01.04 Login Form
+// -----------------------------------------------------------------------------
+
+//  01. Default styles for popup
+.popup-parent {
+  @include box-sizing(border-box);
+  min-height: 100vh;
+  padding: 75px 0 30px;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-mlg) {
+    padding-bottom: 135px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding-bottom: 90px;
+    padding-top: 46px;
+  }
+}
+
+.popup {
+  @include border-radius(5px);
+  @include box-sizing(border-box);
+  background: $c-white;
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 44px 89px 60px;
+  position: relative;
+  z-index: 20;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    max-width: 690px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    @include border-radius(0);
+    max-width: 100%;
+  }
+
+  .logo-box {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: -57px;
+
+    @media (max-width: $screen-xs-max) {
+      top: -35px;
+    }
+
+    a {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+
+    span {
+      display: block;
+    }
+
+    object {
+      height: 38px;
+      position: relative;
+      width: 173px;
+      z-index: -1;
+
+      @media (max-width: $screen-xs-max) {
+        height: 24px;
+        width: 110px;
+      }
+    }
+  }
+
+  .gradient-border {
+    @include border-radius(5px 5px 0 0);
+    @include css3-prefix(background, linear-gradient(45deg, $c-blue, $c-gradient-end));
+    height: 8px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    @media (max-width: $screen-xs-max) {
+      @include border-radius(0);
+    }
+  }
+
+  .disabled {
+    opacity: 0.5;
+  }
+
+  .truncated-inner-elem {
+    display: inline-block;
+    max-width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+
+  .additional-info {
+    @include clearfix();
+    bottom: -46px;
+    margin: 0 auto;
+    min-width: 620px;
+    position: absolute;
+
+    @media (max-width: $screen-xs-max) {
+      bottom: -90px;
+      min-width: 100%;
+    }
+
+    .general-links {
+      float: left;
+      margin: 0;
+      padding: 0;
+
+      @media (max-width: $screen-xs-max) {
+        float: none;
+        text-align: center;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        margin-bottom: 30px;
+      }
+
+      li {
+        color: $c-white;
+        display: inline-block;
+
+        @media (max-width: $screen-md-min) {
+          @include font-size(13);
+        }
+
+        &:hover {
+          color: $c-btn;
+        }
+
+        &:before {
+          @include border-radius(50%);
+          background: $c-white;
+          content: "";
+          display: block;
+          float: left;
+          height: 3px;
+          margin: 7px 3px;
+          width: 3px;
+
+          @media (max-width: $screen-md-min) {
+            margin-left: 1px;
+          }
+        }
+
+        &:first-child:before {
+          display: none;
+        }
+      }
+    }
+
+    .signup-box {
+      color: $c-white;
+      float: right;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        margin-right: -9px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        float: none;
+        text-align: center;
+      }
+
+      span {
+        @media (max-width: $screen-md-min) {
+          @include font-size(13);
+        }
+      }
+
+      .signup-btn {
+        @media (max-width: $screen-xs-max) {
+          @include font-size(13);
+          margin-left: 10px;
+          margin-right: 11px;
+          padding-left: 9px;
+          padding-right: 9px;
+        }
+      }
+    }
+  }
+}
+
+.pass-features {
+  @include clearfix();
+
+  .checkbox {
+    float: left;
+    padding-left: 21px;
+  }
+
+  .pass-recovery {
+    color: $c-light-blue;
+    float: right;
+    letter-spacing: .1px;
+
+    &:hover {
+      color: $c-blue;
+    }
+  }
+}
+
+//    01.01 Centering, fixed position, absolute position
+.centering {
+  @include translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+//    01.02 Close button
+.close-btn i {
+  @include font-size(41);
+  color: $c-grey;
+  cursor: pointer;
+  position: absolute;
+  right: 1px;
+  top: 5px;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    right: 9px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    right: 3px;
+  }
+
+  &:hover {
+    color: $c-dark-grey;
+  }
+}
+
+//    01.03 Registration steps
+.reg-steps {
+  background: $c-bg-reg-steps-tablet url("../images/bg_reg_page.jpg") no-repeat 50% 100%;
+
+  @media (max-width: $screen-xs-max) {
+    background: $c-bg-reg-steps-mobile;
+  }
+
+  .popup {
+    padding-bottom: 30px;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      padding: 53px 60px 60px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding: 56px 35px 45px;
+    }
+  }
+
+  h3 {
+    @include font-size(18);
+    font-weight: normal;
+    margin: 13px 0;
+
+    @media (max-width: $screen-md-min) {
+      @include font-size(20);
+    }
+  }
+
+  .heading {
+    @include font-size(40);
+    color: $c-sapphire;
+    font-weight: normal;
+    letter-spacing: -.3px;
+    margin: 0 0 17px 0;
+    text-align: center;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(38);
+      letter-spacing: 0;
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(32);
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+  }
+
+  .instruction {
+    @include font-size(16);
+    font-family: $default-font-family-light;
+    color: $c-dark-grey;
+    letter-spacing: -.3px;
+    line-height: 1.56;
+    margin: 0 0 44px 0;
+    text-align: center;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(20);
+      letter-spacing: 0;
+      line-height: 1.7;
+      margin-bottom: 35px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(15);
+      letter-spacing: 0;
+      line-height: 1.35;
+      margin-bottom: 33px;
+      padding: 0 5%;
+    }
+
+    span {
+      font-family: $default-font-family;
+    }
+  }
+
+  .icon-box {
+    margin: 9px 0 16px;
+    text-align: center;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      margin-bottom: 18px;
+      margin-top: 3px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 21px;
+      margin-top: -10px;
+    }
+
+    img,
+    object {
+      height: 135px;
+      width: 135px;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        height: 103px;
+        width: 103px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        height: 89px;
+        width: 89px;
+      }
+    }
+  }
+
+  .button-box {
+    @include clearfix();
+  }
+
+  .licence-requirements {
+    @include font-size(16);
+    color: $c-sapphire;
+    line-height: 1.2;
+    margin-bottom: 32px;
+    padding: 0 7%;
+    text-align: center;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(20);
+      line-height: 1.65;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(15);
+      line-height: 1.35;
+      margin-bottom: 15px;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+
+  .agreement {
+    @include font-size(11);
+    color: $c-dark-grey;
+    margin-bottom: 0;
+    margin-top: 30px;
+    text-align: center;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(15);
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(11);
+    }
+
+    a {
+      display: inline-block;
+      border-bottom: 1px dotted $c-dark-grey;
+
+      &:hover {
+        color: $c-blue;
+        border-color: $c-blue;
+      }
+    }
+  }
+}
+
+//    01.04 Login Form
+.login {
+  min-height: 675px;
+  height: 100vh;
+
+  @media (max-width: $screen-xs-max) {
+    min-height: 650px;
+  }
+
+  .popup {
+    min-width: 620px;
+    padding: 55px 0 58px;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      min-width: 629px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include border-radius(5px);
+      @include transform(none);
+      left: auto;
+      margin: 80px 5% 0;
+      min-width: initial;
+      padding-bottom: 41px;
+      top: auto;
+      width: 90%;
+    }
+
+    .logo-box {
+      @media (max-width: $screen-xs-max) {
+        top: -43px;
+      }
+
+      object {
+        @media (max-width: $screen-xs-max) {
+          height: 31px;
+          width: 140px;
+        }
+      }
+    }
+  }
+
+  .login-form {
+    padding: 0 6.5%;
+
+    @media (max-width: $screen-md-min) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+
+  &.bg-login-page {
+    background: url("../images/bg_login_page.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.login-form {
+  .pass-features {
+    .checkbox {
+      @media (max-width: $screen-md-min) {
+        letter-spacing: .1px;
+        padding-left: 28px;
+      }
+    }
+  }
+
+  .pass-recovery {
+    @media (max-width: $screen-md-min) {
+      letter-spacing: .6px;
+    }
+  }
+}

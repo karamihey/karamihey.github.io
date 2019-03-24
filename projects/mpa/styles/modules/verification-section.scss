@@ -1,0 +1,104 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for 'Verification' section
+// -----------------------------------------------------------------------------
+
+//  01. Default styles for 'Verification' section
+.verification {
+  background: url(../images/bg_waves_desktop@1x.png) no-repeat center bottom;
+  background-size: 100%;
+  padding: 100px 0 160px;
+  text-align: center;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    background-image: url(../images/bg_waves_desktop@2x.png);
+  }
+
+  @media (min-width: $screen-sm-plus-min) and (max-width: $screen-md-min) {
+    background-position: left 0 bottom -90px;
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    background-image: url(../images/bg_waves_tablet@1x.png);
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    background-image: url(../images/bg_waves_tablet@2x.png);
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-plus-max) {
+    padding-top: 213px;
+  }
+
+  @media (min-width: $screen-mxs-min) and (max-width: $screen-xs-max) {
+    background-position: left 0 bottom -100px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    background-image: url(../images/bg_waves_mobile@1x.png);
+    padding-bottom: 130px;
+    padding-top: 77px;
+  }
+
+  @media (max-width: $screen-xs-max) and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    background-image: url(../images/bg_waves_mobile@2x.png);
+  }
+
+  @media (min-width: $screen-xs-plus-min) and (max-width: $screen-mxs-max) {
+    background-position: left 0 bottom -50px;
+  }
+
+  h3 {
+    @include font-size(40);
+    font-weight: normal;
+    letter-spacing: -.2px;
+    margin: 15px 0 0 0;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(38);
+      margin-top: 36px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(31);
+      margin-top: 9px;
+      padding: 0 20%;
+    }
+  }
+
+  p {
+    @include font-size(18);
+    color: $c-dark-grey;
+    line-height: 1.35;
+    margin-top: 22px;
+    padding: 0 30%;
+
+    @media (max-width: $screen-md-min) {
+      @include font-size(20);
+      letter-spacing: -.2px;
+      line-height: 1.7;
+      margin-top: 19px;
+      padding: 0 21%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding: 0 10%;
+    }
+  }
+
+  .icon-box object {
+    width: 64px;
+    height: 64px;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      width: 75px;
+      height: 75px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}

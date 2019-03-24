@@ -1,0 +1,263 @@
+// -----------------------------------------------------------------------------
+//  TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//  01. Default styles for header
+//    01.01 Title section
+//    01.02 Minor section
+//    01.03 Other tab styles
+// -----------------------------------------------------------------------------
+
+//  01. Default styles for header
+.terms {
+  .mpa-container {
+    padding: 0 1.5%;
+  }
+
+  h1 {
+    @include font-size(56);
+    color: $c-sapphire;
+    font-weight: normal;
+    letter-spacing: -.2px;
+    margin: 51px 0 42px 0;
+    text-align: center;
+
+    @media (max-width: $screen-md-min) {
+      margin-top: 63px;
+      margin-bottom: 52px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      @include font-size(40);
+      margin-top: 79px;
+    }
+  }
+}
+
+//       01.01.01 Title section
+.terms {
+  .title-section {
+    h2 {
+      @include font-size(40);
+      color: $c-sapphire;
+      font-weight: normal;
+      margin: 30px 0 21px;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        letter-spacing: -1.2px;
+        margin-bottom: 20px;
+        margin-top: 17px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        @include font-size(31);
+        margin-bottom: 18px;
+        margin-top: 32px;
+      }
+    }
+
+    .currentness {
+      @include font-size(14);
+      color: $c-sapphire;
+      font-family: $default-font-family-bold;
+      letter-spacing: .2px;
+      text-transform: uppercase;
+
+      @media (max-width: $screen-md-min) {
+        letter-spacing: .9px;
+      }
+    }
+
+    .title-info {
+      @include font-size(14);
+      color: $c-dark-grey;
+      letter-spacing: .05px;
+      line-height: 1.75;
+      margin: 67px 0 0 0;
+
+      @media (max-width: $screen-md-min) {
+        letter-spacing: .5px;
+        margin-top: 69px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        line-height: 1.8;
+        margin-bottom: 16px;
+      }
+    }
+
+    a {
+      color: $c-azure;
+      font-family: $default-font-family-semibold;
+
+      &:hover {
+        color: $c-blue;
+      }
+    }
+  }
+}
+
+//       01.01.02 Minor section
+.terms {
+  .minor-section {
+    h3 {
+      @include font-size(30);
+      color: $c-sapphire;
+      font-weight: normal;
+      margin: 48px 0 0 0;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        letter-spacing: -1px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        @include font-size(26);
+        margin-top: 50px;
+      }
+    }
+
+    h4 {
+      @include font-size(23);
+      color: $c-sapphire;
+      font-weight: normal;
+      margin: 15px 0 0 0;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        letter-spacing: -.7px;
+        margin-bottom: 21px;
+        margin-top: 20px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        @include font-size(20);
+        margin-top: 22px;
+      }
+    }
+
+    h5 {
+      @include font-size(16);
+      color: $c-dark-grey;
+      font-weight: normal;
+      font-family: $default-font-family-bold;
+      margin: 12px 0 0 0;
+
+      @media (max-width: $screen-md-min) {
+        @include font-size(17);
+        margin-top: 21px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        margin-top: 23px;
+      }
+    }
+
+    h5 + p {
+      margin: 25px 0 21px 0;
+
+      @media (max-width: $screen-md-min) {
+        letter-spacing: .6px;
+        line-height: 1.75;
+        margin-bottom: 30px;
+        margin-top: 19px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        letter-spacing: .5px;
+        margin-top: 20px;
+      }
+    }
+
+    li, p {
+      @include font-size(14);
+      color: $c-dark-grey;
+      letter-spacing: .05px;
+      line-height: 1.75;
+
+      @media (max-width: $screen-md-min) {
+        letter-spacing: .5px;
+      }
+
+      .uppercase {
+        text-transform: uppercase;
+      }
+    }
+
+    li {
+      margin: 11px 0 0 0;
+      padding: 3px 0 0 5px;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        margin-top: 15px;
+        padding-left: 7px;
+        padding-top: 0;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        margin-top: 12px;
+        padding-left: 7px;
+      }
+    }
+
+    p {
+      margin: 18px 0 0 0;
+
+      @media (max-width: $screen-md-min) {
+        line-height: 1.72;
+        margin-top: 16px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        line-height: 1.8;
+      }
+    }
+
+    p + p {
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        margin-top: 20px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        margin-top: 21px;
+      }
+    }
+
+    ul {
+      padding: 0 0 0 16px;
+
+      @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+        margin-left: -2px
+      }
+    }
+  }
+}
+
+//       01.01.03 Other tab styles
+.terms {
+  .faq-email {
+    @include font-size(14);
+    color: $c-dark-grey;
+    font-family: $default-font-family-semibold;
+    letter-spacing: -.2px;
+    margin: 26px 0 0 0;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+      @include font-size(15);
+      letter-spacing: -.15px;;
+      line-height: 1.65;
+      margin-top: -9px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      letter-spacing: -.1px;
+      line-height: 1.74;
+      margin-top: -5px;
+    }
+
+    a {
+      color: $c-azure;
+
+      &:hover {
+        color: $c-blue;
+      }
+    }
+  }
+}
